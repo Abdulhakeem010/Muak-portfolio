@@ -20,7 +20,7 @@ img {
   --ALT-FOOTER-BG: #2a2a28;
   --TEXT-H: #2a2a28;
   --TEXT-P: #444444;
-  --FONT-FAMILY: "Manrope", sans-serif;
+  --FF: "Manrope", sans-serif;
   --BORDER: 1px solid red;
 }
 
@@ -32,7 +32,7 @@ body {
   background-color: var(--BG);
   display: flex;
   flex-direction: column;
-  font-family: var(--FONT-FAMILY);
+  font-family: var(--FF);
   font-style: normal;
 }
 
@@ -52,23 +52,29 @@ header {
 }
 .header-left a {
   text-decoration: none;
-  color: hsla(0, 0%, 0%, 0.8);
+  color: hsla(0, 0%, 0%, 0.6);
   font-size: 16px;
   line-height: 19.2px;
   letter-spacing: -0.2px;
   font-weight: 400;
+}
 
-}
 .header-left a:hover {
-  color: #000;
+  color: hsla(0, 0%, 0%, 0.8);
 }
+
 .header-right {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 20px;
+}
+.nav{
+  text-decoration: none;
+  color: hsla(0, 0%, 0%, 0.5);
 }
 
 .theme-icon {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
