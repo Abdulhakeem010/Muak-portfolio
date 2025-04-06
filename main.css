@@ -49,6 +49,16 @@ header {
   align-items: center;
   justify-content: flex-start;
 }
+.header-left a {
+  text-decoration: none;
+  color: hsla(0, 0%, 0%, 0.8);
+  font-size: 16px;
+  line-height: 19.2px;
+  letter-spacing: -0.2px;
+}
+.header-left a:hover {
+  color: #000;
+}
 .header-right {
   display: flex;
   align-items: center;
