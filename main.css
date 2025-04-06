@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
 
 * {
   margin: 0;
@@ -71,7 +71,14 @@ header {
 }
 .nav{
   text-decoration: none;
-  color: hsla(0, 0%, 0%, 0.5);
+  color: hsla(0, 0%, 0%, 0.7);
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.1px;
+}
+.nav:hover{
+  color: #828282;
 }
 
 .theme-icon {
