@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+:root {
+  --BG:#fff;
+  --ALT-BG:#f3f3f1;
+  --FOOTER-BG:#444444;
+  --ALT-FOOTER-BG:#2a2a28;
+  --TEXT-H:#2A2A28;
+  --TEXT-P:#444444;
+}
