@@ -14,10 +14,20 @@ img {
 }
 
 :root {
-  --BG:#fff;
-  --ALT-BG:#f3f3f1;
+  --BG:#f3f3f1;
+  --ALT-BG:#fff;
   --FOOTER-BG:#444444;
   --ALT-FOOTER-BG:#2a2a28;
   --TEXT-H:#2A2A28;
   --TEXT-P:#444444;
+  --FONT-FAMILY:'Manrope', sans-serif;
+}
+
+html{
+ scroll-behavior: smooth;
+}
+
+body {
+background-color: var(--BG);
+
 }
