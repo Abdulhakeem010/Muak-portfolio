@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
 
 * {
   margin: 0;
@@ -14,25 +14,26 @@ img {
 }
 
 :root {
-  --BG:#f3f3f1;
-  --ALT-BG:#fff;
-  --FOOTER-BG:#444444;
-  --ALT-FOOTER-BG:#2a2a28;
-  --TEXT-H:#2A2A28;
-  --TEXT-P:#444444;
-  --FONT-FAMILY:'Manrope', sans-serif;
-  --BORDER:1px solid red;
+  --BG: #f3f3f1;
+  --ALT-BG: #fff;
+  --FOOTER-BG: #444444;
+  --ALT-FOOTER-BG: #2a2a28;
+  --TEXT-H: #2a2a28;
+  --TEXT-P: #444444;
+  --FONT-FAMILY: "Manrope", sans-serif;
+  --BORDER: 1px solid red;
 }
 
-html{
- scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-background-color: var(--BG);
-display: flex;
-flex-direction: column;
-font-family: var(--FONT-FAMILY);
+  background-color: var(--BG);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--FONT-FAMILY);
+  font-style: normal;
 }
 
 header {
@@ -55,6 +56,7 @@ header {
   font-size: 16px;
   line-height: 19.2px;
   letter-spacing: -0.2px;
+  font-weight: bolder;
 }
 .header-left a:hover {
   color: #000;
