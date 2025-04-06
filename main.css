@@ -43,7 +43,7 @@ header {
   padding-inline: 50px;
   border: var(--BORDER);
   background-color: hsla(0, 0%, 100%, 0.8);
-  /* border: 1px solid #ccc; */
+  border-bottom: 1px solid #ccc;
 }
 .header-left {
   display: flex;
