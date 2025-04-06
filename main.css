@@ -21,6 +21,7 @@ img {
   --TEXT-H: #2a2a28;
   --TEXT-P: #444444;
   --FF: "Manrope", sans-serif;
+  --FW: 200;
   --BORDER: 1px solid red;
 }
 
@@ -33,6 +34,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--FF);
+  font-weight: var(--FW);
   font-style: normal;
 }
 
@@ -56,7 +58,6 @@ header {
   font-size: 16px;
   line-height: 19.2px;
   letter-spacing: -0.2px;
-  font-weight: 400;
 }
 
 .header-left a:hover {
