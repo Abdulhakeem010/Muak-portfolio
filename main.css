@@ -41,9 +41,8 @@ header {
   align-items: center;
   padding-block: 30px;
   padding-inline: 50px;
-  border: var(--BORDER);
   background-color: hsla(0, 0%, 100%, 0.8);
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid hsla(0, 0%, 80%, 0.5);
 }
 .header-left {
   display: flex;
