@@ -101,7 +101,13 @@ header {
 
 /*MAIN STYLING*/
 /* HERO SECTION STYLING */
-
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 50px;
+}
+.hero
 /* END HERO SECTION STYLING */
 /* HERO MAIN STYLING */
 
