@@ -116,5 +116,19 @@ header {
   margin-bottom: 16px;
 }
 .footer-btn{
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border: var(--BORDER);
+  padding-block: 5px;
+  padding-inline: 30px;
+  background-color: var(--ALT-FOOTER-BG);
+}
+.footer-btn a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  line-height: 16.8px;
+ 
 }
