@@ -121,7 +121,7 @@ header {
   align-items: center;
   width: fit-content;
   border: var(--BORDER);
-  padding-block: 8px;
+  padding-block: 10px;
   padding-inline: 30px;
   background-color: var(--ALT-FOOTER-BG);
 }
