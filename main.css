@@ -178,3 +178,7 @@ header {
   align-items: center;
   gap: 30px;
 }
+.fb-icon {
+  width: 20px;
+  height: 20px;
+}
