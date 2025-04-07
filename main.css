@@ -176,10 +176,10 @@ header {
   justify-content: center;
   align-items: center;
   border: 1px solid hsla(0, 0%, 80%, 0.8);
-  padding: 10px;
+  padding: 12px;
   border-radius: 50%;
 }
 .fb-icon {
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
 }
