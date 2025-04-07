@@ -1,10 +1,9 @@
+const blocks = document.querySelectorAll(".marquee-block");
 const keywords = ["code", "tech", "developer", "laptop", "software"];
-const numberOfImages = 5;
 
-for (let i = 1; i <= numberOfImages; i++) {
-  const container = document.getElementById(`imageContainer${i}`);
+blocks.forEach((block, index) => {
   const randomSeed = Math.floor(Math.random() * 10000);
-  const keyword = keywords[i % keywords.length];
+  const keyword = keywords[index % keywords.length];
 
   const img = document.createElement("img");
   img.src = `https://source.unsplash.com/300x200/?${keyword}&sig=${randomSeed}`;
@@ -13,5 +12,5 @@ for (let i = 1; i <= numberOfImages; i++) {
   img.style.marginRight = "10px";
   img.style.borderRadius = "10px";
 
-  container.appendChild(img);
-}
+  block.appendChild(img);
+});
