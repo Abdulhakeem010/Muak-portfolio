@@ -118,6 +118,23 @@ header {
   margin-bottom: 25px;
 }
 .footer-btn{
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border: none;
+  padding-block: 10px;
+  padding-inline: 50px;
+  border-radius: 8px;
+  background-color: var(--ALT-FOOTER-BG);
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  line-height: 16.8px; */
+}
+.footer-btn a{
+  text-decoration: none;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -127,17 +144,22 @@ header {
   padding-inline: 50px;
   border-radius: 8px;
   background-color: var(--ALT-FOOTER-BG);
-}
-.footer-btn a{
-  text-decoration: none;
-  color: white;
   font-size: 16px;
   line-height: 16.8px;
+  transition: all 0.4s ease-in-out;
 }
-.footer-btn:hover .footer-btn a:hover {
+.footer-btn a:hover  {
   background-color: white;
+  color: black;
 }
 
-.footer-btn a:hover{
- color: var(--TEXT-H);
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--ALT-FOOTER-BG);
+  padding-inline: 50px;
+  padding-top: 65px;
+  padding-bottom: 80px;
 }
+
