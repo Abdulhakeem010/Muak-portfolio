@@ -95,3 +95,143 @@ header {
 .icon:hover {
   cursor: pointer;
 }
+
+
+/* FOOTER STYLING */
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--FOOTER-BG);
+  padding-left: 100px;
+  padding-block: 100px;
+}
+.footer-top h1 {
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -1px;
+  color: white;
+  margin-bottom: 7px;
+}
+.footer-top p {
+  font-size: 18px;
+  line-height: 27px;
+  color: #f3f3f2;
+  margin-bottom: 25px;
+}
+
+.footer-btn a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  border: none;
+  padding-block: 10px;
+  padding-inline: 50px;
+  border-radius: 8px;
+  background-color: var(--ALT-FOOTER-BG);
+  font-size: 16px;
+  line-height: 16.8px;
+  transition: all 0.3s ease-in-out;
+}
+.footer-btn a:hover {
+  background-color: white;
+  color: black;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--ALT-FOOTER-BG);
+  padding-inline: 50px;
+  padding-top: 65px;
+  padding-bottom: 80px;
+}
+
+.fb-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid hsla(0, 0%, 80%, 0.2);
+}
+.fb-left {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+.fb-left-logo a{
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19.2px;
+  color: white;
+}
+
+.fb-left-logo a:hover{
+  color: #ffffffd9;
+}
+
+.fb-left-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.fb-left-links a{
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: -0.1px;
+  color: #afafaf;
+}
+
+.fb-left-links a:hover{
+  color: white;
+}
+
+.fb-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #cccccc33;
+  padding: 12px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  color: white;
+}
+.social-icons:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+.fb-icon {
+  width: 16px;
+  height: 16px;
+}
+.fb-bottom {
+  font-size: 14px;
+  line-height: 16.8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #afafaf;
+  margin-top: 42px;
+}
+/* END FOOTER STYLING */
