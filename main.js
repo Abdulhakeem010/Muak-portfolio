@@ -3,11 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const keywords = ["code", "tech", "developer", "laptop", "software"];
 
   blocks.forEach((block, index) => {
-    const randomSeed = Math.floor(Math.random() * 10000);
     const keyword = keywords[index % keywords.length];
+    const randomSeed = Math.floor(Math.random() * 10000);
+    const imageUrl = `https://source.unsplash.com/360x240/?${keyword}&sig=${randomSeed}`;
 
     const img = document.createElement("img");
-    img.src = `https://source.unsplash.com/360x240/?${keyword}&sig=${randomSeed}`;
+    img.src = imageUrl;
     img.alt = keyword;
     img.style.height = "240px";
     img.style.width = "360px";
