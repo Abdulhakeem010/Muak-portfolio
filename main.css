@@ -167,6 +167,39 @@ header {
   height: 240px;
 }
 
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  gap: 20px;
+  background-color: rgba(0, 0, 86, 0.743);
+  padding: 20px 0;
+  position: relative;
+}
+
+.marquee-block {
+  display: inline-block;
+  animation: scroll-left 20s linear infinite;
+}
+
+.marquee-block img {
+  height: 150px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 /* END HERO SECTION STYLING */
 /* HERO MAIN STYLING */
 
