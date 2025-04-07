@@ -137,6 +137,7 @@ header {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  margin-bottom: 60px;
 }
 .social-icon{
   display: flex;
