@@ -172,14 +172,17 @@ header {
   white-space: nowrap;
   display: flex;
   gap: 20px;
-  background-color: rgba(0, 0, 86, 0.743);
+  /* background-color: rgba(0, 0, 86, 0.743); */
   padding: 20px 0;
   position: relative;
 }
 
 .marquee-block {
+  border: var(--BORDER);
   display: inline-block;
   animation: scroll-left 20s linear infinite;
+  width: 33%;
+  height: 240px;
 }
 
 .marquee-block img {
