@@ -206,7 +206,7 @@ header {
   align-items: center;
   gap: 30px;
 }
-.social-icons {
+.social-icons a{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -216,7 +216,7 @@ header {
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
 }
-.social-icons:hover{
+.social-icons:hover a{
   cursor: pointer;
   background-color: white;
 }
