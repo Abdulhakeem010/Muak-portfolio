@@ -8,7 +8,7 @@ blocks.forEach((block, index) => {
   const img = document.createElement("img");
   img.src = `https://source.unsplash.com/300x200/?${keyword}&sig=${randomSeed}`;
   img.alt = keyword;
-  img.style.height = "150px";
+  img.style.height = "240px";
   img.style.marginRight = "10px";
   img.style.borderRadius = "10px";
 
