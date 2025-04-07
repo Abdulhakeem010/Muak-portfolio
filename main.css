@@ -134,8 +134,13 @@ header {
   margin-bottom: 38px;
 }
 .hero-socials {
-  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
+
 
 /* END HERO SECTION STYLING */
 /* HERO MAIN STYLING */
