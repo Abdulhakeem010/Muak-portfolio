@@ -107,5 +107,10 @@ header {
   line-height: 60px;
   letter-spacing: -1px;
   color: white;
-  margin-bottom: ;
+  margin-bottom: 8px;
+}
+.footer-top p {
+  font-size: 18px;
+  line-height: 27px;
+  color: #f3f3f2;
 }
