@@ -163,7 +163,9 @@ header {
   flex-direction: row; 
 }
 .marquee-block{
-  
+border: var(--BORDER);
+  width: 33%;
+  height: 240px;
 }
 
 /* END HERO SECTION STYLING */
