@@ -105,9 +105,18 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 45px;
 }
-.hero
+.hero-image-container {
+  display: flex;
+  border: var(--BORDER);
+  margin-bottom: 45px;
+}
+.hero-image {
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+}
 /* END HERO SECTION STYLING */
 /* HERO MAIN STYLING */
 
