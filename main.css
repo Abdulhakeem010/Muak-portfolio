@@ -98,7 +98,6 @@ header {
 }
 /* END HEADER STYLING */
 
-
 /*MAIN STYLING*/
 /* HERO SECTION STYLING */
 .hero-section {
@@ -123,7 +122,7 @@ header {
   font-size: 55px;
   line-height: 66px;
   letter-spacing: -0.5px;
-  color: #201D15;
+  color: #201d15;
   margin-bottom: 45px;
 }
 .hero-section p {
@@ -138,7 +137,7 @@ header {
   gap: 30px;
   margin-bottom: 60px;
 }
-.social-icon{
+.social-icon {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -154,24 +153,22 @@ header {
   background-color: black;
   color: white;
 }
-.hero-icon{
+.hero-icon {
   width: 18px;
   height: 18px;
 }
-.marquee-container{
+.marquee-container {
   display: flex;
-  flex-direction: row; 
+  flex-direction: row;
 }
-.marquee-block{
-border: var(--BORDER);
+.marquee-block {
+  border: var(--BORDER);
   width: 33%;
   height: 240px;
 }
 
 /* END HERO SECTION STYLING */
 /* HERO MAIN STYLING */
-
-
 
 /* FOOTER STYLING */
 .footer-top {
@@ -242,18 +239,18 @@ border: var(--BORDER);
   align-items: center;
   gap: 80px;
 }
-.fb-left-logo a{
+.fb-left-logo a {
   text-decoration: none;
   font-size: 16px;
   line-height: 19.2px;
   color: white;
 }
 
-.fb-left-logo a:hover{
+.fb-left-logo a:hover {
   color: #ffffffd9;
 }
 
-.fb-left-links{
+.fb-left-links {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -261,7 +258,7 @@ border: var(--BORDER);
   gap: 30px;
 }
 
-.fb-left-links a{
+.fb-left-links a {
   text-decoration: none;
   font-size: 14px;
   line-height: 28px;
@@ -269,7 +266,7 @@ border: var(--BORDER);
   color: #afafaf;
 }
 
-.fb-left-links a:hover{
+.fb-left-links a:hover {
   color: white;
 }
 
