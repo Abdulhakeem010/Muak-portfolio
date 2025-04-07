@@ -107,6 +107,8 @@ header {
   justify-content: center;
   padding-top: 45px;
   padding-inline: 100px;
+  background-color: #fff;
+  /* border-radius: 0px 0px 70px 70px; */
 }
 .hero-image-container {
   display: flex;
@@ -129,7 +131,10 @@ header {
   font-size: 18px;
   line-height: 28.8px;
   color: var(--TEXT-P);
+  margin-bottom: 38px;
 }
+
+
 /* END HERO SECTION STYLING */
 /* HERO MAIN STYLING */
 
