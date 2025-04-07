@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   blocks.forEach((block, index) => {
     const keyword = keywords[index % keywords.length];
     const randomSeed = Math.floor(Math.random() * 10000);
-    const imageUrl = `https://source.unsplash.com/360x240/?${keyword}&sig=${randomSeed}`;
+    const imageUrl = `https://source.unsplash.com/360x240/?tech&sig=123`;
 
     const img = document.createElement("img");
     img.src = imageUrl;
