@@ -136,7 +136,7 @@ header {
   background-color: var(--ALT-FOOTER-BG);
   font-size: 16px;
   line-height: 16.8px;
-  transition: all 0.4s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .footer-btn a:hover {
   background-color: white;
@@ -192,8 +192,7 @@ header {
   font-size: 14px;
   line-height: 28px;
   letter-spacing: -0.1px;
-  color: black;
-
+  color: #828282;
 }
 
 .fb-left-links a:hover{
@@ -215,6 +214,11 @@ header {
   border: 1px solid hsla(0, 0%, 80%, 0.8);
   padding: 12px;
   border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+.social-icons:hover{
+  cursor: pointer;
+  background-color: white;
 }
 .fb-icon {
   width: 17px;
