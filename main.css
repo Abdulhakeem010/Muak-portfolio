@@ -180,13 +180,14 @@ header {
 .marquee-block {
   border: var(--BORDER);
   display: inline-block;
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 10s linear infinite;
   width: 33%;
   height: 240px;
+  border-radius: 10px;
 }
 
 .marquee-block img {
-  /* height: 150px; */
+  height: 240px;
   border-radius: 12px;
   object-fit: cover;
   margin-right: 20px;
