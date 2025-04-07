@@ -177,7 +177,7 @@ header {
 }
 
 .marquee-block {
-  border: var(--BORDER);
+  /* border: var(--BORDER); */
   display: inline-block;
   animation: scroll-left 10s linear infinite;
   width: 360px;
