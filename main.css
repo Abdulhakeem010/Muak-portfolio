@@ -206,7 +206,7 @@ header {
   align-items: center;
   gap: 30px;
 }
-.social-icons a{
+.social-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -215,12 +215,12 @@ header {
   padding: 12px;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
-  color: white;
+  /* color: white; */
 }
-.social-icons:hover a{
+.social-icons:hover {
   cursor: pointer;
   background-color: white;
-  color: black;
+  /* color: black; */
 }
 .fb-icon {
   width: 16px;
