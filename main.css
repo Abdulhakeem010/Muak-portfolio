@@ -71,7 +71,7 @@ header {
   justify-content: flex-end;
   gap: 25px;
 }
-.nav{
+.nav {
   text-decoration: none;
   color: hsla(0, 0%, 0%, 0.9);
   margin-left: 25px;
@@ -79,11 +79,11 @@ header {
   line-height: 28px;
   letter-spacing: -0.1px;
 }
-.nav:hover{
+.nav:hover {
   color: #828282;
 }
-.icon{
-  border:1px solid hsla(0, 0%, 80%, 0.8);
+.icon {
+  border: 1px solid hsla(0, 0%, 80%, 0.8);
   border-radius: 8px;
   padding: 7px;
 }
@@ -96,3 +96,9 @@ header {
   cursor: pointer;
 }
 
+.footer-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--FOOTER-BG);
+}
