@@ -192,7 +192,7 @@ header {
   font-size: 14px;
   line-height: 28px;
   letter-spacing: -0.1px;
-  color: #ffffff99;
+  color: #afafaf;
 }
 
 .fb-left-links a:hover{
@@ -211,7 +211,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 1px solid hsla(0, 0%, 80%, 0.2);
+  border: 1px solid #cccccc33;
   padding: 12px;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
@@ -223,5 +223,15 @@ header {
 .fb-icon {
   width: 16px;
   height: 16px;
+}
+.fb-bottom {
+  font-size: 14px;
+  line-height: 16.8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #afafaf;
+  margin-top: 42px;
 }
 /* END FOOTER STYLING */
