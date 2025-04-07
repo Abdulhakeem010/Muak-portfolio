@@ -101,19 +101,21 @@ header {
   flex-direction: column;
   justify-content: center;
   background-color: var(--FOOTER-BG);
+  padding-left: 100px;
+  padding-block:100px ;
 }
 .footer-top h1 {
   font-size: 50px;
   line-height: 60px;
   letter-spacing: -1px;
   color: white;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
 .footer-top p {
   font-size: 18px;
   line-height: 27px;
   color: #f3f3f2;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .footer-btn{
   display: flex;
@@ -131,5 +133,11 @@ header {
   color: white;
   font-size: 16px;
   line-height: 16.8px;
- 
+}
+.footer-btn:hover .footer-btn a:hover {
+  background-color: white;
+}
+
+.footer-btn a:hover{
+ color: var(--TEXT-H);
 }
