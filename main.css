@@ -120,9 +120,10 @@ header {
   justify-content: center;
   align-items: center;
   width: fit-content;
-  border: var(--BORDER);
+  border: none;
   padding-block: 10px;
-  padding-inline: 30px;
+  padding-inline: 50px;
+  border-radius: 8px;
   background-color: var(--ALT-FOOTER-BG);
 }
 .footer-btn a{
