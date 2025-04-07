@@ -112,7 +112,6 @@ header {
 }
 .hero-image-container {
   display: flex;
-  border: var(--BORDER);
   margin-bottom: 45px;
 }
 .hero-image {
@@ -158,6 +157,13 @@ header {
 .hero-icon{
   width: 18px;
   height: 18px;
+}
+.marquee-container{
+  display: flex;
+  flex-direction: row; 
+}
+.marquee-block{
+  
 }
 
 /* END HERO SECTION STYLING */
