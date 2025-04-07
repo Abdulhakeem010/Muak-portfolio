@@ -215,10 +215,12 @@ header {
   padding: 12px;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
+  color: white;
 }
 .social-icons:hover a{
   cursor: pointer;
   background-color: white;
+  color: black;
 }
 .fb-icon {
   width: 16px;
