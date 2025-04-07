@@ -38,6 +38,7 @@ body {
   font-style: normal;
 }
 
+/* HEADER STYLING */
 header {
   height: 90px;
   display: flex;
@@ -95,7 +96,11 @@ header {
 .icon:hover {
   cursor: pointer;
 }
+/* END HEADER STYLING */
 
+
+
+/* FOOTER STYLING */
 .footer-top {
   display: flex;
   flex-direction: column;
@@ -183,3 +188,4 @@ header {
   width: 17px;
   height: 17px;
 }
+/* END FOOTER STYLING */
