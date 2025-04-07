@@ -1,21 +1,27 @@
-const apiKey = 'C06GoKb-Hb0wCQ80ULCp2RwDiUbIKQD9LwI8z23o25k'; // Replace with your Unsplash API key
-const url = `https://api.unsplash.com/photos/random?query=tech&client_id=${apiKey}`;
-
 document.addEventListener("DOMContentLoaded", () => {
   const blocks = document.querySelectorAll(".marquee-block");
-  const keywords = ["tech", "code", "software", "laptop", "developer"];
+  const keywords = ["tech", "code", "developer", "laptop", "software"];
+  const accessKey = "C06GoKb-Hb0wCQ80ULCp2RwDiUbIKQD9LwI8z23o25k"; // Replace this with your real key
 
   blocks.forEach((block, index) => {
     const keyword = keywords[index % keywords.length];
-    fetch(`${url}&query=${keyword}`)
-      .then(response => response.json())
-      .then(data => {
+    const url = `https://api.unsplash.com/photos/random?query=${keyword}&orientation=landscape&client_id=${accessKey}`;
+
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
         const img = document.createElement("img");
-        img.src = data[0].urls.small; // Get the image URL from the API response
+        img.src = data.urls.small;
         img.alt = keyword;
+        img.style.height = "240px";
+        img.style.width = "360px";
+        img.style.borderRadius = "10px";
+        img.style.objectFit = "cover";
 
         block.appendChild(img);
       })
-      .catch(error => console.error('Error fetching data:', error));
+      .catch((error) => {
+        console.error("Unsplash API Error:", error);
+      });
   });
 });
