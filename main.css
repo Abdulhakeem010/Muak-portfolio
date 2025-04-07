@@ -102,7 +102,7 @@ header {
   justify-content: center;
   background-color: var(--FOOTER-BG);
   padding-left: 100px;
-  padding-block:100px ;
+  padding-block: 100px;
 }
 .footer-top h1 {
   font-size: 50px;
@@ -118,7 +118,7 @@ header {
   margin-bottom: 25px;
 }
 
-.footer-btn a{
+.footer-btn a {
   text-decoration: none;
   color: white;
   display: flex;
@@ -134,7 +134,7 @@ header {
   line-height: 16.8px;
   transition: all 0.4s ease-in-out;
 }
-.footer-btn a:hover  {
+.footer-btn a:hover {
   background-color: white;
   color: black;
 }
@@ -176,8 +176,10 @@ header {
   justify-content: center;
   align-items: center;
   border: 1px solid hsla(0, 0%, 80%, 0.8);
+  padding: 10px;
+  border-radius: 50%;
 }
 .fb-icon {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
 }
