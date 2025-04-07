@@ -117,21 +117,7 @@ header {
   color: #f3f3f2;
   margin-bottom: 25px;
 }
-.footer-btn{
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  border: none;
-  padding-block: 10px;
-  padding-inline: 50px;
-  border-radius: 8px;
-  background-color: var(--ALT-FOOTER-BG);
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  line-height: 16.8px; */
-}
+
 .footer-btn a{
   text-decoration: none;
   color: white;
@@ -161,5 +147,9 @@ header {
   padding-inline: 50px;
   padding-top: 65px;
   padding-bottom: 80px;
+}
+
+.fb-top {
+  display: flex;
 }
 
