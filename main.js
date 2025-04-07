@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const blocks = document.querySelectorAll(".marquee-block");
-  const keywords = ["code", "tech", "developer", "laptop", "software"];
+  const keywords = ["tech", "code", "software", "laptop", "developer"];
 
   blocks.forEach((block, index) => {
     const keyword = keywords[index % keywords.length];
@@ -10,10 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const img = document.createElement("img");
     img.src = imageUrl;
     img.alt = keyword;
-    img.style.height = "240px";
-    img.style.width = "360px";
-    img.style.borderRadius = "10px";
-    img.style.objectFit = "cover";
 
     block.appendChild(img);
   });
