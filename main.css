@@ -145,7 +145,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 1px solid #cccccc33;
+  border: 1px solid hsla(0, 0%, 80%, 0.532);
   padding: 12px;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
@@ -156,7 +156,10 @@ header {
   background-color: black;
   color: white;
 }
-
+.hero-icon{
+  width: 18px;
+  height: 18px;
+}
 
 /* END HERO SECTION STYLING */
 /* HERO MAIN STYLING */
