@@ -220,7 +220,7 @@ header {
 .social-icons:hover {
   cursor: pointer;
   background-color: white;
-  /* color: black; */
+  color: black;
 }
 .fb-icon {
   width: 16px;
