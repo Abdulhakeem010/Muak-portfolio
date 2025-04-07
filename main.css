@@ -170,12 +170,12 @@ header {
   align-items: center;
   gap: 30px;
 }
-
 .social-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  border: 1px solid hsla(0, 0%, 80%, 0.8);
 }
 .fb-icon {
   width: 20px;
