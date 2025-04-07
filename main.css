@@ -211,7 +211,7 @@ header {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: 1px solid hsla(0, 0%, 80%, 0.8);
+  border: 1px solid hsla(0, 0%, 80%, 0.2);
   padding: 12px;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
@@ -221,7 +221,7 @@ header {
   background-color: white;
 }
 .fb-icon {
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
 }
 /* END FOOTER STYLING */
