@@ -166,12 +166,13 @@ header {
   gap: 10px;
   margin-bottom: 150px;
   position: relative;
+  animation: scroll-left 10s linear infinite;
 }
 
 .marquee-block {
   border: var(--BORDER);
   display: inline-block;
-  animation: scroll-left 10s linear infinite;
+ 
   width: 360px;
   height: 240px;
   border-radius: 10px;
