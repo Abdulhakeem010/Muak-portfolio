@@ -52,6 +52,8 @@ header {
   background-color: blanchedalmond;
   border-bottom: 1px solid hsla(0, 0%, 80%, 0.5);
   margin-bottom: 45px;
+  transition: top 0.3s ease;
+  z-index: 1000;
 }
 
 .header-container {
