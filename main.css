@@ -159,6 +159,7 @@ header {
 }
 
 .marquee-container {
+  border: var(--BORDER);
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
