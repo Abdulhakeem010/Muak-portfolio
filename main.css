@@ -37,6 +37,9 @@ body {
   font-weight: var(--FW);
   font-style: normal;
 }
+section{
+  scroll-margin-top: 50px;
+}
 
 /* HEADER STYLING */
 header {
