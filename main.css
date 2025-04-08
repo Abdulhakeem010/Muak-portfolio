@@ -166,6 +166,7 @@ header {
   height: 240px;
   margin-bottom: 150px;
   position: relative;
+  transition: animation-duration 0.3s ease;
 }
 .marquee-text{
   display: flex;
@@ -201,9 +202,9 @@ marquee-group{
     transform: translateX(-50%);
   }
 }
-/* .marquee-container:hover .marquee-text {
-  animation-duration: 30s;
-} */
+.marquee-container:hover .marquee-text {
+  animation-duration: 50s;
+}
 
 /* END HERO SECTION STYLING */
 /* HERO MAIN STYLING */
