@@ -173,7 +173,7 @@ header {
   width: max-content;
 }
 .marquee-container:hover .marquee-text {
-  animation-play-state: calc();
+  animation-duration: 30s;
 }
 marquee-group{
   display: flex;
