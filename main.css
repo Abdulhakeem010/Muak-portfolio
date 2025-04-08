@@ -164,13 +164,17 @@ header {
   overflow: hidden;
   white-space: nowrap;
   display: flex;
-  gap: 10px;
+  height: 240px;
   margin-bottom: 150px;
   position: relative;
 }
 .marquee-text{
   display: flex;
   animation: scroll-left 10s linear infinite;
+  width: max-content;
+}
+marquee-group{
+  display: flex;
 }
 
 .marquee-block {
@@ -192,10 +196,10 @@ header {
 /* Animation */
 @keyframes scroll-left {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
