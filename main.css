@@ -120,6 +120,7 @@ header {
 /*MAIN STYLING*/
 /* HERO SECTION STYLING */
 .hero-section {
+  padding-top: 135px;
   display: flex;
   flex-direction: column;
   justify-content: center;
