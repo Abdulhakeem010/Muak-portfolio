@@ -159,7 +159,6 @@ header {
 }
 
 .marquee-container {
-  border: var(--BORDER);
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
@@ -178,7 +177,6 @@ marquee-group{
 }
 
 .marquee-block {
-  border: var(--BORDER);
   display: inline-block;
   width: 360px;
   height: 240px;
