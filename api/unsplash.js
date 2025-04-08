@@ -1,6 +1,6 @@
 export default async function handler(req, res) {
   const query = req.query.q || "tech";
-  const accessKey = i.env.UNSPLASH_KEY; // This is your secret
+  const accessKey = process.env.UNSPLASH_KEY; // This is your secret
 
   try {
     const response = await fetch(
