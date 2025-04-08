@@ -49,7 +49,7 @@ header {
   padding-inline: 50px;
   background-color: blanchedalmond;
   border-bottom: 1px solid hsla(0, 0%, 80%, 0.5);
-  /* margin-bottom: 100px; */
+  margin-bottom: 45px;
 }
 
 .header-container {
@@ -109,13 +109,14 @@ header {
 }
 /* END HEADER STYLING */
 
+
 /*MAIN STYLING*/
 /* HERO SECTION STYLING */
 .hero-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 45px;
+  /* padding-top: 45px; */
   padding-inline: 100px;
   background-color: #fff;
   /* border-radius: 0px 0px 70px 70px; */
