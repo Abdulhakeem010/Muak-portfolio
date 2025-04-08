@@ -1,6 +1,6 @@
 const marquee = document.getElementById("imageMarquee");
 const keywords = ["tech", "code", "developer", "laptop", "software"];
-const totalImages = 10;
+const totalImages = 50;
 
 async function loadImages() {
   for (let i = 0; i < totalImages; i++) {
