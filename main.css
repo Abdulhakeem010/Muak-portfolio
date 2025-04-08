@@ -48,7 +48,6 @@ header {
   align-items: center;
   padding-block: 30px;
   padding-inline: 50px;
-  /* filter: blur(5px); */
   background-color: hsla(0, 0%, 100%,);
   border-bottom: 1px solid hsla(0, 0%, 80%, 0.5);
 }
