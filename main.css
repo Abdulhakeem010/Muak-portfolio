@@ -172,9 +172,7 @@ header {
   animation: scroll-left 20s linear infinite;
   width: max-content;
 }
-.marquee-container:hover .marquee-text {
-  animation-duration: 30s;
-}
+
 marquee-group{
   display: flex;
 }
@@ -203,6 +201,9 @@ marquee-group{
     transform: translateX(-50%);
   }
 }
+/* .marquee-container:hover .marquee-text {
+  animation-duration: 30s;
+} */
 
 /* END HERO SECTION STYLING */
 /* HERO MAIN STYLING */
