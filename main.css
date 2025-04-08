@@ -202,10 +202,18 @@ header {
     transform: translateX(-50%);
   }
 }
-.marquee-container:hover .marquee-text {
-  animation-duration: 60s;
+
+.marquee-container:hover {
+  animation-duration: 60s; 
 }
 
+.marquee-container:hover .marquee-text {
+  animation-play-state: paused; 
+}
+
+.marquee-container:not(:hover) .marquee-text {
+  animation-play-state: running;
+}
 
 /* END HERO SECTION STYLING */
 /* HERO MAIN STYLING */
