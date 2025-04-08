@@ -175,6 +175,7 @@ header {
   width: 360px;
   height: 240px;
   border-radius: 10px;
+  margin-right: 10px;
 }
 
 .marquee-block img {
