@@ -2,6 +2,9 @@ export default async function handler(req, res) {
   const query = req.query.q || "tech";
   const accessKey = process.env.UNSPLASH_KEY;
 
+  // Allow cross-origin requests (CORS)
+  res.setHeader("Access-Control-Allow-Origin", "*");
+
   if (!accessKey) {
     return res.status(500).json({ error: "Missing API key" });
   }
