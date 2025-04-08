@@ -1,6 +1,10 @@
 export default async function handler(req, res) {
   const query = req.query.q || "tech";
-  const accessKey = process.env.UNSPLASH_KEY; // This is your secret
+  const accessKey = process.env.UNSPLASH_KEY;
+
+  if (!accessKey) {
+    return res.status(500).json({ error: "Missing API key" });
+  }
 
   try {
     const response = await fetch(
