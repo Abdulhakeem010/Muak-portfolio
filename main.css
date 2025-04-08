@@ -162,6 +162,8 @@ header {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
+  display: flex;
+  gap: 10px;
   margin-bottom: 150px;
   position: relative;
 }
@@ -173,7 +175,7 @@ header {
   width: 360px;
   height: 240px;
   border-radius: 10px;
-  margin-left: 10px;
+  overflow: hidden;
 }
 
 .marquee-block img {
