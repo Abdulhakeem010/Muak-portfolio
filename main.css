@@ -203,7 +203,7 @@ header {
   }
 }
 .marquee-container:hover .marquee-text {
-  animation-duration: 80s;
+  animation-duration: 60s;
 }
 
 
