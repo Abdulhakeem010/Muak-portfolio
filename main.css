@@ -170,7 +170,7 @@ header {
 }
 .marquee-text{
   display: flex;
-  animation: scroll-left 25s linear infinite;
+  animation: scroll-left 30s linear infinite;
   width: max-content;
 }
 
@@ -199,11 +199,11 @@ header {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 .marquee-container:hover .marquee-text {
-  animation-duration: 50s;
+  animation-duration: 80s;
 }
 
 
