@@ -44,7 +44,6 @@ header {
   height: 90px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-block: 30px;
   padding-inline: 50px;
@@ -64,6 +63,7 @@ header {
   align-items: center;
   justify-content: flex-start;
 }
+
 .header-left a {
   text-decoration: none;
   color: hsla(0, 0%, 0%, 0.6);
