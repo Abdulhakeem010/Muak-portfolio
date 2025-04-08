@@ -166,7 +166,7 @@ header {
   width: 33%;
   height: 240px;
 } */
-.marquee-container {
+.marquee-wrapper {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
@@ -176,7 +176,7 @@ header {
   position: relative;
 }
 
-.marquee-block {
+.marquee {
   display: inline-block;
   animation: scroll-left 10s linear infinite;
   width: 360px;
@@ -184,7 +184,7 @@ header {
   border-radius: 10px;
 }
 
-.marquee-block img {
+.marquee img {
   height: 240px;
   width: 360px;
   border-radius: 10px;
