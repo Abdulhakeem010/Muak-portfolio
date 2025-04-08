@@ -37,6 +37,9 @@ body {
   font-weight: var(--FW);
   font-style: normal;
 }
+main{
+  padding-top: 135px;
+}
 
 /* HEADER STYLING */
 header {
@@ -119,7 +122,6 @@ header.hidden{
 /*MAIN STYLING*/
 /* HERO SECTION STYLING */
 .hero-section {
-  padding-top: 135px;
   display: flex;
   flex-direction: column;
   justify-content: center;
