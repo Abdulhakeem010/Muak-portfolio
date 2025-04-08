@@ -11,6 +11,7 @@ blocks.forEach(async (block, index) => {
     const img = document.createElement("img");
     img.src = data.image;
     img.alt = keyword;
+    img.style.width = "360px";
     img.style.height = "240px";
     img.style.borderRadius = "10px";
     img.style.objectFit = "cover";
