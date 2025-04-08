@@ -51,12 +51,14 @@ header {
   background-color: hsla(0, 0%, 100%,);
   border-bottom: 1px solid hsla(0, 0%, 80%, 0.5);
 }
+
 .header-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .header-left {
   display: flex;
   align-items: center;
