@@ -57,6 +57,9 @@ header {
   transition: top 0.3s ease;
   z-index: 1000;
 }
+header.hidden{
+  top: -90px;
+}
 
 .header-container {
   width: 100%;
