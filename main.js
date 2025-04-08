@@ -1,30 +1,22 @@
-const marquee = document.getElementById("imageMarquee");
-const keywords = ["tech", "code", "developer", "laptop", "software"];
-const totalImages = 10;
+const blocks = document.querySelectorAll(".marquee-block");
+const keywords = ["code", "tech", "developer", "laptop", "software"];
 
-async function loadImages() {
-  for (let i = 0; i < totalImages; i++) {
-    const keyword = keywords[i % keywords.length];
-    try {
-      const response = await fetch(`/api/unsplash?q=${keyword}`);
-      const data = await response.json();
+blocks.forEach(async (block, index) => {
+  const keyword = keywords[index % keywords.length];
 
-      const imageBlock = document.createElement("div");
-      imageBlock.className = "image-block";
+  try {
+    const res = await fetch(`/api/unsplash?q=${keyword}`);
+    const data = await res.json();
 
-      const img = document.createElement("img");
-      img.src = data.image;
-      img.alt = keyword;
+    const img = document.createElement("img");
+    img.src = data.image;
+    img.alt = keyword;
+    img.style.height = "240px";
+    img.style.borderRadius = "10px";
+    img.style.objectFit = "cover";
 
-      imageBlock.appendChild(img);
-      marquee.appendChild(imageBlock);
-    } catch (error) {
-      console.error("Error fetching image:", error);
-    }
+    block.appendChild(img);
+  } catch (err) {
+    console.error(`Failed to fetch image for ${keyword}:`, err);
   }
-
-  // Duplicate for infinite loop
-  marquee.innerHTML += marquee.innerHTML;
-}
-
-loadImages();
+});
