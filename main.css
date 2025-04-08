@@ -174,7 +174,7 @@ header {
   width: max-content;
 }
 
-marquee-group{
+.marquee-group{
   display: flex;
 }
 
@@ -199,7 +199,7 @@ marquee-group{
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 .marquee-container:hover .marquee-text {
