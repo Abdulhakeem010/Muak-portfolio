@@ -261,6 +261,7 @@ padding-inline: 10%;
   justify-content: center;
   align-items: center;
   gap: 40px;
+  margin-inline: 10%;
 }
 .sp-image{
   width: 600px;
