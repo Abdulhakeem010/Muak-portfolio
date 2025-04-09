@@ -266,7 +266,6 @@ padding-inline: 7%;
   width: fit-content;
 }
 .sp{
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   border: var(--BORDER);
@@ -274,7 +273,7 @@ padding-inline: 7%;
 
 .sp:hover .sp img {
   cursor: pointer;
-  transform: scale(1.1);
+  
 }
 
 .sp img{
