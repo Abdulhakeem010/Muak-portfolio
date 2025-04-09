@@ -262,6 +262,7 @@ padding-inline: 7%;
   gap: 40px;
   border: var(--BORDER);
   width: fit-content;
+  overflow: hidden;
 }
 
 .sp-image{
@@ -269,7 +270,11 @@ padding-inline: 7%;
   height: 400px;
   border-radius: 10px;
   margin-bottom: 22px;
-  border: var(--BORDER);
+  border:1px solid blue;
+  transition: transform 0.3s ease;
+}
+.sp-image:hover {
+  transform: scale(1.05);
 }
 
 .sp-text h2{
