@@ -242,7 +242,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 padding-inline: 10%;
-background-color: var(--BG);
 }
 
 
