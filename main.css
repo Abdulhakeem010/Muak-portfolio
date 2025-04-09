@@ -241,7 +241,7 @@ header.hidden{
 display: flex;
 flex-direction: column;
 justify-content: center;
-padding-inline: 100px;
+padding-inline: 10%;
 background-color: var(--BG);
 }
 
