@@ -241,7 +241,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 padding-inline: 7%;
-border: var(--BORDER);
 }
 .selected-project h1{
   font-size: 50px;
@@ -249,14 +248,12 @@ border: var(--BORDER);
   letter-spacing: -1px;
   color: var(--TEXT-H);
   margin-bottom: 20px;
-  border: var(--BORDER);
 }
 .selected-project p{
   font-size: 18px;
   line-height: 28.8px;
   color: var(--TEXT-P);
   margin-bottom: 50px;
-  border: var(--BORDER);
 }
 .sp-image-container{
   display: flex;
