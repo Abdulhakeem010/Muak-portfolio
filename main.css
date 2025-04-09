@@ -262,6 +262,11 @@ padding-inline: 7%;
   align-items: center;
   gap: 40px;
 }
+
+.sp-image{
+  gap: 22px;
+}
+
 .sp-image{
   width: 600px;
   height: 400px;
