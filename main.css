@@ -126,6 +126,7 @@ header.hidden{
   background-color: #fff;
   border-radius: 0px 0px 70px 70px;
   padding-top: 135px;
+  margin-bottom: 100px;
 }
 .hero-image-container {
   display: flex;
@@ -243,7 +244,13 @@ padding-inline: 10%;
 }
 
 
-/* HERO MAIN STYLING */
+
+
+
+
+
+/* END SELECTED PROJECT STYLING */
+/* END MAIN STYLING */
 
 /* FOOTER STYLING */
 .footer-top {
