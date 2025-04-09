@@ -263,15 +263,11 @@ padding-inline: 7%;
   gap: 40px;
 }
 
-.sp{
-  gap: 22px;
-}
-
 .sp-image{
   width: 600px;
   height: 400px;
   border-radius: 10px;
-  /* margin-bottom: 22px; */
+  margin-bottom: 22px;
 }
 
 
