@@ -30,7 +30,7 @@ html {
 }
 
 body {
-  background-color: var(--ALT-BG);
+  background-color: var(--BG);
   display: flex;
   flex-direction: column;
   font-family: var(--FF);
