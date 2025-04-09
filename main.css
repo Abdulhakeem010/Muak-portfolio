@@ -241,6 +241,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 padding-inline: 7%;
+border: var(--BORDER);
 }
 .selected-project h1{
   font-size: 50px;
@@ -248,12 +249,14 @@ padding-inline: 7%;
   letter-spacing: -1px;
   color: var(--TEXT-H);
   margin-bottom: 20px;
+  border: var(--BORDER);
 }
 .selected-project p{
   font-size: 18px;
   line-height: 28.8px;
   color: var(--TEXT-P);
   margin-bottom: 50px;
+  border: var(--BORDER);
 }
 .sp-image-container{
   display: flex;
@@ -261,6 +264,7 @@ padding-inline: 7%;
   justify-content: center;
   align-items: center;
   gap: 40px;
+  border: var(--BORDER);
 }
 
 .sp-image{
@@ -268,6 +272,7 @@ padding-inline: 7%;
   height: 400px;
   border-radius: 10px;
   margin-bottom: 22px;
+  border: var(--BORDER);
 }
 
 .sp-text h2{
@@ -275,11 +280,13 @@ padding-inline: 7%;
   line-height: 39px;
   color: var(--TEXT-H);
   margin-bottom: 25px;
+  border: var(--BORDER);
 }
 .sp-text p{
   font-size: 18px;
   line-height: 28.8px;
   color: var(--TEXT-P);
+  border: var(--BORDER);
 }
 
 
