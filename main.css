@@ -127,7 +127,7 @@ header.hidden{
   justify-content: center;
   padding-inline: 10%;
   background-color: #fff;
-  /* border-radius: 0px 0px 70px 70px; */
+  border-radius: 0px 0px 70px 70px;
 }
 .hero-image-container {
   display: flex;
