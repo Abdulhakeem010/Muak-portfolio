@@ -242,7 +242,17 @@ flex-direction: column;
 justify-content: center;
 padding-inline: 10%;
 }
-
+.selected-project h1{
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -1px;
+  color: var(--TEXT-H);
+}
+.selected-project p{
+  font-size: 18px;
+  line-height: 28.8px;
+  color: var(--TEXT-P);
+}
 
 
 
