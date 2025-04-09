@@ -269,11 +269,11 @@ padding-inline: 7%;
   border-radius: 10px;
   margin-bottom: 22px;
 }
-.sp h2{
-  /* font-size: 30px; */
-  /* line-height: 39px; */
+.sp-text h2{
+  font-size: 30px;
+  line-height: 39px;
   color: var(--TEXT-H);
-  /* margin-bottom: 25px; */
+  margin-bottom: 25px;
 }
 
 
