@@ -124,7 +124,7 @@ header.hidden{
   justify-content: center;
   padding-inline: 7%;
   background-color: #fff;
-  border-radius: 0px 0px 70px 70px;
+  border-radius: 0px 0px 60px 60px;
   padding-top: 135px;
   margin-bottom: 100px;
 }
@@ -235,6 +235,7 @@ header.hidden{
 }
 /* END HERO SECTION STYLING */
 
+
 /* SELECTED PROJECT STYLING */
 .selected-project {
 display: flex;
@@ -249,7 +250,7 @@ padding-inline: 7%;
   color: var(--TEXT-H);
   margin-bottom: 20px;
 }
-.selected-project p{
+.paragraph{
   font-size: 18px;
   line-height: 28.8px;
   color: var(--TEXT-P);
@@ -258,8 +259,6 @@ padding-inline: 7%;
 .sp-image-container{
   display: flex;
   flex-direction: row;
-  /* justify-content: center;
-  align-items: center; */
   gap: 40px;
   border: var(--BORDER);
   width: fit-content;
