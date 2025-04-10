@@ -46,7 +46,7 @@ function loadContributionGraph(year) {
   monthLabels.innerHTML = "";
   graphYear.textContent = year;
 
-  const url = `https://github-contributions-api.deno.dev/${Abdulhakeem010}.json?from=${year}-01-01&to=${year}-12-31`;
+  const url = `https://github-contributions-api.deno.dev/${Abdulhakeem010}.json?from=${2025}-01-01&to=${2025}-12-31`;
 
   fetch(url)
     .then(res => res.json())
