@@ -24,6 +24,7 @@ const yearList = document.getElementById("year-list");
 const graphContainer = document.getElementById("contribution-graph");
 const monthLabels = document.getElementById("month-labels");
 const graphYear = document.getElementById("graph-year");
+const totalContributionsDisplay = document.getElementById("total-contributions");
 
 // Create year buttons
 years.forEach((year, index) => {
@@ -38,7 +39,7 @@ years.forEach((year, index) => {
   yearList.appendChild(btn);
 });
 
-// Load initial year
+// Load initial year (first year in the array)
 loadContributionGraph(years[0]);
 
 function loadContributionGraph(year) {
@@ -46,7 +47,7 @@ function loadContributionGraph(year) {
   monthLabels.innerHTML = "";
   graphYear.textContent = year;
 
-  // Define URL here
+  // Define URL based on the selected year
   const url = `https://github-contributions-api.deno.dev/Abdulhakeem010.json?from=2025-01-01&to=2025-12-31`;
 
   fetch(url)
@@ -59,6 +60,7 @@ function loadContributionGraph(year) {
         return;
       }
 
+      let totalContributions = 0; // Initialize total contributions for the year
       const seenMonths = new Set();
 
       // Loop through each week's data
@@ -80,9 +82,12 @@ function loadContributionGraph(year) {
         // Loop through each day in the week
         week.forEach(day => {
           const cell = document.createElement("div");
-          const count = day.count; // Get the contribution count
+          const count = day.count; // Get the contribution count for this day
           const date = new Date(day.date);
-          
+
+          // Update the total contributions count for the year
+          totalContributions += count;
+
           // Set up the cell properties
           cell.className = "day";
           cell.title = `${date.toLocaleDateString()}: ${count} contribution${count === 1 ? "" : "s"}`;
@@ -92,6 +97,9 @@ function loadContributionGraph(year) {
           graphContainer.appendChild(cell);
         });
       });
+
+      // Update the displayed total contributions for the selected year
+      totalContributionsDisplay.textContent = `Total Contributions in ${year}: ${totalContributions}`;
     })
     .catch(error => {
       graphContainer.innerText = "Error loading data: " + error;
