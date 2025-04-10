@@ -176,14 +176,14 @@ header.hidden{
   width: 18px;
   height: 18px;
 }
-.graph-container {
+/* .graph-container {
   display: flex;
   flex-direction: column;
   color: white;
   padding: 2rem;
   margin-bottom: 3rem;
   font-size: 12px;
-}
+} */
 
 /* #contribution-graph {
   display: grid;
@@ -200,11 +200,12 @@ header.hidden{
   background-color: #eee;
   border-radius: 2px;
 } */
-.month-labels {
+ 
+/* .month-labels {
   display: grid;
   grid-template-columns: repeat(53, 12px);
   gap: 4px;
-  margin-left: 50px; /* offset for year label */
+  margin-left: 50px; 
   padding-bottom: 5px;
   color: #ccc;
 }
@@ -218,7 +219,7 @@ header.hidden{
   padding-right: 10px;
   color: #ccc;
   font-size: 12px;
-}
+} */
 
 
 #contribution-graph {
