@@ -290,9 +290,17 @@ margin-bottom: 190px;
 }
 /* END SELECTED PROJECT STYLING */
 
-/* */
+/*FIRST PROJECT STYLING*/
+
+.first-project {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  border: var(--BORDER);
+}
 
 /* END MAIN STYLING */
+
 
 /* FOOTER STYLING */
 .footer-top {
