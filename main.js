@@ -17,7 +17,18 @@ window.addEventListener('scroll', function() {
 
 
 
-const years = [2024, 2023, 2022, 2021];
+fetch(url)
+  .then(res => res.json())
+  .then(data => {
+    console.log("API Response:", data);  // Check the structure here
+    if (!data || !Array.isArray(data.contributions)) {
+      graphContainer.innerText = "Couldn't load contributions 😢";
+      return;
+    }
+
+    // Rest of the code
+
+const years = [2025, 2024, 2023, 2022];
 const username = "Abdulhakeem010"; // change this to your GitHub username
 
 const yearList = document.getElementById("year-list");
@@ -46,7 +57,7 @@ function loadContributionGraph(year) {
   monthLabels.innerHTML = "";
   graphYear.textContent = year;
 
-  const url = `https://github-contributions-api.deno.dev/${Abdulhakeem010}.json?from=${2024}-01-01&to=${2024}-12-31`;
+  const url = `https://github-contributions-api.deno.dev/Abdulhakeem010.json?from=2025-01-01&to=2025-12-31`;
 
   fetch(url)
     .then(res => res.json())
@@ -90,3 +101,5 @@ function getColor(count) {
   if (count < 6) return "rgba(0, 255, 255, 0.6)";
   return "rgba(0, 255, 255, 0.85)";
 }
+
+});
