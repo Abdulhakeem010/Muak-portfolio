@@ -206,6 +206,7 @@ header.hidden{
 
 .year-item:hover {
   background: #0033a1b8;
+  cursor: pointer;
 }
 
 .graph-wrapper {
