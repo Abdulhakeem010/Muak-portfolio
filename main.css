@@ -213,7 +213,7 @@ header.hidden {
 
 .month-labels {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 0.5rem;
   padding-left: 25px;
   font-size: 14px;

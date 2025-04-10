@@ -29,9 +29,10 @@ years.forEach((year) => {
 });
 
 function fetchAndRender(year) {
-  console.log(year, "year");
+  const from = `${year}-01-01`;
+  const to = `${year}-12-31`;
 
-  const url = `https://github-contributions-api.deno.dev/${username}.json?year=${year}`;
+  const url = `https://github-contributions-api.deno.dev/${username}.json?from=${from}&to=${to}`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
@@ -72,3 +73,19 @@ function renderGraph(contributions) {
 
 // Load most recent year on startup
 fetchAndRender(years[years.length - 1]);
+
+// psuedo code
+//  we need to render the weeks at the right positions of the graph
+//  we need to render the days at the right positions of the weeks
+
+// what we have is just an array of weeks which has days in it as object
+// we have a total of 53 arrays in the contributions array which repressents the weeks in a year
+
+// 1- get total numbers of weeks used in the current year
+// 2- derive the index to start rendering the weeks from the total number of weeks based on the current week in that year
+// 3- sort the new array starting with the derived index and the rest folowing it...
+// 4- render the weeks in the graph
+
+// const date = new Date();
+
+// console.log(date, "date object");
