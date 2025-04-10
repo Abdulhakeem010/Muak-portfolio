@@ -17,7 +17,7 @@ window.addEventListener('scroll', function() {
 
 
 
-const username = "Abdulhakeem"; // Replace with your GitHub username
+const username = "Abdulhakeem010"; // Replace with your GitHub username
 const years = [2022, 2023, 2024, 2025];
 
 const yearList = document.getElementById("year-list");
