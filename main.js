@@ -15,6 +15,7 @@ window.addEventListener("scroll", function () {
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Update last scroll position (prevent negative value)
 });
 
+
 const username = "Abdulhakeem010"; // Replace with your GitHub username
 const years = [2025];
 const totalNumberOfWeeks = 53;
