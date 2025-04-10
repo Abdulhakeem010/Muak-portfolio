@@ -271,11 +271,6 @@ padding-inline: 7%;
   border: var(--BORDER);
 }
 
-.sp:hover .sp img {
-  cursor: pointer;
-  
-}
-
 .sp img{
   width: 600px;
   height: 400px;
