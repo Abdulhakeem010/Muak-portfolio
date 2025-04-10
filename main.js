@@ -1,24 +1,22 @@
 let lastScrollTop = 0; // Track last scroll position
-const header = document.getElementById('header'); // Select the header element
+const header = document.getElementById("header"); // Select the header element
 
-window.addEventListener('scroll', function() {
+window.addEventListener("scroll", function () {
   let currentScroll = window.scrollY || document.documentElement.scrollTop; // Get current scroll position
 
   if (currentScroll > lastScrollTop) {
     // If scrolling down, hide the header
-    header.classList.add('hidden');
+    header.classList.add("hidden");
   } else {
     // If scrolling up, show the header
-    header.classList.remove('hidden');
+    header.classList.remove("hidden");
   }
 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Update last scroll position (prevent negative value)
 });
 
-
-
 const username = "Abdulhakeem010"; // Replace with your GitHub username
-const years = [2022, 2023, 2024, 2025];
+const years = [2025];
 
 const yearList = document.getElementById("year-list");
 
@@ -31,13 +29,14 @@ years.forEach((year) => {
 });
 
 function fetchAndRender(year) {
-  const url = `https://github-contributions-api.deno.dev/Abdulhakeem.json?year=2025`;
+  console.log(year, "year");
+
+  const url = `https://github-contributions-api.deno.dev/${username}.json?year=${year}`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
       console.log("API Response: ", data);
-      document.getElementById("total-contributions").textContent =
-        `Total Contributions in ${year}: ${data.totalContributions || 0}`;
+      document.getElementById("total-contributions").textContent = `Total Contributions in ${year}: ${data.totalContributions || 0}`;
       renderGraph(data.contributions);
     })
     .catch((err) => {
@@ -50,6 +49,8 @@ function renderGraph(contributions) {
   graphContainer.innerHTML = "";
 
   contributions.forEach((week) => {
+    // console.log(week, "week data");
+
     const weekColumn = document.createElement("div");
     weekColumn.classList.add("week-column");
 
@@ -57,23 +58,16 @@ function renderGraph(contributions) {
       const dayBlock = document.createElement("div");
       dayBlock.classList.add("day-block");
 
-      const count = day.count || 0;
-      dayBlock.style.backgroundColor = getColorForCount(count);
-      dayBlock.title = `${day.date}: ${count} contributions`;
+      const { color, contributionCount, date } = day;
+
+      dayBlock.style.backgroundColor = color;
+      dayBlock.title = `${date}: ${contributionCount} contributions`;
 
       weekColumn.appendChild(dayBlock);
     });
 
     graphContainer.appendChild(weekColumn);
   });
-}
-
-function getColorForCount(count) {
-  if (count === 0) return "#ebedf0";
-  if (count < 5) return "#9be9a8";
-  if (count < 10) return "#40c463";
-  if (count < 20) return "#30a14e";
-  return "#216e39";
 }
 
 // Load most recent year on startup
