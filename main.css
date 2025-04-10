@@ -301,6 +301,7 @@ margin-bottom: 190px;
 }
 .fp-left{
   width: 50%;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -308,6 +309,7 @@ margin-bottom: 190px;
 }
 .fp-right{
   width: 50%;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;  
