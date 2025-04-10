@@ -176,75 +176,66 @@ header.hidden{
   width: 18px;
   height: 18px;
 }
-/* .graph-container {
-  display: flex;
-  flex-direction: column;
-  color: white;
-  padding: 2rem;
-  margin-bottom: 3rem;
-  font-size: 12px;
-} */
 
-/* #contribution-graph {
-  display: grid;
-  grid-template-columns: repeat(53, 1fr); 
-  gap: 3px;
-  justify-content: center;
-  margin-top: 20px;
-  overflow-x: auto;
+.contribution-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  font-family: sans-serif;
 }
 
-.day {
-  width: 15px;
-  height: 15px;
-  background-color: #eee;
-  border-radius: 2px;
-} */
- 
-/* .month-labels {
+.year-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.year-list button {
+  background: none;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.year-list button.active {
+  font-weight: bold;
+  color: #fff;
+}
+
+.graph-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.month-labels {
   display: grid;
   grid-template-columns: repeat(53, 12px);
   gap: 4px;
-  margin-left: 50px; 
+  margin-left: 40px;
   padding-bottom: 5px;
   color: #ccc;
+  font-size: 10px;
 }
+
 .graph-row {
   display: flex;
   align-items: start;
 }
+
 .year-label {
   writing-mode: vertical-rl;
-  transform: rotate(270deg);
+  transform: rotate(180deg);
   padding-right: 10px;
   color: #ccc;
   font-size: 12px;
-} */
-
+}
 
 #contribution-graph {
   display: grid;
   grid-template-rows: repeat(7, 12px);
   grid-auto-flow: column;
-  gap: 7px;
-  /* max-width: 100%; */
-  /* overflow-x: auto;
-  padding: 10px;
-  background-color: rgba(0, 0, 86, 0.05); Optional light background */
-  /* border-radius: 10px; */
-}
-
-.day {
-  width: 15px;
-  height: 15px;
-  border-radius: 2px;
-  transition: transform 0.2s ease, background-color 0.3s ease;
-}
-
-.day:hover {
-  transform: scale(1.4);
-  cursor: pointer;
-  box-shadow: 0 0 5px rgba(0, 255, 255, 0.4);
+  gap: 4px;
 }
 
 .marquee-container {
