@@ -17,19 +17,8 @@ window.addEventListener('scroll', function() {
 
 
 
-fetch(url)
-  .then(res => res.json())
-  .then(data => {
-    console.log("API Response:", data);  // Check the structure here
-    if (!data || !Array.isArray(data.contributions)) {
-      graphContainer.innerText = "Couldn't load contributions 😢";
-      return;
-    }
-
-    // Rest of the code
-
-const years = [2025, 2024, 2023, 2022];
-const username = "Abdulhakeem010"; // change this to your GitHub username
+const years = [2025, 2024, 2023, 2022, 2021];
+const username = "Abdulhakeem010"; // Change to your GitHub username
 
 const yearList = document.getElementById("year-list");
 const graphContainer = document.getElementById("contribution-graph");
@@ -57,11 +46,14 @@ function loadContributionGraph(year) {
   monthLabels.innerHTML = "";
   graphYear.textContent = year;
 
+  // Define URL here
   const url = `https://github-contributions-api.deno.dev/Abdulhakeem010.json?from=2025-01-01&to=2025-12-31`;
 
   fetch(url)
     .then(res => res.json())
     .then(data => {
+      console.log("API Response:", data); // Check if the response is correct
+
       if (!data || !Array.isArray(data.contributions)) {
         graphContainer.innerText = "Couldn't load contributions 😢";
         return;
@@ -70,9 +62,10 @@ function loadContributionGraph(year) {
       const seenMonths = new Set();
 
       data.contributions.forEach((week, weekIndex) => {
-        const firstDay = week[0];
+        const firstDay = week[0]; // First day of the week
         const month = new Date(firstDay.date).toLocaleString("default", { month: "short" });
 
+        // Add month label if it's a new month
         if (!seenMonths.has(month)) {
           seenMonths.add(month);
           const monthLabel = document.createElement("div");
@@ -83,23 +76,25 @@ function loadContributionGraph(year) {
           monthLabels.appendChild(spacer);
         }
 
+        // Render each day's contribution
         week.forEach(day => {
           const cell = document.createElement("div");
           cell.className = "day";
           cell.title = `${day.date}: ${day.count} contribution${day.count === 1 ? "" : "s"}`;
-          cell.style.backgroundColor = day.color || getColor(day.count);
+          cell.style.backgroundColor = getColor(day.count);
           graphContainer.appendChild(cell);
         });
       });
+    })
+    .catch(error => {
+      graphContainer.innerText = "Error loading data: " + error;
     });
 }
 
 function getColor(count) {
-  if (count === 0) return "#e0e0e0";
-  if (count < 2) return "rgba(0, 255, 255, 0.2)";
-  if (count < 4) return "rgba(0, 255, 255, 0.4)";
-  if (count < 6) return "rgba(0, 255, 255, 0.6)";
-  return "rgba(0, 255, 255, 0.85)";
+  if (count === 0) return "#e0e0e0";  // No contributions
+  if (count < 2) return "rgba(0, 255, 255, 0.2)";  // Light color
+  if (count < 4) return "rgba(0, 255, 255, 0.4)";  // Light-medium color
+  if (count < 6) return "rgba(0, 255, 255, 0.6)";  // Medium color
+  return "rgba(0, 255, 255, 0.85)";  // High contribution color
 }
-
-});
