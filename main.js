@@ -104,6 +104,7 @@ fetch("https://github-contributions-api.deno.dev/Abdulhakeem010.json")
 
     data.contributions.forEach(week => {
       week.forEach(day => {
+        console.log(day); // 👈 See what properties exist
         const cell = document.createElement("div");
         cell.className = "day";
         cell.title = `${day.date}: ${day.count} contribution${day.count === 1 ? "" : "s"}`;
