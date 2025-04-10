@@ -17,7 +17,7 @@ window.addEventListener('scroll', function() {
 
 
 
-const username = "YOUR_USERNAME_HERE"; // Replace with your GitHub username
+const username = "Abdulhakeem"; // Replace with your GitHub username
 const years = [2022, 2023, 2024, 2025];
 
 const yearList = document.getElementById("year-list");
@@ -31,7 +31,7 @@ years.forEach((year) => {
 });
 
 function fetchAndRender(year) {
-  const url = `https://github-contributions-api.deno.dev/${username}.json?year=${year}`;
+  const url = `https://github-contributions-api.deno.dev/Abdulhakeem.json?year=2025`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
