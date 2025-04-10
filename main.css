@@ -306,6 +306,13 @@ margin-bottom: 190px;
   justify-content: center;
   align-items: center;
 }
+.fp-right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center;
+}
 .fp-image{
   height: 500px;
 }
