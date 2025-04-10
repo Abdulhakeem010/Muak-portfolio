@@ -182,6 +182,7 @@ header.hidden{
   color: white;
   padding: 2rem;
   margin-bottom: 3rem;
+  font-size: 12px;
 }
 
 /* #contribution-graph {
@@ -207,6 +208,17 @@ header.hidden{
   padding-bottom: 5px;
   color: #ccc;
 }
+.graph-row {
+  display: flex;
+  align-items: start;
+}
+.year-label {
+  writing-mode: vertical-rl;
+  transform: rotate(270deg);
+  padding-right: 10px;
+  color: #ccc;
+  font-size: 12px;
+}
 
 
 #contribution-graph {
@@ -214,10 +226,10 @@ header.hidden{
   grid-template-rows: repeat(7, 12px);
   grid-auto-flow: column;
   gap: 7px;
-  max-width: 100%;
-  overflow-x: auto;
+  /* max-width: 100%; */
+  /* overflow-x: auto;
   padding: 10px;
-  background-color: rgba(0, 0, 86, 0.05); /* Optional light background */
+  background-color: rgba(0, 0, 86, 0.05); Optional light background */
   /* border-radius: 10px; */
 }
 
