@@ -15,8 +15,6 @@ window.addEventListener("scroll", function () {
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Update last scroll position (prevent negative value)
 });
 
-
-
 const username = "Abdulhakeem010"; // Replace with your GitHub username
 const years = [2025];
 
@@ -33,7 +31,7 @@ years.forEach((year) => {
 function fetchAndRender(year) {
   console.log(year, "year");
 
-  const url = `https://github-contributions-api.deno.dev/${username}?from=${year}-01-01&to=${year}-12-31`;
+  const url = `https://github-contributions-api.deno.dev/${username}.json?year=${year}`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
