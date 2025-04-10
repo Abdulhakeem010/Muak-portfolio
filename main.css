@@ -176,6 +176,13 @@ header.hidden{
   width: 18px;
   height: 18px;
 }
+.graph-container {
+  background-color: rgba(0, 0, 86, 0.743);
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
 
 #contribution-graph {
   display: grid;
