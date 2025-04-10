@@ -239,20 +239,20 @@ header.hidden{
 
 #contribution-graph {
   display: flex;
-  gap: 2px;
+  gap: 4px;
 }
 
 .week-column {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
 }
 
 .day-block {
-  width: 12px;
-  height: 12px;
+  width: 15px;
+  height: 15px;
   border-radius: 2px;
-  background-color: #ebedf0;
+  background-color: #ecedee;
 }
 
 #total-contributions {
