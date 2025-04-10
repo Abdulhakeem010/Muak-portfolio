@@ -31,7 +31,7 @@ years.forEach((year) => {
 function fetchAndRender(year) {
   console.log(year, "year");
 
-  const url = `https://github-contributions-api.deno.dev/${username}.json?year=${year}`;
+  const url = `https://github-contributions-api.deno.dev/${username}?from=${year}-01-01&to=${year}-12-31`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
