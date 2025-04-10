@@ -39,6 +39,13 @@ function getColor(count) {
 fetch(`https://github-contributions-api.deno.dev/Abdulhakeem010.json`)
   .then(res => res.json())
   .then(data => {
+    console.log("API Response:", data);
+
+    if (!data || !data.contributions) {
+      console.error("No contributions found or unexpected data format");
+      return;
+    }
+
     data.contributions.forEach(week => {
       week.days.forEach(day => {
         const cell = document.createElement("div");
