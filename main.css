@@ -199,6 +199,15 @@ header.hidden{
   background-color: #eee;
   border-radius: 2px;
 } */
+.month-labels {
+  display: grid;
+  grid-template-columns: repeat(53, 12px);
+  gap: 4px;
+  margin-left: 50px; /* offset for year label */
+  padding-bottom: 5px;
+  color: #ccc;
+}
+
 
 #contribution-graph {
   display: grid;
