@@ -36,7 +36,7 @@ function getColor(count) {
   return colorLevels[4];
 }
 
-fetch(`https://github-contributions-api.deno.dev/${Abdulhakeem010}.json`)
+fetch(`https://github-contributions-api.deno.dev/Abdulhakeem010.json`)
   .then(res => res.json())
   .then(data => {
     data.contributions.forEach(week => {
