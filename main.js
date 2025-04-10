@@ -59,13 +59,44 @@ window.addEventListener('scroll', function() {
 //   .catch(err => console.error("Error loading contribution data:", err));
 
 
+// const graphContainer = document.getElementById("contribution-graph");
+
+// fetch("https://github-contributions-api.deno.dev/Abdulhakeem010.json")
+//   .then(res => res.json())
+//   .then(data => {
+//     console.log("API Response:", data); // keep this for debugging
+
+//     if (!data || !Array.isArray(data.contributions)) {
+//       graphContainer.innerText = "Couldn't load contributions 😢";
+//       return;
+//     }
+
+//     data.contributions.forEach(week => {
+//       week.forEach(day => {
+//         const cell = document.createElement("div");
+//         cell.className = "day";
+//         cell.title = `${day.date}: ${day.count} contribution${day.count === 1 ? "" : "s"}`;
+//         cell.style.backgroundColor = getColor(day.count);
+//         graphContainer.appendChild(cell);
+//       });
+//     });
+//   })
+//   .catch(err => console.error("Error loading contribution data:", err));
+
+// function getColor(count) {
+//   // Customize this to match your portfolio's color theme
+//   if (count === 0) return "#e4e4e4"; // light gray
+//   if (count < 2) return "rgba(0, 255, 255, 0.2)";
+//   if (count < 4) return "rgba(0, 255, 255, 0.4)";
+//   if (count < 6) return "rgba(0, 255, 255, 0.6)";
+//   return "rgba(0, 255, 255, 0.8)";
+// }
+
 const graphContainer = document.getElementById("contribution-graph");
 
 fetch("https://github-contributions-api.deno.dev/Abdulhakeem010.json")
   .then(res => res.json())
   .then(data => {
-    console.log("API Response:", data); // keep this for debugging
-
     if (!data || !Array.isArray(data.contributions)) {
       graphContainer.innerText = "Couldn't load contributions 😢";
       return;
@@ -84,10 +115,10 @@ fetch("https://github-contributions-api.deno.dev/Abdulhakeem010.json")
   .catch(err => console.error("Error loading contribution data:", err));
 
 function getColor(count) {
-  // Customize this to match your portfolio's color theme
-  if (count === 0) return "#e4e4e4"; // light gray
+  // Use your cool palette — this one fades cyan with transparency
+  if (count === 0) return "#e0e0e0";
   if (count < 2) return "rgba(0, 255, 255, 0.2)";
   if (count < 4) return "rgba(0, 255, 255, 0.4)";
   if (count < 6) return "rgba(0, 255, 255, 0.6)";
-  return "rgba(0, 255, 255, 0.8)";
+  return "rgba(0, 255, 255, 0.85)";
 }
