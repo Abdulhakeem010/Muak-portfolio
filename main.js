@@ -17,7 +17,7 @@ window.addEventListener('scroll', function() {
 
 
 
-const years = [2025, 2024, 2023, 2022, 2021];
+const years = [2025, 2024, 2023, 2022, 2021]; // Including 2025
 const username = "Abdulhakeem010"; // Change to your GitHub username
 
 const yearList = document.getElementById("year-list");
@@ -61,8 +61,9 @@ function loadContributionGraph(year) {
 
       const seenMonths = new Set();
 
+      // Loop through each week's data
       data.contributions.forEach((week, weekIndex) => {
-        const firstDay = week[0]; // First day of the week
+        const firstDay = week[0]; // Get the first day of the week
         const month = new Date(firstDay.date).toLocaleString("default", { month: "short" });
 
         // Add month label if it's a new month
@@ -76,12 +77,18 @@ function loadContributionGraph(year) {
           monthLabels.appendChild(spacer);
         }
 
-        // Render each day's contribution
+        // Loop through each day in the week
         week.forEach(day => {
           const cell = document.createElement("div");
+          const count = day.count; // Get the contribution count
+          const date = new Date(day.date);
+          
+          // Set up the cell properties
           cell.className = "day";
-          cell.title = `${day.date}: ${day.count} contribution${day.count === 1 ? "" : "s"}`;
-          cell.style.backgroundColor = getColor(day.count);
+          cell.title = `${date.toLocaleDateString()}: ${count} contribution${count === 1 ? "" : "s"}`;
+          cell.style.backgroundColor = getColor(count);
+
+          // Append the cell to the graph container
           graphContainer.appendChild(cell);
         });
       });
