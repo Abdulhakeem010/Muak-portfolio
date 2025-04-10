@@ -93,6 +93,7 @@ window.addEventListener('scroll', function() {
 // }
 
 const graphContainer = document.getElementById("contribution-graph");
+const monthLabels = document.getElementById("month-labels");
 
 fetch("https://github-contributions-api.deno.dev/Abdulhakeem010.json")
   .then(res => res.json())
@@ -102,21 +103,37 @@ fetch("https://github-contributions-api.deno.dev/Abdulhakeem010.json")
       return;
     }
 
-    data.contributions.forEach(week => {
+    const seenMonths = new Set();
+
+    data.contributions.forEach((week, weekIndex) => {
+      // Add month label at the top of each new month
+      const firstDayOfWeek = week[0];
+      const month = new Date(firstDayOfWeek.date).toLocaleString("default", {
+        month: "short",
+      });
+
+      if (!seenMonths.has(month)) {
+        const monthLabel = document.createElement("div");
+        monthLabel.textContent = month;
+        seenMonths.add(month);
+        monthLabels.appendChild(monthLabel);
+      } else {
+        // Add empty placeholder for spacing
+        const spacer = document.createElement("div");
+        monthLabels.appendChild(spacer);
+      }
+
       week.forEach(day => {
         const cell = document.createElement("div");
         cell.className = "day";
         cell.title = `${day.date}: ${day.count} contribution${day.count === 1 ? "" : "s"}`;
-        // Prefer GitHub-like color if available
         cell.style.backgroundColor = day.color || getColor(day.count);
         graphContainer.appendChild(cell);
       });
     });
-  })
-  .catch(err => console.error("Error loading contribution data:", err));
+  });
 
 function getColor(count) {
-  // Use your cool palette — this one fades cyan with transparency
   if (count === 0) return "#e0e0e0";
   if (count < 2) return "rgba(0, 255, 255, 0.2)";
   if (count < 4) return "rgba(0, 255, 255, 0.4)";
