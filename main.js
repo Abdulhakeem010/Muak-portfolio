@@ -17,8 +17,10 @@ window.addEventListener("scroll", function () {
 
 const username = "Abdulhakeem010"; // Replace with your GitHub username
 const years = [2025];
+const totalNumberOfWeeks = 53;
 
 const yearList = document.getElementById("year-list");
+let contributionData;
 
 years.forEach((year) => {
   const yearBtn = document.createElement("div");
@@ -37,6 +39,7 @@ function fetchAndRender(year) {
     .then((res) => res.json())
     .then((data) => {
       console.log("API Response: ", data);
+      contributionData = data;
       document.getElementById("total-contributions").textContent = `Total Contributions in ${year}: ${data.totalContributions || 0}`;
       renderGraph(data.contributions);
     })
@@ -50,8 +53,6 @@ function renderGraph(contributions) {
   graphContainer.innerHTML = "";
 
   contributions.forEach((week) => {
-    // console.log(week, "week data");
-
     const weekColumn = document.createElement("div");
     weekColumn.classList.add("week-column");
 
@@ -73,19 +74,3 @@ function renderGraph(contributions) {
 
 // Load most recent year on startup
 fetchAndRender(years[years.length - 1]);
-
-// psuedo code
-//  we need to render the weeks at the right positions of the graph
-//  we need to render the days at the right positions of the weeks
-
-// what we have is just an array of weeks which has days in it as object
-// we have a total of 53 arrays in the contributions array which repressents the weeks in a year
-
-// 1- get total numbers of weeks used in the current year
-// 2- derive the index to start rendering the weeks from the total number of weeks based on the current week in that year
-// 3- sort the new array starting with the derived index and the rest folowing it...
-// 4- render the weeks in the graph
-
-// const date = new Date();
-
-// console.log(date, "date object");
