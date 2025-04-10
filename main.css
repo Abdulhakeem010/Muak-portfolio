@@ -208,9 +208,9 @@ header.hidden{
   background: #0033a1b8;
 }
 
-.graph-wrapper {
-  /* flex-grow: 1; */
-}
+/* .graph-wrapper {
+  flex-grow: 1;
+} */
 
 .month-labels {
   display: flex;
