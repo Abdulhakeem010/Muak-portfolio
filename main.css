@@ -298,6 +298,7 @@ margin-bottom: 190px;
   flex-direction: row;
   height: 500px;
   border: var(--BORDER);
+  margin-bottom: 110px;
 }
 .fp-left{
   width: 50%;
