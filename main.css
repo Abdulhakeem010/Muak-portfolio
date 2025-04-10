@@ -197,7 +197,7 @@ header.hidden{
   height: 15px;
   background-color: #eee;
   border-radius: 2px;
-  transition: transform 0.2s ease;
+  /* transition: transform 0.2s ease; */
 }
 
 /* .day:hover {
