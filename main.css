@@ -178,7 +178,6 @@ header.hidden{
 }
 .graph-container {
   background-color: var(--BG);
-  font-family: sans-serif;
   color: white;
   padding: 2rem;
   margin-bottom: 3rem;
