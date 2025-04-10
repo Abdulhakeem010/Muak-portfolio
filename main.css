@@ -177,7 +177,8 @@ header.hidden{
   height: 18px;
 }
 .graph-container {
-  background-color: var(--BG);
+  display: flex;
+  flex-direction: column;
   color: white;
   padding: 2rem;
   margin-bottom: 3rem;
