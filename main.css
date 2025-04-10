@@ -177,6 +177,28 @@ header.hidden{
   height: 18px;
 }
 
+#contribution-graph {
+  display: grid;
+  grid-template-columns: repeat(53, 1fr); /* 53 weeks */
+  gap: 2px;
+  justify-content: center;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.day {
+  width: 10px;
+  height: 10px;
+  background-color: #eee;
+  border-radius: 2px;
+  transition: transform 0.2s ease;
+}
+
+.day:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
 .marquee-container {
   width: 100%;
   overflow: hidden;
