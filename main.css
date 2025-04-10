@@ -297,7 +297,6 @@ margin-bottom: 190px;
   display: flex;
   flex-direction: row;
   height: 500px;
-  border: var(--BORDER);
   margin-bottom: 110px;
 }
 .fp-left{
@@ -306,7 +305,7 @@ margin-bottom: 190px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color:  var(--ALT-FOOTER-BG);
+  background-color: var(--ALT-FOOTER-BG);
   padding-inline: 7%;
 }
 .fp-left h1{
