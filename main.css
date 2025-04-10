@@ -305,7 +305,7 @@ margin-bottom: 190px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
 }
 .fp-right{
   width: 50%;
