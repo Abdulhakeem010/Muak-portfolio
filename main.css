@@ -186,8 +186,9 @@ header.hidden {
   margin-bottom: 100px;
   width: fit-content;
   height: fit-content;
-  border:  1px solid hsla(0, 0%, 80%, 0.532);
+  border:  1px solid  hsla(0, 0%, 80%, 0.8);
   border-radius:10px;
+  padding: 1.5rem;
 }
 .cg h2{
   font-size: 45px;
@@ -238,14 +239,15 @@ header.hidden {
 
 .month-labels {
   display: flex;
-  margin-left: 30px;
+  margin-left: 25px;
   font-size: 14px;
   margin-bottom: 8px;
   gap: 2px;
+  border: 1px solid red;
 }
 
 .month-label {
-  width: 14px;
+  width: 15px;
   text-align: center;
   flex-shrink: 0;
 }
@@ -260,7 +262,7 @@ header.hidden {
   flex-direction: column;
   font-size: 10px;
   margin-right: 5px;
-  gap: 2px;
+  gap: 3px;
 }
 
 .contribution-graph {
@@ -271,15 +273,15 @@ header.hidden {
 .week-column {
   display: flex;
   flex-direction: column;
-  gap: 2px;
-  margin-right: 2px;
+  gap: 3px;
+  margin-right: 3px;
 }
 
 .day-block {
   width: 14px;
   height: 14px;
   background-color: #ebedf0;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 /*rubbish*/
 
