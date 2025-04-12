@@ -15,20 +15,31 @@ window.addEventListener("scroll", function () {
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Update last scroll position (prevent negative value)
 });
 
-
 const username = "Abdulhakeem010";
 const years = [2022, 2023, 2024, 2025];
-const token = ""; // Replace this
+const token = ""; // Replace this with your GitHub PAT
 
 const yearList = document.getElementById("year-list");
+let activeYearButton = null;
 
 years.forEach((year) => {
   const yearBtn = document.createElement("div");
   yearBtn.className = "year-item";
   yearBtn.textContent = year;
-  yearBtn.onclick = () => fetchAndRender(year);
+  yearBtn.onclick = () => {
+    setActiveYearButton(yearBtn);
+    fetchAndRender(year);
+  };
   yearList.appendChild(yearBtn);
 });
+
+function setActiveYearButton(button) {
+  if (activeYearButton) {
+    activeYearButton.classList.remove("active");
+  }
+  button.classList.add("active");
+  activeYearButton = button;
+}
 
 async function fetchAndRender(year) {
   const from = `${year}-01-01T00:00:00Z`;
@@ -55,10 +66,10 @@ async function fetchAndRender(year) {
   const res = await fetch("https://api.github.com/graphql", {
     method: "POST",
     headers: {
-      "Authorization": `Bearer ${token}`,
+      Authorization: `Bearer ${token}`,
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ query })
+    body: JSON.stringify({ query }),
   });
 
   const json = await res.json();
@@ -92,24 +103,27 @@ function renderGraph(weeks) {
 
     graphContainer.appendChild(weekColumn);
 
-    // Add month label at first occurrence
+    // Add month label at the top only when the month changes
     const firstDay = week.contributionDays[0];
     if (firstDay) {
-      const currentMonth = new Date(firstDay.date).toLocaleString('default', { month: 'short' });
+      const currentMonth = new Date(firstDay.date).toLocaleString("default", { month: "short" });
       if (currentMonth !== previousMonth) {
-        const monthLabel = document.createElement("div");
-        monthLabel.className = "month-label";
-        monthLabel.textContent = currentMonth;
-        monthLabels.appendChild(monthLabel);
+        const label = document.createElement("div");
+        label.className = "month-label";
+        label.textContent = currentMonth;
+        monthLabels.appendChild(label);
         previousMonth = currentMonth;
       } else {
-        const emptyLabel = document.createElement("div");
-        emptyLabel.className = "month-label";
-        monthLabels.appendChild(emptyLabel);
+        const label = document.createElement("div");
+        label.className = "month-label empty";
+        monthLabels.appendChild(label);
       }
     }
   });
 }
 
-// Load the most recent year by default
+// Set the most recent year as active and fetch its data
+const lastYearBtn = yearList.lastChild;
+setActiveYearButton(lastYearBtn);
 fetchAndRender(years[years.length - 1]);
+
