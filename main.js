@@ -18,7 +18,7 @@ window.addEventListener("scroll", function () {
 
 const username = "Abdulhakeem010";
 const years = [2022, 2023, 2024, 2025];
-const token = "YOUR_GITHUB_TOKEN_HERE"; // Replace this
+const token = ""; // Replace this
 
 const yearList = document.getElementById("year-list");
 
