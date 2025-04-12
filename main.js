@@ -16,7 +16,7 @@ window.addEventListener("scroll", function () {
 });
 
 const username = "Abdulhakeem010";
-const years = [2025, 2024, 2023, 2022];
+const years = [2025,2024,2023,2022];
 const token = ""; // Replace this with your GitHub PAT
 
 const yearList = document.getElementById("year-list");
@@ -123,7 +123,7 @@ function renderGraph(weeks) {
 }
 
 // Set the most recent year as active and fetch its data
-const lastYearBtn = yearList.lastChild;
+const lastYearBtn = yearList.firstChild;
 setActiveYearButton(lastYearBtn);
 fetchAndRender(years[years.length - 1]);
 
