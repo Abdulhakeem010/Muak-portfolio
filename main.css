@@ -180,12 +180,14 @@ header.hidden {
 
 .cg {
   margin: 0;
-  padding: 2rem;
-  display: flex;
+  /* padding: 2rem;
+  display: flex; */
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   border: 1px solid red;
   margin-bottom: 100px;
+  width: fit-content;
+  height: fit-content;
 }
 
 .container {
@@ -218,7 +220,7 @@ header.hidden {
 }
 
 #total-contributions {
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   font-weight: bold;
 }
 
