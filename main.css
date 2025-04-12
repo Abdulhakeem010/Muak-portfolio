@@ -176,88 +176,96 @@ header.hidden {
   height: 18px;
 }
 
-.graph {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+/*rubbish*/
+
+.cg {
+  font-family: sans-serif;
+  background: #f5f5f5;
+  margin: 0;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.contribution-section {
+.container {
   display: flex;
-  gap: 2rem;
 }
 
 .year-list {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  margin-right: 2rem;
 }
 
 .year-item {
+  padding: 8px 12px;
+  background: #eee;
+  margin-bottom: 4px;
   cursor: pointer;
-  padding: 0.5rem 1rem;
-  background: #001b56b8;
-  color: white;
-  border-radius: 5px;
-  text-align: center;
+  border-radius: 6px;
 }
 
 .year-item:hover {
-  background: #0033a1b8;
+  background: #ddd;
 }
 
-/* .graph-wrapper {
-  flex-grow: 1;
-} */
+.graph-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#total-contributions {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
 
 .month-labels {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 0.5rem;
-  padding-left: 25px;
-  font-size: 14px;
+  margin-left: 30px;
+  font-size: 12px;
+  margin-bottom: 4px;
+  gap: 2px;
+}
+
+.month-label {
+  width: 14px;
+  text-align: center;
+  flex-shrink: 0;
 }
 
 .graph-row {
   display: flex;
+  flex-direction: row;
 }
 
-.year-label {
+.day-labels {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  font-size: 10px;
   margin-right: 5px;
-  font-size: 12px;
+  gap: 2px;
 }
 
-.year-label div {
-  height: 12px;
-  margin-bottom: 2px;
-}
-
-#contribution-graph {
+.contribution-graph {
   display: flex;
-  gap: 4px;
+  flex-direction: row;
 }
 
 .week-column {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
+  margin-right: 2px;
 }
 
 .day-block {
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
+  background-color: #ebedf0;
   border-radius: 2px;
-  background-color: #ecedee;
 }
-
-#total-contributions {
-  margin-top: 1rem;
-  font-weight: bold;
-}
+/*rubbish*/
 
 .marquee-container {
   width: 100%;
