@@ -375,7 +375,6 @@ header.hidden {
 .sp {
   display: flex;
   flex-direction: column;
-  border: var(--BORDER);
 }
 .sp img {
   width: 600px;
