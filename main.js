@@ -16,12 +16,11 @@ window.addEventListener("scroll", function () {
 });
 
 
-const username = "Abdulhakeem010"; // Replace with your GitHub username
-const years = [2025];
-const totalNumberOfWeeks = 53;
+const username = "Abdulhakeem010";
+const years = [2022, 2023, 2024, 2025];
+const token = "YOUR_GITHUB_TOKEN_HERE"; // Replace this
 
 const yearList = document.getElementById("year-list");
-let contributionData;
 
 years.forEach((year) => {
   const yearBtn = document.createElement("div");
@@ -31,47 +30,86 @@ years.forEach((year) => {
   yearList.appendChild(yearBtn);
 });
 
-function fetchAndRender(year) {
-  const from = `${year}-01-01`;
-  const to = `${year}-12-31`;
+async function fetchAndRender(year) {
+  const from = `${year}-01-01T00:00:00Z`;
+  const to = `${year}-12-31T23:59:59Z`;
 
-  const url = `https://github-contributions-api.deno.dev/${username}.json?from=${from}&to=${to}`;
-  fetch(url)
-    .then((res) => res.json())
-    .then((data) => {
-      console.log("API Response: ", data);
-      contributionData = data;
-      document.getElementById("total-contributions").textContent = `Total Contributions in ${year}: ${data.totalContributions || 0}`;
-      renderGraph(data.contributions);
-    })
-    .catch((err) => {
-      console.error("Failed to fetch data:", err);
-    });
+  const query = `
+    query {
+      user(login: "${username}") {
+        contributionsCollection(from: "${from}", to: "${to}") {
+          contributionCalendar {
+            totalContributions
+            weeks {
+              contributionDays {
+                color
+                contributionCount
+                date
+              }
+            }
+          }
+        }
+      }
+    }`;
+
+  const res = await fetch("https://api.github.com/graphql", {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${token}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ query })
+  });
+
+  const json = await res.json();
+  const weeks = json.data.user.contributionsCollection.contributionCalendar.weeks;
+  const total = json.data.user.contributionsCollection.contributionCalendar.totalContributions;
+
+  document.getElementById("total-contributions").textContent = `Total Contributions in ${year}: ${total}`;
+  renderGraph(weeks);
 }
 
-function renderGraph(contributions) {
+function renderGraph(weeks) {
   const graphContainer = document.getElementById("contribution-graph");
+  const monthLabels = document.getElementById("month-labels");
+
   graphContainer.innerHTML = "";
+  monthLabels.innerHTML = "";
 
-  contributions.forEach((week) => {
+  let previousMonth = "";
+
+  weeks.forEach((week, weekIndex) => {
     const weekColumn = document.createElement("div");
-    weekColumn.classList.add("week-column");
+    weekColumn.className = "week-column";
 
-    week.forEach((day) => {
+    week.contributionDays.forEach((day) => {
       const dayBlock = document.createElement("div");
-      dayBlock.classList.add("day-block");
-
-      const { color, contributionCount, date } = day;
-
-      dayBlock.style.backgroundColor = color;
-      dayBlock.title = `${date}: ${contributionCount} contributions`;
-
+      dayBlock.className = "day-block";
+      dayBlock.style.backgroundColor = day.color;
+      dayBlock.title = `${day.date}: ${day.contributionCount} contributions`;
       weekColumn.appendChild(dayBlock);
     });
 
     graphContainer.appendChild(weekColumn);
+
+    // Add month label at first occurrence
+    const firstDay = week.contributionDays[0];
+    if (firstDay) {
+      const currentMonth = new Date(firstDay.date).toLocaleString('default', { month: 'short' });
+      if (currentMonth !== previousMonth) {
+        const monthLabel = document.createElement("div");
+        monthLabel.className = "month-label";
+        monthLabel.textContent = currentMonth;
+        monthLabels.appendChild(monthLabel);
+        previousMonth = currentMonth;
+      } else {
+        const emptyLabel = document.createElement("div");
+        emptyLabel.className = "month-label";
+        monthLabels.appendChild(emptyLabel);
+      }
+    }
   });
 }
 
-// Load most recent year on startup
+// Load the most recent year by default
 fetchAndRender(years[years.length - 1]);
