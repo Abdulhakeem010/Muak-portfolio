@@ -121,8 +121,9 @@ header.hidden{
   flex-direction: column;
   padding-top: 135px; 
   padding-inline:  8%;
-  margin-bottom: 3rem;
+  margin-bottom: 115px;
   border-radius: 0 0 60px 60px;
+  padding-bottom: 150px;
 }
 .who-i-am h1{
   font-size: 55px;
