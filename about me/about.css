@@ -182,8 +182,10 @@ header.hidden {
 .interest-p-container{
   display: flex;
   flex-direction: row;
-  margin-bottom: 40px;
   gap: 60px;
+}
+.first-p{
+  margin-bottom: 40px;
 }
 .interest-p{
   font-size: 18px;
@@ -193,6 +195,7 @@ header.hidden {
 }
 .la-container{
  border: 1px solid red;
+ margin-bottom: 160px;
 }
 
 /* FOOTER STYLING */
