@@ -133,6 +133,13 @@ header.hidden{
   color: var(--TEXT-P);
   margin-bottom: 100px;
 }
+.sp-image-container{
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(1fr 1fr);
+  gap: 20px;
+}
+
 
 
 
