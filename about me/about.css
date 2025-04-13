@@ -121,6 +121,7 @@ header.hidden{
   flex-direction: column;
   padding-top: 135px; 
   padding-inline:  8%;
+  margin-bottom: 3rem;
 }
 .who-i-am h1{
   font-size: 55px;
@@ -128,6 +129,19 @@ header.hidden{
   letter-spacing: -0.5;
   color: #201D15;
   margin-bottom: 100px;
+}
+.wia-content{
+  border: var(--BORDER);
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.wia-image{
+  width: calc(50% - 20px);
+  height: 300px;
+}
+.wia-text{
+  width: calc(50% - 20px);
 }
 
 
