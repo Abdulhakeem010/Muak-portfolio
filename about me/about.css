@@ -116,7 +116,18 @@ header.hidden{
 /*main styling*/
 /* Who i am styling */
 .who-i-am{
+  background-color: var(--ALT-BG);
+  display: flex;
+  flex-direction: column;
   padding-top: 135px; 
+  padding-inline:  8%;
+}
+.who-i-am h1{
+  font-size: 55px;
+  line-height: 66px;
+  letter-spacing: -0.5;
+  color: #201D15;
+  margin-bottom: 100px;
 }
 
 
