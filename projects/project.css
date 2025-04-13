@@ -134,17 +134,16 @@ header.hidden {
 }
 
 .sp-image-container {
-  border: 1px solid red;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  column-gap: 40px;
+  row-gap: 60px;
 }
 
 .sp {
   display: flex;
   flex-direction: column;
   height: fit-content;
-  border: 1px solid red;
 }
 .sp img {
   width: 100%;
