@@ -337,9 +337,9 @@ header.hidden {
   animation-play-state: paused;
 }
 
-.marquee-container:not(:hover) .marquee-text {
+/* .marquee-container:not(:hover) .marquee-text {
   animation-play-state: running;
-}
+} */
 /* END HERO SECTION STYLING */
 
 /* SELECTED PROJECT STYLING */
