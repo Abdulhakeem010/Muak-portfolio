@@ -184,17 +184,24 @@ header.hidden {
   flex-direction: row;
   gap: 60px;
 }
+
 .first-p{
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
+
 .interest-p{
   font-size: 18px;
   line-height: 28.8px;
   color: var(--TEXT-P);
   width: calc(50% - 30px);
 }
+.interest-image{
+  border: var(--BORDER);
+  height: 400px;
+  margin-bottom: 100px;
+  border-radius: 15px;
+}
 .la-container{
- border: 1px solid red;
  margin-bottom: 160px;
 }
 
