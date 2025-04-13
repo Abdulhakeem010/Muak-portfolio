@@ -146,7 +146,17 @@ header.hidden{
   width: calc(50% - 20px);
   border: 1px solid green;
 }
-
+.wia-text h3{
+  font-size: 24px;
+  line-height: 33.6px;
+  margin-bottom: 30px;
+  color: var(--TEXT-H);
+}
+.wia-text p{
+  font-size: 18px;
+  line-height: 28.8px;
+  color: var(--TEXT-P);
+}
 
 
 
