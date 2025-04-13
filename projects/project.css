@@ -113,6 +113,15 @@ header.hidden{
 .icon:hover {
   cursor: pointer;
 }
+.projects-container{
+  padding-top: 155px;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 7%;
+  margin-bottom: ;
+}
+
+
 
 /* FOOTER STYLING */
 .footer-top {
