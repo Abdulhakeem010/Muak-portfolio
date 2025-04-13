@@ -173,7 +173,7 @@ header.hidden{
   justify-content: center;
   background-color: var(--ALT-FOOTER-BG);
   padding-inline: 50px;
-  padding-top: 65px;
+  padding-top: 55px;
   padding-bottom: 70px;
 }
 
@@ -192,18 +192,18 @@ header.hidden{
   align-items: center;
   gap: 80px;
 }
-.fb-left-logo a{
+.fb-left-logo a {
   text-decoration: none;
   font-size: 16px;
   line-height: 19.2px;
   color: white;
 }
 
-.fb-left-logo a:hover{
+.fb-left-logo a:hover {
   color: #ffffffd9;
 }
 
-.fb-left-links{
+.fb-left-links {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -211,7 +211,7 @@ header.hidden{
   gap: 30px;
 }
 
-.fb-left-links a{
+.fb-left-links a {
   text-decoration: none;
   font-size: 14px;
   line-height: 28px;
@@ -219,7 +219,7 @@ header.hidden{
   color: #afafaf;
 }
 
-.fb-left-links a:hover{
+.fb-left-links a:hover {
   color: white;
 }
 
@@ -260,4 +260,3 @@ header.hidden{
   color: #afafaf;
   margin-top: 42px;
 }
-/* END FOOTER STYLING */
