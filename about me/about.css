@@ -133,7 +133,6 @@ header.hidden{
   margin-bottom: 100px;
 }
 .wia-content{
-  border: var(--BORDER);
   display: flex;
   flex-direction: row;
   gap: 40px;
@@ -142,11 +141,9 @@ header.hidden{
 .wia-image{
   width: calc(50% - 20px);
   height: 300px;
-  border: 1px solid blue;
 }
 .wia-text{
   width: calc(50% - 20px);
-  border: 1px solid green;
 }
 .wia-text h3{
   font-size: 24px;
