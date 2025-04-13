@@ -54,6 +54,7 @@ header {
   transition: top 0.4s ease;
   z-index: 1000;
 }
+
 header.hidden {
   top: -90px;
 }
@@ -125,8 +126,8 @@ header.hidden {
   padding-inline: 7%;
   background-color: #fff;
   border-radius: 0px 0px 60px 60px;
-  padding-top: 135px;
-  margin-bottom: 100px;
+  padding-top: 135px;     /*i need this*/
+  margin-bottom: 100px;   /*i need this*/
 }
 .hero-image-container {
   display: flex;
@@ -394,6 +395,7 @@ header.hidden {
   color: var(--TEXT-P);
 }
 /* END SELECTED PROJECT STYLING */
+
 
 /*FIRST PROJECT STYLING*/
 .first-project {

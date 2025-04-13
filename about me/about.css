@@ -53,6 +53,7 @@ header {
   transition: top 0.4s ease;
   z-index: 1000;
 }
+
 header.hidden{
   top: -90px;
 }
