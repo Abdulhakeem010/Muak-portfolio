@@ -405,7 +405,9 @@ header.hidden {
   flex-direction: row;
   height: 500px;
   margin-bottom: 150px;
+  cursor: pointer;
 }
+
 .fp-left {
   width: 50%;
   height: 500px;
