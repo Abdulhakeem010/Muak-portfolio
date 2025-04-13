@@ -135,10 +135,12 @@ header.hidden{
   display: flex;
   flex-direction: row;
   gap: 40px;
+  height: 300px;
 }
 .wia-image{
   width: calc(50% - 20px);
   height: 300px;
+  border: 1px solid blue;
 }
 .wia-text{
   width: calc(50% - 20px);
