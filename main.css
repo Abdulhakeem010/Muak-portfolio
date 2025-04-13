@@ -329,9 +329,9 @@ header.hidden {
   }
 }
 
-.marquee-container:hover {
+/* .marquee-container:hover {
   animation-duration: 60s;
-}
+} */
 
 .marquee-container:hover .marquee-text {
   animation-play-state: paused;
