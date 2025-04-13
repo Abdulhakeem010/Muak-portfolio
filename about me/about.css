@@ -54,7 +54,7 @@ header {
   z-index: 1000;
 }
 
-header.hidden{
+header.hidden {
   top: -90px;
 }
 
@@ -115,49 +115,56 @@ header.hidden{
 }
 /*main styling*/
 /* Who i am styling */
-.who-i-am{
+.who-i-am {
   background-color: var(--ALT-BG);
   display: flex;
   flex-direction: column;
-  padding-top: 135px; 
-  padding-inline:  8%;
+  padding-top: 135px;
+  padding-inline: 8%;
   margin-bottom: 115px;
   border-radius: 0 0 60px 60px;
   padding-bottom: 150px;
 }
-.who-i-am h1{
+.who-i-am h1 {
   font-size: 55px;
   line-height: 66px;
   letter-spacing: -0.5;
-  color: #201D15;
+  color: #201d15;
   margin-bottom: 100px;
 }
-.wia-content{
+.wia-content {
+  border: var(--BORDER);
   display: flex;
   flex-direction: row;
   gap: 40px;
   height: 300px;
 }
-.wia-image{
+.wia-image {
+  border-radius: 15px;
   width: calc(50% - 20px);
   height: 300px;
 }
-.wia-text{
+
+.wia-image img {
+  border-radius:15px ;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+.wia-text {
   width: calc(50% - 20px);
 }
-.wia-text h3{
+.wia-text h3 {
   font-size: 24px;
   line-height: 33.6px;
   margin-bottom: 30px;
   color: var(--TEXT-H);
 }
-.wia-text p{
+.wia-text p {
   font-size: 18px;
   line-height: 28.8px;
   color: var(--TEXT-P);
 }
-
-
 
 /* FOOTER STYLING */
 .footer-top {
@@ -228,18 +235,18 @@ header.hidden{
   align-items: center;
   gap: 80px;
 }
-.fb-left-logo a{
+.fb-left-logo a {
   text-decoration: none;
   font-size: 16px;
   line-height: 19.2px;
   color: white;
 }
 
-.fb-left-logo a:hover{
+.fb-left-logo a:hover {
   color: #ffffffd9;
 }
 
-.fb-left-links{
+.fb-left-links {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -247,7 +254,7 @@ header.hidden{
   gap: 30px;
 }
 
-.fb-left-links a{
+.fb-left-links a {
   text-decoration: none;
   font-size: 14px;
   line-height: 28px;
@@ -255,7 +262,7 @@ header.hidden{
   color: #afafaf;
 }
 
-.fb-left-links a:hover{
+.fb-left-links a:hover {
   color: white;
 }
 
