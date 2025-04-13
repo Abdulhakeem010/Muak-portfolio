@@ -96,9 +96,13 @@ header.hidden {
   line-height: 28px;
   letter-spacing: -0.1px;
 }
+.line{
+  text-decoration: line-through;
+  }
 .nav:hover {
   color: #828282;
 }
+
 
 .icon {
   border: 1px solid hsla(0, 0%, 80%, 0.8);
