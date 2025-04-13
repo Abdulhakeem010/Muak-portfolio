@@ -172,6 +172,17 @@ header.hidden {
   flex-direction: column;
   padding-inline: 8%;
 }
+.interest-h{
+  font-size: 50px;
+  line-height: 60px;
+  letter-spacing: -1px;
+  color: var(--TEXT-H);
+  margin-bottom: 25px;
+}
+.interest-p-container{
+  display: flex;
+  flex-direction: row;
+}
 
 /* FOOTER STYLING */
 .footer-top {
