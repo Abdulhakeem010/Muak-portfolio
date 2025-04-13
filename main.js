@@ -1,23 +1,23 @@
-let lastScrollTop = 0; // Track last scroll position
-const header = document.getElementById("header"); // Select the header element
+let lastScrollTop = 0; 
+const header = document.getElementById("header");
 
 window.addEventListener("scroll", function () {
-  let currentScroll = window.scrollY || document.documentElement.scrollTop; // Get current scroll position
+  let currentScroll = window.scrollY || document.documentElement.scrollTop; 
 
   if (currentScroll > lastScrollTop) {
-    // If scrolling down, hide the header
+  
     header.classList.add("hidden");
   } else {
-    // If scrolling up, show the header
+  
     header.classList.remove("hidden");
   }
 
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Update last scroll position (prevent negative value)
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
 
 const username = "Abdulhakeem010";
 const years = [2025];
-const token = ""; // Replace this with your GitHub PAT
+const token = ""; 
 
 const yearList = document.getElementById("year-list");
 let activeYearButton = null;
