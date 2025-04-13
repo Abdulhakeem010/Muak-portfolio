@@ -136,14 +136,13 @@ header.hidden {
 .sp-image-container {
   border: 1px solid red;
   display: grid;
-  grid-template-columns: repeat(1fr 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
 }
 
 .sp {
   display: flex;
   flex-direction: column;
-  width: calc(50% - 10px);
   height: fit-content;
   border: 1px solid red;
 }
