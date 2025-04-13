@@ -167,6 +167,12 @@ header.hidden {
   color: var(--TEXT-P);
 }
 
+.interest{
+  display: flex;
+  flex-direction: column;
+  padding-inline: 8%;
+}
+
 /* FOOTER STYLING */
 .footer-top {
   display: flex;
