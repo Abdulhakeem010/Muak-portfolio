@@ -38,7 +38,6 @@ body {
   font-style: normal;
 }
 
-
 header {
   position: fixed;
   top: 0;
@@ -54,7 +53,7 @@ header {
   transition: top 0.4s ease;
   z-index: 1000;
 }
-header.hidden{
+header.hidden {
   top: -90px;
 }
 
@@ -113,35 +112,46 @@ header.hidden{
 .icon:hover {
   cursor: pointer;
 }
-.projects-container{
+.projects-container {
   padding-top: 155px;
   display: flex;
   flex-direction: column;
   padding-inline: 7%;
   margin-bottom: 200px;
 }
-.pc-h1{
+.pc-h1 {
   font-size: 55px;
   line-height: 66px;
   letter-spacing: -0.5px;
-  color: #201D15;
+  color: #201d15;
   margin-bottom: 25px;
 }
-.pc-p{
+.pc-p {
   font-size: 18px;
   line-height: 28.8px;
   color: var(--TEXT-P);
   margin-bottom: 100px;
 }
-.sp-image-container{
+
+.sp-image-container {
   border: 1px solid red;
   display: grid;
   grid-template-columns: repeat(1fr 1fr);
   gap: 20px;
 }
 
-
-
+.sp {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 10px);
+  /* height: 400px; */
+  border: 1px solid red;
+}
+.sp img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 22px;
+}
 
 /* FOOTER STYLING */
 .footer-top {
