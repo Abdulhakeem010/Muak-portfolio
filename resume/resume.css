@@ -97,6 +97,9 @@ header.hidden{
   line-height: 28px;
   letter-spacing: -0.1px;
 }
+.line{
+  text-decoration: line-through;
+  }
 .nav:hover {
   color: #828282;
 }
