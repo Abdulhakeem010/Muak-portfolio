@@ -101,7 +101,9 @@ header.hidden {
 .nav:hover {
   color: #828282;
 }
-
+.nav.active{
+  border-bottom: 2px solid black;
+}
 .icon {
   border: 1px solid hsla(0, 0%, 80%, 0.8);
   border-radius: 8px;

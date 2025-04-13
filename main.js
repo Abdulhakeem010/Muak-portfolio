@@ -125,3 +125,13 @@ function renderGraph(weeks) {
 const lastYearBtn = yearList.lastChild;
 setActiveYearButton(lastYearBtn);
 fetchAndRender(years[years.length - 1]);
+
+const navLinks = document.querySelectorAll('.nav');
+const currentPath = window.location.pathname;
+
+navLinks.forEach(link => {
+  const linkPath = new URL(link.href).pathname;
+  if (currentPath.endsWith(linkPath)) {
+    link.classList.add('active');
+  }
+});
