@@ -122,7 +122,6 @@ function renderGraph(weeks) {
   });
 }
 
-// Set the most recent year as active and fetch its data
 const lastYearBtn = yearList.lastChild;
 setActiveYearButton(lastYearBtn);
 fetchAndRender(years[years.length - 1]);
