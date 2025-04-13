@@ -120,7 +120,19 @@ header.hidden{
   padding-inline: 7%;
   margin-bottom: 200px;
 }
-
+.pc-h1{
+  font-size: 55px;
+  line-height: 66px;
+  letter-spacing: -0.5px;
+  color: #201D15;
+  margin-bottom: 25px;
+}
+.pc-p{
+  font-size: 18px;
+  line-height: 28.8px;
+  color: var(--TEXT-P);
+  margin-bottom: 100px;
+}
 
 
 
