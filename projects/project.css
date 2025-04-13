@@ -99,9 +99,7 @@ header.hidden {
 .nav:hover {
   color: #828282;
 }
-.nav:active{
-  text-decoration: line-through;
-}
+
 .icon {
   border: 1px solid hsla(0, 0%, 80%, 0.8);
   border-radius: 8px;
