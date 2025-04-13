@@ -113,6 +113,11 @@ header.hidden{
 .icon:hover {
   cursor: pointer;
 }
+/*main styling*/
+/* Who i am styling */
+.who-i-am{
+  padding-top: 135px; 
+}
 
 
 
