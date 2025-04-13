@@ -183,11 +183,16 @@ header.hidden {
   display: flex;
   flex-direction: row;
   margin-bottom: 40px;
+  gap: 60px;
 }
 .interest-p{
   font-size: 18px;
   line-height: 28.8px;
   color: var(--TEXT-P);
+  width: calc(50% - 30px);
+}
+.la-container{
+ border: 1px solid red;
 }
 
 /* FOOTER STYLING */
