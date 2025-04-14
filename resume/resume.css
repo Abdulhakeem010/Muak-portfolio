@@ -180,6 +180,9 @@ header.hidden {
   line-height: 28.8px;
   color: var(--TEXT-P);
 }
+.content li{
+  margin-bottom: 5px;
+}
 
 /* FOOTER STYLING */
 .footer-top {
