@@ -74,7 +74,8 @@ header.hidden {
   text-decoration: none;
   color: hsla(0, 0%, 0%, 0.6);
   font-size: 16px;
-  line-height: 19.2px;
+  font-weight: 400px;
+  line-height: 19px;
   letter-spacing: -0.2px;
 }
 
@@ -93,6 +94,7 @@ header.hidden {
   color: hsla(0, 0%, 0%, 0.9);
   margin-left: 25px;
   font-size: 14px;
+  font-weight: 400;
   line-height: 28px;
   letter-spacing: -0.1px;
 }
@@ -457,6 +459,7 @@ header.hidden {
 }
 .footer-top h1 {
   font-size: 50px;
+  font-weight: 500;
   line-height: 60px;
   letter-spacing: -1px;
   color: white;
@@ -464,6 +467,7 @@ header.hidden {
 }
 .footer-top p {
   font-size: 18px;
+  font-weight: 400;
   line-height: 27px;
   color: #f3f3f2;
   margin-bottom: 25px;
@@ -481,8 +485,9 @@ header.hidden {
   padding-inline: 50px;
   border-radius: 8px;
   background-color: var(--ALT-FOOTER-BG);
-  font-size: 16px;
-  line-height: 16.8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
   transition: all 0.3s ease-in-out;
 }
 .footer-btn a:hover {
@@ -518,6 +523,7 @@ header.hidden {
 .fb-left-logo a {
   text-decoration: none;
   font-size: 16px;
+  font-weight: 700;
   line-height: 19.2px;
   color: white;
 }
@@ -537,6 +543,7 @@ header.hidden {
 .fb-left-links a {
   text-decoration: none;
   font-size: 14px;
+  font-weight: 400;
   line-height: 28px;
   letter-spacing: -0.1px;
   color: #afafaf;
@@ -575,6 +582,7 @@ header.hidden {
 }
 .fb-bottom {
   font-size: 14px;
+  font-weight: 400;
   line-height: 16.8px;
   display: flex;
   flex-direction: column;
