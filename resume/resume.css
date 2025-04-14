@@ -136,23 +136,29 @@ header.hidden{
   font-size: 24px;
   line-height: 33.6px;
   color: var(--TEXT-H);
-  margin-bottom: 25px;
+  margin-bottom: 35px;
 }
 .intro-btn{
   width: fit-content;
   margin-bottom: 90px;
+ 
+}
+.intro-btn a:any-link{
+  color: var(--TEXT-H);
+  text-decoration: none;
   border: 1px solid hsla(0, 0%, 80%, 0.8);
   border-radius: 5px;
-  padding-block: 6px;
+  padding-block: 7px;
   padding-inline: 22px;
   text-align: center;
   font-size: 14px;
   line-height: 16.8px;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
-.intro-btn a:any-link{
-  color: var(--TEXT-H);
-  text-decoration: none;
+.intro-btn a:hover {
+  background-color: var(--TEXT-H);
+  color: white;
 }
 
 
