@@ -131,8 +131,8 @@ header.hidden {
   padding-inline: 7%;
   background-color: #fff;
   border-radius: 0px 0px 60px 60px;
-  padding-top: 135px;     /*i need this*/
-  margin-bottom: 100px;   /*i need this*/
+  padding-top: 135px;   
+  margin-bottom: 100px; 
 }
 .hero-image-container {
   display: flex;
