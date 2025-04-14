@@ -21,7 +21,6 @@ img {
   --TEXT-H: #2a2a28;
   --TEXT-P: #444444;
   --FF: "Manrope", sans-serif;
-  --FW: 200;
   --BORDER: 1px solid red;
 }
 
@@ -34,7 +33,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: var(--FF);
-  font-weight: var(--FW);
   font-style: normal;
 }
 
@@ -74,7 +72,8 @@ header.hidden {
   text-decoration: none;
   color: hsla(0, 0%, 0%, 0.6);
   font-size: 16px;
-  line-height: 19.2px;
+  font-weight: 400;
+  line-height: 19px;
   letter-spacing: -0.2px;
 }
 
@@ -93,6 +92,7 @@ header.hidden {
   color: hsla(0, 0%, 0%, 0.9);
   margin-left: 25px;
   font-size: 14px;
+  font-weight: 400;
   line-height: 28px;
   letter-spacing: -0.1px;
 }
