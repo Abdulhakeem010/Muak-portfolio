@@ -122,7 +122,10 @@ header.hidden{
   background-color: var(--ALT-BG);
   display: flex;
   flex-direction: column;
+  padding-inline: 19.5%;
+  border-radius: 0 0 60px 60px;
 }
+.
 
 /* FOOTER STYLING */
 .footer-top {
