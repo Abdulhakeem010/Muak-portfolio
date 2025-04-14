@@ -21,7 +21,7 @@ img {
   --TEXT-H: #2a2a28;
   --TEXT-P: #444444;
   --FF: "Manrope", sans-serif;
-  --BORDER: 1px solid red;
+  --BORDER: 1px solid firebrick;
 }
 
 html {
@@ -120,6 +120,27 @@ header.hidden{
 
 .intro{
   padding-top: 160px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--ALT-BG);
+  border-radius: 0 0 60px 60px;
+  padding-inline: 7%;
+}
+.intro h1{
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 66px;
+  letter-spacing: -0.5px;
+  color: #201d15;
+  margin-bottom: 25px;
+}
+.intro p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28.8px;
+  color: var(--TEXT-P);
+  margin-bottom: 100px;
+  border: 1px solid firebrick;
 }
 
 
