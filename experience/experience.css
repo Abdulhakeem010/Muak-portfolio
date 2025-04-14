@@ -97,11 +97,11 @@ header.hidden{
   line-height: 28px;
   letter-spacing: -0.1px;
 }
-.line{
+.line {
   text-decoration: line-through;
-  }
-  
-.nav:hover {
+}
+.nav:hover, .line:hover {
+  text-decoration: none;
   color: #828282;
 }
 .icon {
