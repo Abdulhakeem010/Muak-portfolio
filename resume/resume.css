@@ -126,6 +126,7 @@ header.hidden {
 }
 .intro h1 {
   font-size: 55px;
+  font-weight: 400;
   line-height: 66px;
   letter-spacing: -0.5px;
   color: var(--TEXT-H);
@@ -134,6 +135,7 @@ header.hidden {
 
 .intro p {
   font-size: 24px;
+  font-weight: 500;
   line-height: 33.6px;
   color: var(--TEXT-H);
   margin-bottom: 35px;
@@ -152,12 +154,13 @@ header.hidden {
   padding-inline: 22px;
   text-align: center;
   font-size: 14px;
+  font-weight: 500;
   line-height: 16.8px;
   transition: all 0.3s ease-in-out;
 }
 .intro-btn a:hover {
   background-color: var(--TEXT-H);
-  color: white;
+  color:#e8e9ee;
 }
 
 .content {
