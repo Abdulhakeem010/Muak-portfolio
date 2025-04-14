@@ -72,7 +72,8 @@ header.hidden {
   text-decoration: none;
   color: hsla(0, 0%, 0%, 0.6);
   font-size: 16px;
-  line-height: 19.2px;
+  font-weight: 400;
+  line-height: 19px;
   letter-spacing: -0.2px;
 }
 
