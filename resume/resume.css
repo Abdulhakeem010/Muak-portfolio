@@ -38,7 +38,6 @@ body {
   font-style: normal;
 }
 
-
 header {
   position: fixed;
   top: 0;
@@ -54,7 +53,7 @@ header {
   transition: top 0.4s ease;
   z-index: 1000;
 }
-header.hidden{
+header.hidden {
   top: -90px;
 }
 
@@ -97,9 +96,9 @@ header.hidden{
   line-height: 28px;
   letter-spacing: -0.1px;
 }
-.line{
+.line {
   text-decoration: line-through;
-  }
+}
 .nav:hover {
   color: #828282;
 }
@@ -117,7 +116,7 @@ header.hidden{
   cursor: pointer;
 }
 
-.intro{
+.intro {
   padding-top: 160px;
   background-color: var(--ALT-BG);
   display: flex;
@@ -126,7 +125,7 @@ header.hidden{
   border-radius: 0 0 60px 60px;
   margin-bottom: 90px;
 }
-.intro h1{
+.intro h1 {
   font-size: 55px;
   line-height: 66px;
   letter-spacing: -0.5px;
@@ -134,18 +133,17 @@ header.hidden{
   margin-bottom: 30px;
 }
 
-.intro p{
+.intro p {
   font-size: 24px;
   line-height: 33.6px;
   color: var(--TEXT-H);
   margin-bottom: 35px;
 }
-.intro-btn{
+.intro-btn {
   width: fit-content;
   margin-bottom: 95px;
- 
 }
-.intro-btn a:any-link{
+.intro-btn a:any-link {
   color: var(--TEXT-H);
   text-decoration: none;
   border: 1px solid hsla(0, 0%, 80%, 0.8);
@@ -163,23 +161,22 @@ header.hidden{
   color: white;
 }
 
-.content{
+.content {
   display: flex;
   flex-direction: column;
   padding-inline: 19.5%;
   margin-bottom: 200px;
 }
-.content h2{
+.content h2 {
   font-size: 30px;
   line-height: 39px;
   color: var(--TEXT-H);
   margin-bottom: 25px;
 }
-.content ul{
-list-style-position: inside;
-margin-bottom: 60px;
+.content ul {
+  list-style-position: inside;
+  margin-bottom: 48px;
 }
-
 
 /* FOOTER STYLING */
 .footer-top {
