@@ -118,9 +118,10 @@ header.hidden{
   cursor: pointer;
 }
 
-.experiences-container{
-  padding-top: 135px;
+.intro{
+  padding-top: 160px;
 }
+
 
 /* FOOTER STYLING */
 .footer-top {
