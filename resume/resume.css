@@ -99,7 +99,8 @@ header.hidden {
 .line {
   text-decoration: line-through;
 }
-.nav:hover {
+.nav:hover, .line:hover {
+  text-decoration: none;
   color: #828282;
 }
 .icon {
