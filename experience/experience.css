@@ -149,7 +149,7 @@ header.hidden{
 .experience-container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding-inline: 7%;
+  margin-inline: 7%;
 }
 
 
