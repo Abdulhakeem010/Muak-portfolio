@@ -117,6 +117,13 @@ header.hidden{
   cursor: pointer;
 }
 
+.intro{
+  padding-top: 160px;
+  background-color: var(--ALT-BG);
+  display: flex;
+  flex-direction: column;
+}
+
 /* FOOTER STYLING */
 .footer-top {
   display: flex;
