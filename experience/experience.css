@@ -156,12 +156,14 @@ header.hidden{
 .experience{
 display: flex;
 flex-direction: row;
+gap: 24px;
 }
 .e-image{
   width: 80px;
   height: 80px;
   border: 1px solid hsla(0, 0%, 80%, 0.8);
   border-radius: 10px;
+  padding: 10px;
   place-content: center;
 }
 .e-image img{
