@@ -126,7 +126,7 @@ header.hidden{
   border-radius: 0 0 60px 60px;
   padding-inline: 7%;
   padding-bottom: 90px;
-  margin-bottom: ;
+  margin-bottom: 100px;
 }
 .intro h1{
   font-size: 50px;
@@ -145,6 +145,7 @@ header.hidden{
 .styled-text{
   font-weight: 700;
 }
+
 
 
 /* FOOTER STYLING */
