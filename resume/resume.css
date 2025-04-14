@@ -171,6 +171,7 @@ header.hidden {
 }
 .content h2 {
   font-size: 30px;
+  font-weight: 500;
   line-height: 39px;
   color: var(--TEXT-H);
   margin-bottom: 25px;
@@ -179,6 +180,7 @@ header.hidden {
   list-style-position: inside;
   margin-bottom: 48px;
   font-size: 18px;
+  font-weight: 400;
   line-height: 28.8px;
   color: var(--TEXT-P);
 }
@@ -186,7 +188,7 @@ header.hidden {
   margin-bottom: 5px;
 }
 .styled-text{
-  font-size: 25px;
+  font-weight: 700;
 }
 
 /* FOOTER STYLING */
@@ -200,6 +202,7 @@ header.hidden {
 }
 .footer-top h1 {
   font-size: 50px;
+  font-weight: 500;
   line-height: 60px;
   letter-spacing: -1px;
   color: white;
@@ -207,6 +210,7 @@ header.hidden {
 }
 .footer-top p {
   font-size: 18px;
+  font-weight: 400;
   line-height: 27px;
   color: #f3f3f2;
   margin-bottom: 25px;
@@ -224,8 +228,9 @@ header.hidden {
   padding-inline: 50px;
   border-radius: 8px;
   background-color: var(--ALT-FOOTER-BG);
-  font-size: 16px;
-  line-height: 16.8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
   transition: all 0.3s ease-in-out;
 }
 .footer-btn a:hover {
@@ -261,6 +266,7 @@ header.hidden {
 .fb-left-logo a {
   text-decoration: none;
   font-size: 16px;
+  font-weight: 700;
   line-height: 19.2px;
   color: white;
 }
@@ -280,6 +286,7 @@ header.hidden {
 .fb-left-links a {
   text-decoration: none;
   font-size: 14px;
+  font-weight: 400;
   line-height: 28px;
   letter-spacing: -0.1px;
   color: #afafaf;
@@ -318,6 +325,7 @@ header.hidden {
 }
 .fb-bottom {
   font-size: 14px;
+  font-weight: 400;
   line-height: 16.8px;
   display: flex;
   flex-direction: column;
