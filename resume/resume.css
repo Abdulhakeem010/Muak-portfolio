@@ -148,8 +148,9 @@ header.hidden{
   text-align: center;
   font-size: 14px;
   line-height: 16.8px;
+  cursor: pointer;
 }
-.intro-btn a{
+.intro-btn a:any-link{
   color: var(--TEXT-H);
   text-decoration: none;
 }
