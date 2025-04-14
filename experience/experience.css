@@ -148,7 +148,7 @@ header.hidden{
 
 .experiences-container{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
   margin-inline: 7%;
   margin-bottom: 100px;
   gap: 50px;
@@ -159,8 +159,8 @@ flex-direction: row;
 gap: 24px;
 }
 .e-image{
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border: 1px solid hsla(0, 0%, 80%, 0.8);
   border-radius: 10px;
   padding: 10px;
