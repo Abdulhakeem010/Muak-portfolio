@@ -138,7 +138,21 @@ header.hidden{
   color: var(--TEXT-H);
   margin-bottom: 25px;
 }
-
+.intro-btn{
+  width: fit-content;
+  margin-bottom: 90px;
+  border: 1px solid hsla(0, 0%, 80%, 0.8);
+  border-radius: 5px;
+  padding-block: 6px;
+  padding-inline: 22px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16.8px;
+}
+.intro-btn a{
+  color: var(--TEXT-H);
+  text-decoration: none;
+}
 
 /* FOOTER STYLING */
 .footer-top {
