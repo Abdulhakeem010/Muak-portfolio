@@ -142,6 +142,7 @@ header.hidden {
 .intro-btn {
   width: fit-content;
   margin-bottom: 95px;
+  cursor: pointer;
 }
 .intro-btn a:any-link {
   color: var(--TEXT-H);
@@ -153,7 +154,6 @@ header.hidden {
   text-align: center;
   font-size: 14px;
   line-height: 16.8px;
-  cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 .intro-btn a:hover {
