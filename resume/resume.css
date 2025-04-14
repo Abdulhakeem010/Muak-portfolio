@@ -176,6 +176,9 @@ header.hidden {
 .content ul {
   list-style-position: inside;
   margin-bottom: 48px;
+  font-size: 18px;
+  line-height: 28.8px;
+  color: var(--TEXT-P);
 }
 
 /* FOOTER STYLING */
