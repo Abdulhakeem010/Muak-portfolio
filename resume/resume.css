@@ -183,6 +183,11 @@ header.hidden {
 .content li{
   margin-bottom: 5px;
 }
+.styled-text{
+  font-size: 25px;
+  line-height: 28.8px;
+  color: var(--TEXT-P);
+}
 
 /* FOOTER STYLING */
 .footer-top {
