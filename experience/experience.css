@@ -160,13 +160,14 @@ flex-direction: row;
 .e-image{
   width: 80px;
   height: 80px;
-  border: var(--BORDER);
+  border: 1px solid hsla(0, 0%, 80%, 0.8);
+  border-radius: 10px;
   place-content: center;
 }
 .e-image img{
-  width: 80px;
+  /* width: 80px;
   height: 80px;
-  border-radius: 10px;
+  border-radius: 10px; */
 }
 
 
