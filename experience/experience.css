@@ -146,12 +146,20 @@ header.hidden{
   font-weight: 700;
 }
 
-.experience-container{
+.experiences-container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-inline: 7%;
+  margin-bottom: 100px;
+  /* gap: 50px; */
 }
-
+.experience{
+display: flex;
+flex-direction: row;
+}
+.e-image{
+  border: var(--BORDER);
+}
 
 
 /* FOOTER STYLING */
