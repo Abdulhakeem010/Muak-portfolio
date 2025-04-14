@@ -163,6 +163,20 @@ header.hidden{
   color: white;
 }
 
+.content{
+  display: flex;
+  flex-direction: column;
+  padding-inline: 19.5%;
+  margin-bottom: 200px;
+}
+.content h2{
+  font-size: 30px;
+  line-height: 39px;
+  color: var(--TEXT-H);
+  margin-bottom: 25px;
+}
+
+
 
 /* FOOTER STYLING */
 .footer-top {
