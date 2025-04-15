@@ -400,6 +400,19 @@ header.hidden {
   font-weight: 400;
   color: var(--TEXT-P);
 }
+.see-p{
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 600;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.sp:hover .see-p{
+  opacity: 1;
+  transform: translateY(0);
+}
 /* END SELECTED PROJECT STYLING */
 
 
