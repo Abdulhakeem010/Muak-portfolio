@@ -408,8 +408,8 @@ header.hidden {
   display: flex;
   gap: 5px;
   align-items: center;
-  
 }
+
 .see-p a:any-link,
 .see-p a:visited {
   text-decoration: none;
