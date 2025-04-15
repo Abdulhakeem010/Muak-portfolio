@@ -163,7 +163,7 @@ header.hidden {
   width: 100px;
   height: 100px;
   padding: 12px;
-  aspect-ratio: 1/1;
+  aspect-ratio: 1/1; /*Mad Snippet*/
   border: 1px solid hsla(0, 0%, 80%, 0.8);
   border-radius: 5px;
   display: flex;
