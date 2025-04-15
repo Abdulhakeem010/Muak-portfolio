@@ -205,22 +205,26 @@ header.hidden {
   font-weight: 400;
   margin-bottom: 5px;
   color: var(--TEXT-P);
+  
 }
 .p-link a:any-link,
 .p-link a:visited {
+  color: var(--TEXT-H);
   text-decoration: none;
-  color: firebrick;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
   border: 1px solid hsla(0, 0%, 80%, 0.8);
-  padding-block: 5px;
-  padding-inline: 10px;
   border-radius: 5px;
+  padding-block: 7px;
+  padding-inline: 22px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.8px;
   transition: all 0.3s ease-in-out;
 }
 .p-link a:hover {
   text-decoration: underline;
+  background-color: var(--TEXT-H);
+  color:#e8e9ee;
 }
 
 /* FOOTER STYLING */
