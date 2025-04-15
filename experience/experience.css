@@ -183,15 +183,8 @@ gap: 24px;
 .experience {
   display: flex;
   flex-direction: row;
-  
+  gap: 24px;
 }
-
-/* .e-image-text {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-} */
 
 .e-image {
   width: 100px;
@@ -217,14 +210,14 @@ gap: 24px;
   /* margin-bottom: 5px; */
 }
 
-.p1{
+.p1 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   margin-bottom: 5px;
   color: var(--TEXT-H);
 }
-.p2{
+.p2 {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 1px;
@@ -232,14 +225,15 @@ gap: 24px;
   margin-bottom: 5px;
   color: var(--TEXT-P);
 }
-.p3{
+.p3 {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   margin-bottom: 5px;
   color: var(--TEXT-P);
 }
-.p-link a:any-link, .p-link a:visited{
+.p-link a:any-link,
+.p-link a:visited {
   text-decoration: none;
   color: firebrick;
   font-size: 16px;
@@ -247,10 +241,9 @@ gap: 24px;
   font-weight: 400;
   transition: all 0.3s ease-in-out;
 }
-.p-link a:hover{
+.p-link a:hover {
   text-decoration: underline;
 }
-
 
 /* FOOTER STYLING */
 .footer-top {
