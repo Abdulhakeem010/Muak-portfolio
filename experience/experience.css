@@ -151,13 +151,12 @@ header.hidden {
   grid-template-columns: repeat(2, 1fr);
   margin-inline: 7%;
   margin-bottom: 100px;
-  gap: 20px;
+  gap: 30px;
 }
 .experience{
 display: flex;
 flex-direction: row;
 gap: 24px;
-border: 1px solid red;
 }
 .e-image{
   width: 100px;
@@ -183,7 +182,8 @@ border: 1px solid red;
 
 .experience {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  
 }
 
 /* .e-image-text {
