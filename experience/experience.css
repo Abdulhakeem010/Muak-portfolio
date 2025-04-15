@@ -156,7 +156,6 @@ header.hidden {
 
 .experience {
   display: flex;
-  flex-direction: row;
   gap: 24px;
 }
 
@@ -164,6 +163,7 @@ header.hidden {
   width: 100px;
   height: 100px;
   padding: 12px;
+  aspect-ratio: 1/1;
   border: 1px solid hsla(0, 0%, 80%, 0.8);
   border-radius: 5px;
   display: flex;
@@ -213,6 +213,7 @@ header.hidden {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  border: 1px solid hsla(0, 0%, 80%, 0.8);
   transition: all 0.3s ease-in-out;
 }
 .p-link a:hover {
