@@ -151,7 +151,8 @@ header.hidden {
   grid-template-columns: repeat(2, 1fr);
   margin-inline: 7%;
   margin-bottom: 100px;
-  gap: 30px;
+  column-gap: 30px;
+  row-gap: 100px;
 }
 
 .experience {
