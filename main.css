@@ -405,13 +405,20 @@ header.hidden {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.5s ease, transform 0.5s ease;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  
 }
 .see-p a:any-link,
 .see-p a:visited {
   text-decoration: none;
   color: var(--TEXT-H);
 }
-.see-p img
+.see-p img{
+  width: 28px;
+  height: 28px;
+}
 .sp:hover .see-p {
   opacity: 1;
   transform: translateY(0);
