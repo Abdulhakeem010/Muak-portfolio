@@ -356,13 +356,15 @@ header.hidden {
   font-size: 50px;
   line-height: 60px;
   letter-spacing: -1px;
+  font-weight: 500;
   color: var(--TEXT-H);
   margin-bottom: 20px;
 }
 
 .paragraph {
   font-size: 18px;
-  line-height: 28.8px;
+  line-height: 29px;
+  font-weight: 400;
   color: var(--TEXT-P);
   margin-bottom: 50px;
 }
@@ -387,12 +389,14 @@ header.hidden {
 .sp-text h2 {
   font-size: 30px;
   line-height: 39px;
+  font-weight: 500;
   color: var(--TEXT-H);
   margin-bottom: 20px;
 }
 .sp-text p {
   font-size: 18px;
-  line-height: 28.8px;
+  line-height: 29px;
+  font-weight: 400;
   color: var(--TEXT-P);
 }
 /* END SELECTED PROJECT STYLING */
@@ -420,6 +424,7 @@ header.hidden {
 .fp-left h1 {
   font-size: 50px;
   line-height: 60px;
+  font-weight: 500;
   letter-spacing: -1px;
   color: #fff;
   margin-bottom: 20px;
@@ -427,6 +432,7 @@ header.hidden {
 .fp-left p {
   font-size: 18px;
   line-height: 27px;
+  font-weight: 400;
   color: #f3f3f2;
 }
 .fp-right {
@@ -436,6 +442,7 @@ header.hidden {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid red;
 }
 .fp-image {
   width: 100%;
