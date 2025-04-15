@@ -411,6 +411,7 @@ header.hidden {
   text-decoration: none;
   color: var(--TEXT-H);
 }
+.see-p img
 .sp:hover .see-p {
   opacity: 1;
   transform: translateY(0);
