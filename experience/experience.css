@@ -161,8 +161,8 @@ header.hidden {
 }
 
 .e-image {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   padding: 12px;
   aspect-ratio: 1/1; /*Mad Snippet*/
   border: 1px solid hsla(0, 0%, 80%, 0.8);
