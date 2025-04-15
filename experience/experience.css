@@ -178,14 +178,18 @@ border: 1px solid red;
   grid-template-columns: repeat(2, 1fr);
   margin-inline: 7%;
   margin-bottom: 100px;
-  gap: 20px;
+  gap: 30px;
 }
 
 .experience {
-  /* display: flex;
-  flex-direction: row; */
-  gap: 24px;
+  display: flex;
+  flex-direction: column;
   border: 1px solid red;
+}
+.e-image-text{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
 
 .e-image {
