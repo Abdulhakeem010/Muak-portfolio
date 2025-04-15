@@ -222,7 +222,6 @@ header.hidden {
   transition: all 0.3s ease-in-out;
 }
 .p-link a:hover {
-  text-decoration: underline;
   background-color: var(--TEXT-H);
   color:#e8e9ee;
 }
