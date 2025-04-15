@@ -50,11 +50,10 @@ header {
   border-bottom: 1px solid hsla(0, 0%, 80%, 0.5);
   transition: top 0.4s ease;
   z-index: 1000;
-
-  background: rgba(255, 255, 255, 0.1); /* transparent white */
-  backdrop-filter: blur(100px); /* main blur effect */
-  -webkit-backdrop-filter: blur(100px); /* for Safari support */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* soft shadow */
+  background: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(100px); 
+  -webkit-backdrop-filter: blur(100px); 
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
 }
 
 header.hidden {
