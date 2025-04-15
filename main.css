@@ -222,6 +222,7 @@ header.hidden {
   cursor: pointer;
   border-radius: 6px;
   border:  1px solid hsla(0, 0%, 80%, 0.532);
+  font-weight: 400;
 }
 
 .year-item:hover {
@@ -229,7 +230,6 @@ header.hidden {
 }
 .year-item.active {
   background-color: #61d26e;
-  font-weight: bold;
 }
 
 .graph-container {
