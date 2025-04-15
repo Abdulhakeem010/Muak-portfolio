@@ -213,6 +213,7 @@ border: 1px solid red;
   font-size: 20px;
   font-weight: 600;
   line-height: 28px;
+  color: var(--TEXT-P);
   /* margin-bottom: 5px; */
 }
 .p1{
@@ -220,8 +221,16 @@ border: 1px solid red;
   line-height: 24px;
   font-weight: 400;
   margin-bottom: 5px;
-
+  color: var(--TEXT-P);
 }
+.p2{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  /* margin-bottom: 5px; */
+  color: var(--TEXT-P);
+}
+
 
 /* FOOTER STYLING */
 .footer-top {
