@@ -239,6 +239,13 @@ border: 1px solid red;
   margin-bottom: 5px;
   color: var(--TEXT-P);
 }
+.p-link a:any-link, .p-link:visited{
+  text-decoration: none;
+  color: firebrick;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
 
 
 /* FOOTER STYLING */
