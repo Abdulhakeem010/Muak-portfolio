@@ -105,10 +105,6 @@ header.hidden {
   color: #828282;
 }
 
-/* .nav:active{
-  border-bottom: 2px solid black;
-} */
-
 .icon {
   border: 1px solid hsla(0, 0%, 80%, 0.8);
   border-radius: 8px;
@@ -148,6 +144,7 @@ header.hidden {
 }
 .hero-section h1 {
   font-size: 55px;
+  font-weight: 400;
   line-height: 66px;
   letter-spacing: -0.5px;
   color: #201d15;
