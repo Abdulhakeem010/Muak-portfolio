@@ -193,9 +193,9 @@ border: 1px solid red;
 }
 
 .e-image {
-  width: 80px; 
-  height: 80px; 
-  padding: 15px; 
+  width: 100px; 
+  height: 100px; 
+  padding: 12px; 
   border: 1px solid hsla(0, 0%, 80%, 0.8);
   border-radius: 10px;
   display: flex;
