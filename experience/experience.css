@@ -189,9 +189,9 @@ border: 1px solid red;
 }
 
 .e-image {
-  width: 100px; /* Set a fixed width */
-  height: 100px; /* Set a fixed height to maintain square shape */
-  padding: 10px; /* Add padding inside the container */
+  width: 100px; 
+  height: 100px; 
+  padding: 10px; 
   border: 1px solid hsla(0, 0%, 80%, 0.8);
   border-radius: 10px;
   display: flex;
