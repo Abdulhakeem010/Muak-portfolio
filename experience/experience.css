@@ -156,7 +156,6 @@ header.hidden {
 }
 
 .experience {
-  border: 1px solid red;
   display: flex;
   gap: 24px;
 }
