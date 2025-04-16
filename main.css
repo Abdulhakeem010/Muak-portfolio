@@ -414,11 +414,11 @@ header.hidden {
   font-size: 15px;
   line-height: 23px;
   font-weight: 600;
-  opacity: 0;
+  /* opacity: 0; */
   transform: translateY(10px);
   transition: opacity 0.4s ease, transform 0.4s ease;
   display: flex;
-  gap: 6px;
+ gap: 6px; 
   align-items: center;
 }
 
@@ -426,18 +426,20 @@ header.hidden {
 .see-p a:visited {
   text-decoration: none;
   color: var(--TEXT-H);
+  border: var(--BORDER);
 }
 
 .see-p-image {
   width: 28px;
   height: 28px;
+  border: var(--BORDER);
 }
 .sp:hover .see-p {
   opacity: 1;
   transform: translateY(0);
 }
 .sp:hover .sp-image {
-  transform: scale(1.15); /* zoom out slightly */
+  transform: scale(1.15); 
 }
 
 /* END SELECTED PROJECT STYLING */
