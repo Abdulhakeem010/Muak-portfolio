@@ -418,18 +418,17 @@ header.hidden {
   transform: translateY(10px);
   transition: opacity 0.4s ease, transform 0.4s ease;
   display: flex;
-  gap: 4px; 
+  gap: 4px;
   align-items: center;
   text-align: center;
-  height: 100%;
 }
 
-.see-p p{
+.see-p p {
   color: var(--TEXT-H);
   text-align: center;
   margin: 0;
 }
-.arrow-c{
+.arrow-c {
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -437,26 +436,27 @@ header.hidden {
 
 .see-p-image {
   width: 30px;
-  height: 100%; 
+  height: 100%;
 }
 .sp:hover .see-p {
   opacity: 1;
   transform: translateY(0);
 }
 .sp:hover .sp-image {
-  transform: scale(1.15); 
+  transform: scale(1.15);
 }
 
 /* END SELECTED PROJECT STYLING */
 
 /*FIRST PROJECT STYLING*/
-.first-project a{
+.first-project a:any-link,
+.first-project a:visited {
   width: 100%;
   display: flex;
   flex-direction: row;
   height: 500px;
   margin-bottom: 160px;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .fp-left {
