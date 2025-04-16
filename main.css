@@ -449,8 +449,8 @@ header.hidden {
 /* END SELECTED PROJECT STYLING */
 
 /*FIRST PROJECT STYLING*/
-.first-project a:any-link,
-.first-project a:visited {
+.first-project:any-link,
+.first-project:visited {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -481,6 +481,9 @@ header.hidden {
   line-height: 27px;
   font-weight: 400;
   color: #f3f3f2;
+}
+.fp-see{
+  color: #ebedf0;
 }
 .fp-right {
   width: 50%;
