@@ -429,11 +429,14 @@ header.hidden {
   text-align: center;
   border: 1px solid red;
 }
+.arrow-c{
+border: 1px solid red;
+}
 
 .see-p-image {
   width: 28px;
   height: 28px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .sp:hover .see-p {
   opacity: 1;
