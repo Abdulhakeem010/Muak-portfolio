@@ -378,7 +378,6 @@ header.hidden {
   height: fit-content;
 }
 .sp-image-d{
-border: 1px solid red;
 margin-bottom: 20px;
 overflow: hidden;   
 border-radius: 10px; 
