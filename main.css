@@ -342,7 +342,7 @@ header.hidden {
 }
 /* END HERO SECTION STYLING */
 
-/* SELECTED PROJECT STYLING */
+/* FEATURED PROJECT STYLING */
 .selected-project {
   display: flex;
   flex-direction: column;
@@ -446,8 +446,7 @@ header.hidden {
 .sp:hover .sp-image {
   transform: scale(1.15);
 }
-
-/* END SELECTED PROJECT STYLING */
+/* END FEATURED PROJECT STYLING */
 
 /*FIRST PROJECT STYLING*/
 .first-project a{
