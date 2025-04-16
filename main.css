@@ -376,6 +376,7 @@ header.hidden {
   display: flex;
   flex-direction: column;
   height: fit-content;
+  cursor: pointer;
 }
 .sp-image-d{
 margin-bottom: 20px;
@@ -432,7 +433,7 @@ border-radius: 10px;
   transform: translateY(0);
 }
 .sp:hover .sp-image {
-  transform: scale(1.2); /* zoom out slightly */
+  transform: scale(1.15); /* zoom out slightly */
 }
 
 /* END SELECTED PROJECT STYLING */
