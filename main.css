@@ -376,7 +376,6 @@ header.hidden {
   display: flex;
   flex-direction: column;
   height: fit-content;
-  cursor: pointer;
 }
 .p-link:any-link,
 .p-link:visited {
