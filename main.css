@@ -420,19 +420,20 @@ header.hidden {
   display: flex;
  gap: 6px; 
   align-items: center;
+  text-align: center;
+  border: 1px solid red;
 }
 
-.see-p a:any-link,
-.see-p a:visited {
-  text-decoration: none;
+.see-p p{
   color: var(--TEXT-H);
-  border: var(--BORDER);
+  text-align: center;
+  border: 1px solid red;
 }
 
 .see-p-image {
   width: 28px;
   height: 28px;
-  border: var(--BORDER);
+  border: 1px solid red;
 }
 .sp:hover .see-p {
   opacity: 1;
