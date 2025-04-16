@@ -418,7 +418,7 @@ header.hidden {
   transform: translateY(10px);
   transition: opacity 0.4s ease, transform 0.4s ease;
   display: flex;
- gap: 6px; 
+  gap: 4px; 
   align-items: center;
   text-align: center;
   border: 1px solid red;
@@ -439,7 +439,7 @@ header.hidden {
 .see-p-image {
   width: 28px;
   height: 28px;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 .sp:hover .see-p {
   opacity: 1;
