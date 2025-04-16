@@ -494,6 +494,11 @@ header.hidden {
   align-items: center;
   text-align: center;
 }
+.view-p p{
+  color: var(--ALT-BG);
+  text-align: center;
+  margin: 0;
+}
 
 .fp-right {
   width: 50%;
