@@ -154,7 +154,6 @@ header.hidden {
 }
 .hero-section p {
   /* font-size:clamp(14px,2.5vw,18px); */
-  /* line-height: 1.6; */
   font-size: 18px;
   line-height: 29px;
   font-weight: 400;
