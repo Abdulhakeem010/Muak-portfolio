@@ -738,6 +738,7 @@ header.hidden {
   .hero-section{
     padding-top: 125px;
     margin-bottom: 58px;
+    border-radius: 0px 0px 30px 30px;
   }
   .hero-section p{
     margin-bottom: 60px; 
