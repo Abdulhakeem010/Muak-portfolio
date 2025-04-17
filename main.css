@@ -816,7 +816,7 @@ header.hidden {
   }
 
   .footer-bottom {
-    padding-inline: 50px;
+    padding-inline: 20px;
   }
   
   .fb-top {
@@ -833,7 +833,6 @@ header.hidden {
   }
   
   .fb-left-links {
-    display: flex;
     flex-direction: row;
     gap: 50px;
     margin-bottom: 30px;
@@ -849,7 +848,7 @@ header.hidden {
 }
 
 @media screen and (max-width: 425px){
-  .hero-section P{
+  .hero-section p{
     margin-bottom: 35px;
   }
   .hero-socials{
@@ -864,5 +863,16 @@ header.hidden {
   }
   .footer-btn a{
     width: 100%;
+  }
+  .fb-left-links {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .fb-left-links a {
+    font-size: 16px;
+    line-height: 27px;
   }
 }
