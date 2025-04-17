@@ -862,5 +862,7 @@ header.hidden {
   .marquee-container {
     margin-bottom: 70px;
   }
-
+  .footer-btn a{
+    width: 100%;
+  }
 }
