@@ -17,7 +17,7 @@ window.addEventListener("scroll", function () {
 
 const username = "Abdulhakeem010";
 const years = [2025];
-const token = ""; 
+const token = ; 
 
 const yearList = document.getElementById("year-list");
 let activeYearButton = null;
