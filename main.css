@@ -798,5 +798,8 @@ header.hidden {
     padding-inline: 3%;
     padding-block: 50px 100px;
   }
+  .footer-btn a{
+    width: 100%;
+  }
 
 }
