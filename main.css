@@ -871,12 +871,12 @@ header.hidden {
   .fb-left-links {
     flex-direction: row;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 30px;
   }
   
   .fb-left-links a {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 27px;
   }
 }
@@ -888,4 +888,8 @@ header.hidden {
   .no-b{
     display: none;
   }
+  .fb-left-links {
+    gap: 20px;
+  }
+
 }
