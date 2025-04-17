@@ -473,7 +473,7 @@ header.hidden {
 
 .fp-left {
   width: 50%;
-  height: 500px;
+  /* height: 500px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -481,7 +481,7 @@ header.hidden {
   padding-inline: 7%;
 }
 .fp-left h1 {
-  font-size: 50px;
+  font-size: clamp(32px,3vw,50px);
   line-height: 60px;
   font-weight: 500;
   letter-spacing: -1px;
@@ -769,11 +769,84 @@ header.hidden {
   .no{
     display: none;
   }
+
   .first-project a{
-    width: 100%;
-    display: flex;
     flex-direction: column;
-    height: 500px;
+    /* height: 500px; */
     margin-bottom: 150px;
   }
+  .fp-left {
+    width: 100%;
+    /* height: 500px; */
+    flex-direction: column;
+  }
+  .fp-left h1 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 500;
+    letter-spacing: -1px;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .fp-left p {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    color: #f3f3f2;
+  }
+  .view-p {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 23px;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    text-align: center;
+  }
+  .view-p p{
+    color: var(--ALT-BG);
+    text-align: center;
+    margin: 0;
+  }
+  .view-image-c {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .view-p-image {
+    width: 30px;
+    height: 100%;
+  }
+  .first-project:hover .view-p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .first-project:hover .fp-image {
+    transform: scale(1.15);
+  }
+  
+  .fp-right {
+    width: 100%;
+    /* height: 500px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    order: -1;
+  }
+  .fp-image-container{
+    overflow: hidden;
+  }
+  .fp-image {
+    width: 100%;
+    height: 500px;
+    transition: transform 0.4s ease;
+    object-fit: cover;
+  }
+
 }
