@@ -192,6 +192,8 @@ header.hidden {
   align-items: flex-start;
   margin-bottom: 100px;
   width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
   height: fit-content;
   border: 1px solid hsla(0, 0%, 80%, 0.8);
   border-radius: 10px;
@@ -208,6 +210,10 @@ header.hidden {
   border: 1px solid red;
   margin-top: 1.5rem;
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .year-list {
@@ -234,9 +240,11 @@ header.hidden {
 }
 
 .graph-container {
-  padding: 1.5rem;
+  padding: 1rem;
   background: #f5f5f5;
   display: flex;
+  flex: 1;
+  min-width: 250px;
   flex-direction: column;
   border-radius: 10px;
 }
