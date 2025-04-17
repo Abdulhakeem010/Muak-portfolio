@@ -845,5 +845,10 @@ header.hidden {
   .fb-right {
     gap: 25px;
   }
+}
 
+@media screen and (max-width: 425px){
+  .hero-section P{
+    margin-bottom: 35px;
+  }
 }
