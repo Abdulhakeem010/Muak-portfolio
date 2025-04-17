@@ -769,4 +769,11 @@ header.hidden {
   .no{
     display: none;
   }
+  .first-project a{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    margin-bottom: 150px;
+  }
 }
