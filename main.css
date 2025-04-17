@@ -34,6 +34,7 @@ body {
   flex-direction: column;
   font-family: var(--FF);
   font-style: normal;
+  /* max-width: 100vw; */
 }
 
 /* HEADER STYLING */
