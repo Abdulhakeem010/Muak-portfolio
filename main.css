@@ -592,6 +592,7 @@ header.hidden {
   font-weight: 500;
   line-height: 17px;
   transition: all 0.3s ease-in-out;
+  text-align: center;
 }
 .footer-btn a:hover {
   background-color: white;
@@ -798,14 +799,16 @@ header.hidden {
     padding-inline: 3%;
     padding-block: 50px 100px;
   }
+  .footer-top p{
+    margin-bottom: 30px;
+  }
   .footer-btn a {
     width: 100%;
-    padding-block: 10px;
-    padding-inline: 50px;
+    padding-block: 15px;
+    padding-inline: 0px;
     border-radius: 10px;
     font-size: 16px;
     line-height: 19px;
-    transition: all 0.3s ease-in-out;
   }
 
 }
