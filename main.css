@@ -157,7 +157,10 @@ header.hidden {
   font-weight: 400;
   color: var(--TEXT-P);
   margin-bottom: 38px;
+  word-break: break-word;
+  overflow-wrap: break-word;
 }
+
 .hero-socials {
   display: flex;
   flex-direction: row;
