@@ -895,4 +895,7 @@ header.hidden {
   .sp-image {
     height: 250px;
   }
+  .first-project a{
+    height: 650px;
+  }
 }
