@@ -416,11 +416,12 @@ header.hidden {
   color: var(--TEXT-H);
   margin-bottom: 20px;
 }
-.sp-text p {
-  font-size:clamp(15px,2vw, 18px);
-  line-height: 1.3;
+.sp-text-p {
+  font-size:18px;
+  line-height: 29px;
   font-weight: 400;
   color: var(--TEXT-P);
+ 
 }
 .see-p {
   margin-top: 10px;
