@@ -856,4 +856,8 @@ header.hidden {
     justify-content: space-evenly;
     gap: 0;
   }
+  .cg{
+    margin-bottom: 70px;
+  }
+  
 }
