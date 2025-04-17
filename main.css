@@ -803,7 +803,7 @@ header.hidden {
     margin-bottom: 30px;
   }
   .footer-btn a {
-    width: 100%;
+    width: fit-content;
     padding-block: 15px;
     padding-inline: 0px;
     border-radius: 10px;
@@ -842,7 +842,7 @@ header.hidden {
   .fb-right {
   
     flex-direction: row;
-    gap: 50px;
+    gap: 20px;
   }
   .social-icons {
     display: flex;
