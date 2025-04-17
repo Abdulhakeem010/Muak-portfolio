@@ -561,9 +561,9 @@ header.hidden {
   padding-block: 100px;
 }
 .footer-top h1 {
-  font-size: 50px;
+  font-size: clamp(32px,4vw,50px);
   font-weight: 500;
-  line-height: 60px;
+  line-height: 1.2;
   letter-spacing: -1px;
   color: white;
   margin-bottom: 7px;
@@ -796,6 +796,9 @@ header.hidden {
   .footer-top{
     padding-left: 0;
     padding-inline: 3%;
+    padding-block: 0;
+    padding-top: 50px;
+    padding-bottom: 100px;
   }
 
 }
