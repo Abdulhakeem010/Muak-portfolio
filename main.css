@@ -757,4 +757,7 @@ header.hidden {
   .see-p{
     opacity: 1;
   }
+  .sp-text h2{
+    margin-bottom: 10px;
+  }
 }
