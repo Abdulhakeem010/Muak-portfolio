@@ -749,6 +749,9 @@ header.hidden {
   .paragraph{
     margin-bottom: 70px;
   }
+  .selected-project{
+    margin-bottom: 100px;
+  }
   .sp-image-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
