@@ -803,7 +803,7 @@ header.hidden {
     margin-bottom: 30px;
   }
   .footer-btn a {
-    width: fit-content;
+    width: 100%;
     padding-block: 15px;
     padding-inline: 0px;
     border-radius: 10px;
