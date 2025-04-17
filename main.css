@@ -165,6 +165,7 @@ header.hidden {
 .hero-socials {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   gap: 30px;
   margin-bottom: 60px;
 }
@@ -745,7 +746,6 @@ header.hidden {
   }
   .hero-socials{
     justify-content: center;
-    align-items: center;
     gap: 75px;
   }
   .marquee-container {
@@ -851,5 +851,9 @@ header.hidden {
 @media screen and (max-width: 425px){
   .hero-section P{
     margin-bottom: 35px;
+  }
+  .hero-socials{
+    justify-content: space-evenly;
+    gap: 0;
   }
 }
