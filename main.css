@@ -144,7 +144,7 @@ header.hidden {
   border-radius: 50%;
 }
 .hero-section h1 {
-  font-size: clamp(32px, 5vw, 55px);
+  font-size: clamp(32px, 4vw, 55px);
   font-weight: 400;
   line-height: 1.3;
   letter-spacing: -0.5px;
@@ -736,7 +736,7 @@ header.hidden {
   .hero-socials{
     justify-content: center;
     align-items: center;
-    gap: 80px;
+    gap: 75px;
   }
   
 }
