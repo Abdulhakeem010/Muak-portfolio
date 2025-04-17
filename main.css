@@ -816,12 +816,8 @@ header.hidden {
   }
   
   .fb-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 40px;
-    border-bottom: 1px solid hsla(0, 0%, 80%, 0.2);
+    flex-direction: column;
+    justify-content: center;
   }
   .fb-left {
     display: flex;
