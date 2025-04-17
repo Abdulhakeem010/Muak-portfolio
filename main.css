@@ -202,9 +202,9 @@ header.hidden {
   padding: 1.5rem;
 }
 .cg h2 {
-  font-size: 45px;
+  font-size:clamp(32px,4vw,50px);
   letter-spacing: -1px;
-  line-height: 60px;
+  line-height: 1.2;
   font-weight: 400;
 }
 
