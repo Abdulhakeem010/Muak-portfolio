@@ -247,6 +247,8 @@ header.hidden {
   min-width: 250px;
   flex-direction: column;
   border-radius: 10px;
+  width: fit-content;
+  border: 1px solid red;
 }
 
 #total-contributions {
