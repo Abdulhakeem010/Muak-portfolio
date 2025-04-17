@@ -796,9 +796,9 @@ header.hidden {
   .footer-top{
     padding-left: 0;
     padding-inline: 3%;
-    padding-block: 0;
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-block: 50px 100px;
+    /* padding-top: 50px;
+    padding-bottom: 100px; */
   }
 
 }
