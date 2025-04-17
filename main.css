@@ -780,13 +780,19 @@ header.hidden {
     height: 260px;
     flex-direction: column;
   }
+  .view-p{
+    opacity: 1;
+  }
   
   .fp-right {
     width: 100%;
-    height:500px ;
+    height:400px ;
     order: -1;
   }
-
+  .fp-image {
+    /* width: 100%; */
+    height: 400px;
+  }
 
 
 }
