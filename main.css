@@ -144,7 +144,7 @@ header.hidden {
   border-radius: 50%;
 }
 .hero-section h1 {
-  font-size:clamp(24px,6vh,55px) ;
+  font-size: clamp(32px, 5vw, 55px);
   font-weight: 400;
   line-height: 66px;
   letter-spacing: -0.5px;
@@ -152,8 +152,8 @@ header.hidden {
   margin-bottom: 45px;
 }
 .hero-section p {
-  font-size: 18px;
-  line-height: 28.8px;
+  font-size:clamp(14px,2.5vw,18px);
+  line-height: 29px;
   font-weight: 400;
   color: var(--TEXT-P);
   margin-bottom: 38px;
