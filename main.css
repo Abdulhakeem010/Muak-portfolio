@@ -745,5 +745,13 @@ header.hidden {
   .marquee-container {
     margin-bottom: 100px;
   }
- 
+  .paragraph{
+    margin-bottom: 70px;
+  }
+  .sp-image-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+  }
+  
 }
