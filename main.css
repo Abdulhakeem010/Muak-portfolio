@@ -765,6 +765,7 @@ header.hidden {
     grid-template-columns: repeat(1, 1fr);
     gap: 50px;
   }
+  
   .see-p{
     opacity: 1;
   }
@@ -860,6 +861,9 @@ header.hidden {
   }
   .marquee-container {
     margin-bottom: 70px;
+  }
+  .sp-image {
+    height: 300px;
   }
   .footer-btn a{
     width: 100%;
