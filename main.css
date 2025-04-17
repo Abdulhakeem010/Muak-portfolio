@@ -700,13 +700,6 @@ header.hidden {
   .cg{
     width: 100%;
   }
-  .container{
-     width: 100%;
-     border: 1px solid red;
-  }
-  .graph-container{
-    border: 1px solid red;
-  }
   .year-list{
     display: none;
   }
