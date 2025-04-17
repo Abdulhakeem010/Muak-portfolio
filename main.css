@@ -756,6 +756,9 @@ header.hidden {
     justify-content: center;
     gap: 75px;
   }
+  .cg{
+   margin-inline: 5%;
+  }
   .marquee-container {
     margin-bottom: 100px;
   }
