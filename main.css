@@ -848,9 +848,6 @@ header.hidden {
 }
 
 @media screen and (max-width: 425px){
-  .hero-section p{
-    margin-bottom: 35px;
-  }
   .hero-socials{
     justify-content: space-evenly;
     gap: 0;
@@ -874,5 +871,12 @@ header.hidden {
   .fb-left-links a {
     font-size: 16px;
     line-height: 27px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .hero-socials{
+    justify-content: space-between;
+    
   }
 }
