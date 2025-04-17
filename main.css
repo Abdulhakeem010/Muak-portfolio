@@ -758,6 +758,12 @@ header.hidden {
     opacity: 1;
   }
   .sp-text h2{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+  }
+  .see-p {
+    margin-top: 0px;
+  }
+  .no{
+    display: none;
   }
 }
