@@ -738,5 +738,9 @@ header.hidden {
     align-items: center;
     gap: 75px;
   }
+  .marquee-container{
+    overflow: visible;
+    margin-bottom: 100px;
+  }
   
 }
