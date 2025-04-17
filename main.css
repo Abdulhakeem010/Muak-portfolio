@@ -740,11 +740,20 @@ header.hidden {
     padding-top: 125px;
     margin-bottom: 58px;
     border-radius: 0px 0px 30px 30px;
+    padding-inline: 0;
+  }
+  .hero-image-container{
+    margin-inline: 5%;
+  }
+  .hero-section h1{
+    margin-inline: 5%;
   }
   .hero-section p{
     margin-bottom: 60px; 
+    margin-inline: 5%;
   }
   .hero-socials{
+    margin-inline: 5%;
     justify-content: center;
     gap: 75px;
   }
