@@ -47,14 +47,14 @@ header {
   display: flex;
   align-items: center;
   padding-block: 30px;
-  padding-inline: 50px;
+  padding-inline: 5%;
   border-bottom: 1px solid hsla(0, 0%, 80%, 0.5);
   transition: top 0.4s ease;
   z-index: 1000;
   background: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(100px);
   -webkit-backdrop-filter: blur(100px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); */
 }
 
 header.hidden {
@@ -734,6 +734,7 @@ header.hidden {
 
 @media screen and (max-width: 768px) {
   .hero-section{
+    padding-top: 125px;
     margin-bottom: 58px;
   }
   .hero-section p{
