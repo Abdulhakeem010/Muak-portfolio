@@ -776,12 +776,20 @@ header.hidden {
   }
 
   .header-navs {
-    display: none;
-    /* ...rest from earlier */
+    position: fixed;
+    /* top: 90px; */
+    right: -100%;
+    width: fit-content;
+    flex-direction: row;
+    padding: 2rem;
+    gap: 1.5rem;
+    /* box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1); */
+    transition: right 0.3s ease;
+    z-index: 999;
   }
 
   .header-navs.active {
-    display: flex;
+    right: 0;
   }
 
   .hero-section{
