@@ -907,7 +907,15 @@ header.hidden {
 }
 
 @media screen and (max-width: 425px){
+  .header-navs{
+    flex-direction: column;
+    top: 0px;
+    right: 0;
+  }
 
+  .header-navs.active {
+    top: 90;
+  }
   
   .hero-socials{
     justify-content: space-evenly;
