@@ -777,12 +777,12 @@ header.hidden {
 
   .header-navs {
     position: fixed;
-    right: -100%;
+    right: -70%;
     width: fit-content;
     flex-direction: row;
     padding: 6rem;
     gap: 1.5rem;
-    transition: right 0.3s ease;
+    transition: right 1s ease-in-out;
     z-index: 999;
   }
 
