@@ -489,7 +489,7 @@ header.hidden {
   margin-bottom: 20px;
 }
 .fp-left-p {
-  font-size: 18px;
+  font-size: clamp(16px,3vw,18px);
   line-height: 27px;
   font-weight: 400;
   color: #f3f3f2;
