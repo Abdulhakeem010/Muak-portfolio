@@ -798,7 +798,7 @@ header.hidden {
     position: fixed;
     right: -70%;
     top: 0;
-    height: 100%;
+    /* height: 100%; */
     width: fit-content;
     flex-direction: row;
     padding: 6rem;
