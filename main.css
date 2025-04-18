@@ -66,6 +66,9 @@ header.hidden {
   justify-content: space-between;
   align-items: center;
 }
+.menu-button{
+  border: 1px solid red;
+}
 
 .header-left {
   display: flex;
