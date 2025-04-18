@@ -135,12 +135,12 @@ header.hidden {
 /* Active (turned into "X") */
 .menu-toggle.active span:first-child {
   transform: rotate(45deg) translate(4px, 4px);
-  width: 26px;
+  width: 24px;
 }
 
 .menu-toggle.active span:last-child {
   transform: rotate(-45deg) translate(3px, -3px);
-  width: 26px;
+  width: 24px;
 }
 
 
