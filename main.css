@@ -93,21 +93,6 @@ header.hidden {
   gap: 25px;
 }
 
-.header-navs {
-  position: fixed;
-  top: -100%;
-  left: 0;
-  width: 100%;
-  flex-direction: column;
-  align-items: center;
-  padding: 4rem 1rem;
-  gap: 1.5rem;
-  background-color: white; /* or your desired bg */
-  transition: top 0.5s ease-in-out;
-  z-index: 999;
-}
-/* rough*/
-
 .nav {
   text-decoration: none;
   color: hsla(0, 0%, 0%, 0.9);
@@ -923,7 +908,7 @@ header.hidden {
 }
 
 @media screen and (max-width: 425px){
-  .header-navs {
+  /* .header-navs {
     position: fixed;
     right: 0%;
     width: 100%;
@@ -941,7 +926,7 @@ header.hidden {
   .header-navs.active {
     right: 0;
     top: 0px;
-  }
+  } */
   
   .hero-socials{
     justify-content: space-evenly;
