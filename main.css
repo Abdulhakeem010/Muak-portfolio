@@ -907,14 +907,19 @@ header.hidden {
 }
 
 @media screen and (max-width: 425px){
-  .header-navs{
+  .header-navs {
+    position: fixed;
+    right: 0%;
+    width: fit-content;
     flex-direction: column;
-    top: 0px;
-    right: 0;
+    padding: 6rem;
+    gap: 1.5rem;
+    transition: right 1s ease-in-out;
+    z-index: 999;
   }
 
   .header-navs.active {
-    top: 90;
+    top: 0;
   }
   
   .hero-socials{
