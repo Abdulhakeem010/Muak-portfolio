@@ -780,7 +780,7 @@ header.hidden {
     right: -100%;
     width: fit-content;
     flex-direction: row;
-    padding: 2rem;
+    padding: 6rem;
     gap: 1.5rem;
     transition: right 0.3s ease;
     z-index: 999;
