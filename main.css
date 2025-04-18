@@ -863,6 +863,9 @@ header.hidden {
   .sp-image {
     height: 300px;
   }
+  .view-p{
+    margin-top: 0;
+  }
   .footer-btn a{
     width: 100%;
   }
