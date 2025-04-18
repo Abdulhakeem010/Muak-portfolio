@@ -488,7 +488,7 @@ header.hidden {
   color: #fff;
   margin-bottom: 20px;
 }
-.fp-left p {
+.fp-left-p {
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
@@ -736,7 +736,7 @@ header.hidden {
   .hero-section{
     padding-top: 125px;
     margin-bottom: 58px;
-    border-radius: 0px 0px 30px 30px;
+    border-radius: 0px 0px 0px 0px;
     padding-inline: 0;
   }
   .pad{
