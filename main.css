@@ -898,13 +898,8 @@ header.hidden {
   .first-project a{
     height: 650px;
   }
-  .fb-left-links {
-    gap: 30px;
-    margin-bottom: 30px;
-  }
   
   .fb-left-links a {
-    font-size: 14px;
-    line-height: 27px;
-  
+    font-size: 12px;
+  }
 }
