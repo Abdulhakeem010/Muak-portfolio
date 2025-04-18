@@ -126,3 +126,11 @@ const lastYearBtn = yearList.lastChild;
 setActiveYearButton(lastYearBtn);
 fetchAndRender(years[years.length - 1]);
 
+
+const menuToggle = document.getElementById('menu-toggle');
+const navs = document.querySelector('.header-navs');
+
+menuToggle.addEventListener('click', () => {
+  navs.classList.toggle('active');
+  menuToggle.classList.toggle('active');
+});
