@@ -124,11 +124,11 @@ header.hidden {
 
 /* First line longer than second */
 .menu-toggle span:first-child {
-  width: 24px;
+  width: 28px;
 }
 
 .menu-toggle span:last-child {
-  width: 16px;
+  width: 18px;
   align-self: flex-end;
 }
 
