@@ -1,14 +1,12 @@
-let lastScrollTop = 0; 
+let lastScrollTop = 0;
 const header = document.getElementById("header");
 
 window.addEventListener("scroll", function () {
-  let currentScroll = window.scrollY || document.documentElement.scrollTop; 
+  let currentScroll = window.scrollY || document.documentElement.scrollTop;
 
   if (currentScroll > lastScrollTop) {
-  
     header.classList.add("hidden");
   } else {
-  
     header.classList.remove("hidden");
   }
 
@@ -17,7 +15,7 @@ window.addEventListener("scroll", function () {
 
 const username = "Abdulhakeem010";
 const years = [2025];
-const token = ""; 
+const token = "";
 
 const yearList = document.getElementById("year-list");
 let activeYearButton = null;
@@ -126,21 +124,20 @@ const lastYearBtn = yearList.lastChild;
 setActiveYearButton(lastYearBtn);
 fetchAndRender(years[years.length - 1]);
 
-
-const menuToggle = document.getElementById('menu-toggle');
-const navs = document.querySelector('.header-navs');
-const navLinks = document.querySelectorAll('.header-navs .nav');
+const menuToggle = document.getElementById("menu-toggle");
+const navs = document.querySelector(".header-navs");
+const navLinks = document.querySelectorAll(".nav");
 
 // Toggle menu icon and nav
-menuToggle.addEventListener('click', () => {
-  navs.classList.toggle('active');
-  menuToggle.classList.toggle('active');
+menuToggle.addEventListener("click", () => {
+  navs.classList.toggle("active");
+  menuToggle.classList.toggle("active");
 });
 
 // Auto-close nav when a link is clicked
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    navs.classList.remove('active');
-    menuToggle.classList.remove('active');
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    navs.classList.remove("active");
+    menuToggle.classList.remove("active");
   });
 });
