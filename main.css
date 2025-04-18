@@ -790,8 +790,28 @@ header.hidden {
   .header-navs.active {
     right: 0;
   } */
+  .menu-toggle {
+    display: flex;
+  }
 
-  
+  .header-navs {
+    position: fixed;
+    right: -70%;
+    top: 0;
+    height: 100%;
+    width: fit-content;
+    flex-direction: row;
+    padding: 6rem;
+    gap: 1.5rem;
+    background: white;
+    transition: right 1s ease-in-out;
+    z-index: 999;
+  }
+
+  .header-navs.active {
+    right: 0;
+  }
+
 
   .hero-section{
     padding-top: 125px;
