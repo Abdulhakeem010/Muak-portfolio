@@ -772,7 +772,7 @@ header.hidden {
 }
 
 @media screen and (max-width: 768px) {
-  .menu-toggle {
+  /* .menu-toggle {
     display: flex;
   }
 
@@ -789,7 +789,9 @@ header.hidden {
 
   .header-navs.active {
     right: 0;
-  }
+  } */
+
+  
 
   .hero-section{
     padding-top: 125px;
