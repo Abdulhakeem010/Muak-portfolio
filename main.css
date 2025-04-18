@@ -907,6 +907,8 @@ header.hidden {
 }
 
 @media screen and (max-width: 425px){
+
+  
   .hero-socials{
     justify-content: space-evenly;
     gap: 0;
