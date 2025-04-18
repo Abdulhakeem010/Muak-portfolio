@@ -92,6 +92,22 @@ header.hidden {
   justify-content: flex-end;
   gap: 25px;
 }
+
+.header-navs {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+  gap: 1.5rem;
+  background-color: white; /* or your desired bg */
+  transition: top 0.5s ease-in-out;
+  z-index: 999;
+}
+/* rough*/
+
 .nav {
   text-decoration: none;
   color: hsla(0, 0%, 0%, 0.9);
