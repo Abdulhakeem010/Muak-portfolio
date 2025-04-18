@@ -129,8 +129,18 @@ fetchAndRender(years[years.length - 1]);
 
 const menuToggle = document.getElementById('menu-toggle');
 const navs = document.querySelector('.header-navs');
+const navLinks = document.querySelectorAll('.header-navs .nav');
 
+// Toggle menu icon and nav
 menuToggle.addEventListener('click', () => {
   navs.classList.toggle('active');
   menuToggle.classList.toggle('active');
+});
+
+// Auto-close nav when a link is clicked
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    navs.classList.remove('active');
+    menuToggle.classList.remove('active');
+  });
 });
