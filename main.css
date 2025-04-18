@@ -109,7 +109,7 @@ header.hidden {
   display: none;
   flex-direction: column;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
   cursor: pointer;
   z-index: 1002; 
 }
