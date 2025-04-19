@@ -522,6 +522,15 @@ header.hidden {
 }
 
 @media screen and (max-width:425px) {
+  .who-i-am{
+    padding-bottom: 60px;
+    border-radius: 0 0 30px 30px;
+  }
+  .who-i-am h1{
+    margin-bottom: 40px;
+  }
+
+
   .footer-btn{
     display: flex;
     justify-content: center;
