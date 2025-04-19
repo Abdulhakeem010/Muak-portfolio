@@ -438,6 +438,10 @@ header.hidden {
     display: flex;
     right: 0;
   }
+  .who-i-am{
+    padding-top: 140px;
+  }
+
 
   .footer-top {
     padding-left: 0;
