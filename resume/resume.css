@@ -384,6 +384,13 @@ header.hidden {
 
 
 @media screen and (max-width: 1024px){
+  .intro{
+    padding-inline: 5%;
+    margin-bottom: 60px;
+  }
+  .content{
+    padding-inline: 8%;
+  }
   .footer-top {
     padding-left: 50px;
   }
