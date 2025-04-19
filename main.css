@@ -872,14 +872,17 @@ header.hidden {
   .footer-top p {
     margin-bottom: 30px;
   }
+  /* .footer-btn{
+    width: ;
+  }
   .footer-btn a {
-    width: 50%;
+    width: 100%;
     padding-block: 15px;
     padding-inline: 0px;
     border-radius: 10px;
     font-size: 16px;
     line-height: 19px;
-  }
+  } */
 
   .footer-bottom {
     padding-inline: 20px;
@@ -950,8 +953,19 @@ header.hidden {
   .view-p {
     margin-top: 0;
   }
+  .footer-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+
   .footer-btn a {
-    width: 100%;
+    padding-block: 12px;
+    padding-inline: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 19px;
   }
   .fb-left-links {
     flex-direction: row;
