@@ -444,40 +444,24 @@ header.hidden {
   .who-i-am h1{
     margin-bottom: 70px;
   }
+
   .wia-content {
-    display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 40px;
-    height: 300px;
+    height: fit-content;
   }
   .wia-image {
-    border-radius: 15px;
-    width: calc(50% - 20px);
+    width: 100%;
     height: 300px;
   }
   
   .wia-image img {
-    border-radius:15px ;
     width: 100%;
     height: 100%;
   }
   .wia-text {
-    width: calc(50% - 20px);
+    width: 100%;
   }
-  .wia-text h3 {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 33.6px;
-    margin-bottom: 30px;
-    color: var(--TEXT-H);
-  }
-  .wia-text p {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 28.8px;
-    color: var(--TEXT-P);
-  }
-
 
   .footer-top {
     padding-left: 0;
