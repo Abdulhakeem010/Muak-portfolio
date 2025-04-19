@@ -449,6 +449,9 @@ header.hidden {
   .projects-container {
     margin-bottom: 100px;
   }
+  .pc-p{
+    margin-bottom: 50px;
+  }
   
   .sp-image-container {
     display: grid;
@@ -508,6 +511,9 @@ header.hidden {
 }
 
 @media screen and (max-width: 425px) {
+  .projects-container{
+    padding-top: 140px;
+  }
   .sp-image {
     height: 300px;
   }
@@ -540,6 +546,9 @@ header.hidden {
 }
 
 @media screen and (max-width: 375px) {
+  .projects-container{
+    padding-top: 130px;
+  }
   .fb-left-links {
     gap: 20px;
   }
