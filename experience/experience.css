@@ -415,7 +415,15 @@ header.hidden {
 }
 
 @media screen and (max-width: 1024px){
-  
+  .footer-top {
+    padding-left: 50px;
+  }
+  .fb-left {
+    gap: 40px;
+  }
+  .fb-left-links {
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 768px){
