@@ -733,7 +733,7 @@ header.hidden {
 
 /* Responsiveness*/
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1024px) {
   .hero-section {
     padding-top: 150px;
     padding-inline: 5%;
@@ -753,6 +753,9 @@ header.hidden {
   }
   .selected-project {
     padding-inline: 5%;
+  }
+  .no{
+    display: none;
   }
   .footer-top {
     padding-left: 50px;
