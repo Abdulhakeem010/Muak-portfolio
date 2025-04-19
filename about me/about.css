@@ -559,12 +559,20 @@ header.hidden {
 }
 
 @media screen and (max-width:375px) {
+  .wia-image {
+    height: 250px;
+  }
+
   .fb-left-links {
     gap: 20px;
   }
 }
 
 @media screen and (max-width:320px) {
+  .wia-image {
+    height: 220px;
+  }
+
   .fb-left-links a {
     font-size: 12px;
   }
