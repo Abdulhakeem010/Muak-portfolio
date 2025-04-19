@@ -508,6 +508,10 @@ header.hidden {
 }
 
 @media screen and (max-width: 425px) {
+  .sp-image {
+    height: 300px;
+  }
+
   .footer-btn{
     display: flex;
     justify-content: center;
