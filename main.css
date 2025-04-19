@@ -790,15 +790,8 @@ header.hidden {
 
   .header-navs.active {
     display: flex;
-    /* right: 100px; */
+    right: 0;
   }
-  /* .menu-toggle {
-    display: flex;
-  }
-  .header-navs{
-    border: 1px solid red;
-    display: none;
-  } */
 
 
   .hero-section {
