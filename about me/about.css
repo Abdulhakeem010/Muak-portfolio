@@ -406,6 +406,9 @@ header.hidden {
     padding-bottom: 100px;
     margin-bottom: 60px;
   }
+  .interest{
+    padding-inline: 5%;
+  }
   .footer-top {
     padding-left: 50px;
   }
