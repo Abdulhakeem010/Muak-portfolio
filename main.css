@@ -897,7 +897,7 @@ header.hidden {
 
   .fb-left-links {
     flex-direction: row;
-    gap: 50px;
+    gap: 40px;
     margin-bottom: 30px;
   }
 
