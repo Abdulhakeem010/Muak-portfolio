@@ -771,16 +771,16 @@ header.hidden {
   }
 
   .nav-wrapper {
-    width: max-content;
+    /* width: max-content;
     position: relative;
     overflow-x: scroll;
     border: 1px solid red;
-    display: flex;
+    display: flex; */
   }
 
   .header-navs {
     display: none;
-    right: -70%;
+    /* right: -70%; */
     flex-direction: row;
     gap: 1.5rem;
     transition: right 1s ease-in-out;
@@ -790,7 +790,7 @@ header.hidden {
 
   .header-navs.active {
     display: flex;
-    right: 100px;
+    /* right: 100px; */
   }
   /* .menu-toggle {
     display: flex;
