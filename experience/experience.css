@@ -536,6 +536,7 @@ header.hidden {
 }
 
 @media screen and (max-width: 320px){
+  
   .fb-left-links a {
     font-size: 12px;
   }
