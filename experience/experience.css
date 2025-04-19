@@ -170,9 +170,9 @@ header.hidden {
   margin-bottom: 100px;
 }
 .intro h1 {
-  font-size: 50px;
+  font-size:clamp(40px,4.4vw,55px);
   font-weight: 400;
-  line-height: 66px;
+  line-height: 1.2;
   letter-spacing: -0.5px;
   color: #201d15;
   margin-bottom: 25px;
@@ -415,6 +415,9 @@ header.hidden {
 }
 
 @media screen and (max-width: 1024px){
+  .no-b{
+    display: none;
+  }
   .footer-top {
     padding-left: 50px;
   }
