@@ -399,6 +399,7 @@ li::before {
   }
   .content{
     padding-inline: 8%;
+    margin-bottom: 50px;
   }
   .footer-top {
     padding-left: 50px;
@@ -424,11 +425,18 @@ li::before {
     z-index: 999;
     border: 1px solid blue;
   }
-
   .header-navs.active {
     display: flex;
     right: 0;
   }
+  .intro{
+    padding-top: 140px;
+    border-radius: 0 0 30px 30px;
+  }
+  .content{
+    margin-bottom: 40px;
+  }
+
 
   .footer-top {
     padding-left: 0;
@@ -471,6 +479,10 @@ li::before {
   }
 }
 @media screen and (max-width: 425px){
+  .content{
+    margin-bottom: 40px;
+  }
+
   .footer-btn{
     display: flex;
     justify-content: center;
