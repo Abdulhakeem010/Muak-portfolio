@@ -446,6 +446,26 @@ header.hidden {
     right: 0;
   }
 
+  .projects-container {
+    margin-bottom: 100px;
+  }
+  
+  .sp-image-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 50px;
+  }
+
+  .see-p {
+    opacity: 1;
+  }
+  .sp-text h2 {
+    margin-bottom: 5px;
+  }
+  .see-p {
+    margin-top: 0px;
+  }
+
   .footer-top {
     padding-left: 0;
     padding-inline: 5%;
