@@ -186,8 +186,7 @@ header.hidden {
 .sp-image-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 60px;
-  row-gap: 90px;
+  gap: 60px;
 }
 
 .sp {
@@ -413,6 +412,10 @@ header.hidden {
 }
 
 @media screen and (max-width: 1024px) {
+  .projects-container {
+    padding-inline: 5%;
+  }
+
   .footer-top {
     padding-left: 50px;
   }
