@@ -220,7 +220,7 @@ header.hidden {
 .interest-h{
   font-size:clamp(32px,4.4vw,50px);
   font-weight: 500;
-  line-height: 60px;
+  line-height: 1.2;
   letter-spacing: -1px;
   color: var(--TEXT-H);
   margin-bottom: 25px;
