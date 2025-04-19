@@ -766,13 +766,13 @@ header.hidden {
 }
 
 @media screen and (max-width: 768px) {
-  .menu-toggle {
+  /* .menu-toggle {
     display: flex;
   }
 
   .nav-wrapper {
     width: max-content;
-    position: absolute;
+    position: relative;
     overflow-x: scroll;
     border: 1px solid red;
     display: flex;
@@ -780,18 +780,19 @@ header.hidden {
 
   .header-navs {
     display: flex;
-    /* right: -70%; */
+    right: -70%;
     flex-direction: row;
     gap: 1.5rem;
     transition: right 1s ease-in-out;
     z-index: 999;
     border: 1px solid blue;
-    position: relative;
   }
 
   .header-navs.active {
     right: 100px;
-  }
+  } */
+
+  
 
   .hero-section {
     padding-top: 125px;
