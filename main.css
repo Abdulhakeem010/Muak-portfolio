@@ -483,7 +483,6 @@ header.hidden {
   justify-content: center;
   align-items: center;
 }
-
 .see-p-image {
   width: 30px;
   height: 100%;
@@ -773,7 +772,7 @@ header.hidden {
 
   .nav-wrapper {
     width: max-content;
-    position: relative;
+    position: absolute;
     overflow-x: scroll;
     border: 1px solid red;
     display: flex;
@@ -787,6 +786,7 @@ header.hidden {
     transition: right 1s ease-in-out;
     z-index: 999;
     border: 1px solid blue;
+    position: relative;
   }
 
   .header-navs.active {
