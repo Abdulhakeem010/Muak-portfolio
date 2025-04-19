@@ -220,7 +220,8 @@ header.hidden {
   margin-bottom: 25px;
 }
 .content ul {
-  list-style-position: inside;
+  list-style: none;
+  /* list-style-position: inside; */
   margin-bottom: 48px;
   font-size: 18px;
   font-weight: 400;
@@ -228,7 +229,15 @@ header.hidden {
   color: var(--TEXT-P);
 }
 .content li{
+  position: relative;
+  padding-left: 1.2em;
   margin-bottom: 5px;
+}
+li::before {
+  content: "•"; 
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 .styled-text{
   font-weight: 700;
