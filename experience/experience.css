@@ -190,9 +190,9 @@ header.hidden {
 .experiences-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-inline: 7%;
+  margin-inline: 5%;
   margin-bottom: 150px;
-  column-gap: 30px;
+  column-gap: 50px;
   row-gap: 100px;
 }
 
