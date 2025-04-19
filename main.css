@@ -766,7 +766,7 @@ header.hidden {
 }
 
 @media screen and (max-width: 768px) {
-  /* .menu-toggle {
+  .menu-toggle {
     display: flex;
   }
 
@@ -779,7 +779,7 @@ header.hidden {
   }
 
   .header-navs {
-    display: flex;
+    display: none;
     right: -70%;
     flex-direction: row;
     gap: 1.5rem;
@@ -789,16 +789,16 @@ header.hidden {
   }
 
   .header-navs.active {
-    right: 100px;
-  } */
-  .menu-toggle {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 8px;
-    cursor: pointer;
-    z-index: 1002;
+    right: 100px;
   }
+  /* .menu-toggle {
+    display: flex;
+  }
+  .header-navs{
+    border: 1px solid red;
+    display: none;
+  } */
 
 
   .hero-section {
