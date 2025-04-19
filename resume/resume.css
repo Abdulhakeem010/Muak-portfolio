@@ -433,6 +433,9 @@ li::before {
     padding-top: 140px;
     border-radius: 0 0 30px 30px;
   }
+  .intro-btn{
+    margin-bottom: 70px;
+  }
   .content{
     margin-bottom: 40px;
   }
@@ -479,6 +482,9 @@ li::before {
   }
 }
 @media screen and (max-width: 425px){
+  .intro-btn{
+    margin-bottom: 60px;
+  }
   .content{
     margin-bottom: 40px;
   }
@@ -511,6 +517,7 @@ li::before {
 }
 
 @media screen and (max-width: 375px){
+
   .fb-left-links {
     gap: 20px;
   }
