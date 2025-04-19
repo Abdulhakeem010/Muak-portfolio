@@ -499,6 +499,9 @@ header.hidden {
 }
 
 @media screen and (max-width: 425px){
+  .experiences-container{
+    margin-bottom: 120px;
+  }
   .footer-btn{
     display: flex;
     justify-content: center;
