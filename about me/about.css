@@ -262,9 +262,9 @@ header.hidden {
   padding-block: 100px;
 }
 .footer-top h1 {
-  font-size: 50px;
+  font-size: clamp(32px, 4vw, 50px);
   font-weight: 500;
-  line-height: 60px;
+  line-height: 1.2;
   letter-spacing: -1px;
   color: white;
   margin-bottom: 7px;
@@ -296,6 +296,7 @@ header.hidden {
   font-weight: 500;
   line-height: 17px;
   transition: all 0.3s ease-in-out;
+  text-align: center;
 }
 .footer-btn a:hover {
   background-color: white;
@@ -437,14 +438,6 @@ header.hidden {
   }
   .footer-top p {
     margin-bottom: 30px;
-  }
-  .footer-btn a {
-    width: 50%;
-    padding-block: 15px;
-    padding-inline: 0px;
-    border-radius: 10px;
-    font-size: 16px;
-    line-height: 19px;
   }
 
   .footer-bottom {

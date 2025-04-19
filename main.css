@@ -872,17 +872,6 @@ header.hidden {
   .footer-top p {
     margin-bottom: 30px;
   }
-  /* .footer-btn{
-    width: ;
-  }
-  .footer-btn a {
-    width: 100%;
-    padding-block: 15px;
-    padding-inline: 0px;
-    border-radius: 10px;
-    font-size: 16px;
-    line-height: 19px;
-  } */
 
   .footer-bottom {
     padding-inline: 20px;
@@ -957,7 +946,7 @@ header.hidden {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 100%;
   }
 
   .footer-btn a {
