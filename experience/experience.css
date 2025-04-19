@@ -487,13 +487,41 @@ header.hidden {
 }
 
 @media screen and (max-width: 425px){
-  
+  .footer-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer-btn a {
+    padding-block: 12px;
+    padding-inline: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .fb-left-links {
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+  .fb-left-links a {
+    font-size: 14px;
+    line-height: 27px;
+  }
 }
 
 @media screen and (max-width: 375px){
-  
+  .fb-left-links {
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 320px){
-  
+  .fb-left-links a {
+    font-size: 12px;
+  }
 }
