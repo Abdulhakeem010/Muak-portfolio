@@ -426,4 +426,52 @@ header.hidden {
     display: flex;
     right: 0;
   }
+
+  .footer-top {
+    padding-left: 0;
+    padding-inline: 5%;
+    padding-block: 50px 100px;
+  }
+  .footer-top p {
+    margin-bottom: 30px;
+  }
+  .footer-btn a {
+    width: 50%;
+    padding-block: 15px;
+    padding-inline: 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .footer-bottom {
+    padding-inline: 20px;
+  }
+
+  .fb-top {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .fb-left {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .fb-left-logo a {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .fb-left-links {
+    flex-direction: row;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+
+  .fb-left-links a {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .fb-right {
+    gap: 25px;
+  }
 }
