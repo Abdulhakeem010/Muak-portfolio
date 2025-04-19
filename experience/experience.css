@@ -502,6 +502,9 @@ header.hidden {
   .experiences-container{
     margin-bottom: 120px;
   }
+  .experience{
+    gap: 20px;
+  }
   .footer-btn{
     display: flex;
     justify-content: center;
