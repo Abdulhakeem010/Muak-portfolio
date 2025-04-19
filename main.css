@@ -837,9 +837,6 @@ header.hidden {
   .see-p {
     margin-top: 0px;
   }
-  .no {
-    display: none;
-  }
 
   .first-project a {
     flex-direction: column;

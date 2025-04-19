@@ -399,3 +399,23 @@ header.hidden {
 @media screen and (max-width:1024px) {
   
 }
+
+@media screen and (max-width:768px) {
+  .menu-toggle {
+    display: flex;
+  }
+  .header-navs {
+    display: none;
+    /* right: -70%; */
+    flex-direction: row;
+    gap: 1.5rem;
+    transition: right 1s ease-in-out;
+    z-index: 999;
+    border: 1px solid blue;
+  }
+
+  .header-navs.active {
+    display: flex;
+    right: 0;
+  }
+}
