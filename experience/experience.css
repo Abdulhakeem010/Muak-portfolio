@@ -454,8 +454,6 @@ header.hidden {
   }
   .experiences-container {
     grid-template-columns: repeat(1, 1fr);
-    margin-bottom: 150px;
-    column-gap: 50px;
     row-gap: 70px;
   }
 
