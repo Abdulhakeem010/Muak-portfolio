@@ -469,6 +469,9 @@ header.hidden {
   .interest-p{
     width: 100%;
   }
+  .no-b{
+    display: none;
+  }
 
   .footer-top {
     padding-left: 0;
