@@ -165,8 +165,8 @@ header.hidden {
   flex-direction: column;
   background-color: var(--ALT-BG);
   border-radius: 0 0 60px 60px;
-  padding-inline: 7%;
   padding-bottom: 90px;
+  padding-inline: 7%;
   margin-bottom: 100px;
 }
 .intro h1 {
@@ -446,6 +446,11 @@ header.hidden {
   .header-navs.active {
     display: flex;
     right: 0;
+  }
+  .intro{
+    padding-top: 140px;
+    border-radius: 0 0 30px 30px;
+   padding-bottom: 60px;
   }
 
   .footer-top {
