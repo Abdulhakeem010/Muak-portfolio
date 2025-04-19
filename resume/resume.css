@@ -210,7 +210,7 @@ header.hidden {
   display: flex;
   flex-direction: column;
   padding-inline: 19.5%;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 .content h2 {
   font-size: clamp(25px,3vw,30px);
