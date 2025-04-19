@@ -199,7 +199,7 @@ header.hidden {
   width: calc(50% - 20px);
 }
 .wia-text h3 {
-  font-size: 24px;
+  font-size: clamp(20px,2vw,24px);
   font-weight: 500;
   line-height: 33.6px;
   margin-bottom: 30px;
@@ -460,6 +460,12 @@ header.hidden {
     height: 100%;
   }
   .wia-text {
+    width: 100%;
+  }
+  .interest-p-container{
+    flex-direction: column;
+  }
+  .interest-p{
     width: 100%;
   }
 
