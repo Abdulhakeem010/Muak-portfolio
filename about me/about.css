@@ -275,7 +275,7 @@ header.hidden {
 .carousel-track img {
   border-radius: 15px;
   border: 1px solid blue;
-  width: calc((100% - 30px) / 4);
+  width: calc((100% - 10px) / 4);
   height:400px; 
   object-fit: cover;
   flex-shrink: 0;
@@ -473,6 +473,11 @@ header.hidden {
   .interest{
     padding-inline: 5%;
   }
+
+  .carousel-track img {
+    width: calc((100% - 20px) / 3); /* 2 gaps between 3 images */
+  }
+
   .footer-top {
     padding-left: 50px;
   }
@@ -540,6 +545,11 @@ header.hidden {
   .interest-image{
     margin-bottom: 70px;
   }
+
+  .carousel-track img {
+    width: calc((100% - 10px) / 2); /* 1 gap between 2 images */
+  }
+
   .la-container{
     margin-bottom: 140px;
   }
@@ -593,7 +603,9 @@ header.hidden {
   .who-i-am h1{
     margin-bottom: 40px;
   }
-
+  .carousel-track img {
+    width: 100%; /* only 1 image visible, so no gap */
+  }
 
   .footer-btn{
     display: flex;
