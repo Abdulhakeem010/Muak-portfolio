@@ -242,6 +242,7 @@ header.hidden {
   color: var(--TEXT-P);
   width: calc(50% - 30px);
 }
+
 .carousel-container {
   border: var(--BORDER);
   display: flex;
