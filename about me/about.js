@@ -33,3 +33,24 @@ navLinks.forEach((link) => {
     menuToggle.classList.remove("active");
   });
 });
+
+const track = document.querySelector(".carousel-track");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+
+let index = 0;
+const slideWidth = 300; // should match your image width
+
+prevBtn.addEventListener("click", () => {
+  if (index > 0) {
+    index--;
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+  }
+});
+
+nextBtn.addEventListener("click", () => {
+  if (index < track.children.length - 1) {
+    index++;
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
+  }
+});
