@@ -97,7 +97,8 @@ function getImageWidth() {
 function calculateMaxIndex() {
   imageWidth = getImageWidth();
   const visibleCount = Math.floor(carousel.offsetWidth / imageWidth);
-  maxIndex = images.length - visibleCount;
+  const totalScrollableWidth = track.scrollWidth - carousel.offsetWidth;
+  maxIndex = Math.floor(totalScrollableWidth / imageWidth);
 
   if (index > maxIndex) index = maxIndex;
   if (index < 0) index = 0;
