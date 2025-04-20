@@ -244,7 +244,6 @@ header.hidden {
 }
 
 .carousel-container {
-  border: var(--BORDER);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -260,6 +259,7 @@ header.hidden {
 }
 
 .carousel {
+  border: ;
   overflow: hidden;
   width: 300px; 
   flex:1;
@@ -274,7 +274,6 @@ header.hidden {
 
 .carousel-track img {
   border-radius: 15px;
-  border: 1px solid blue;
   width: calc((100% - 30px) / 4);
   height:400px; 
   object-fit: cover;
