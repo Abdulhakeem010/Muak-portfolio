@@ -92,3 +92,53 @@ navLinks.forEach((link) => {
 // // Recalculate on load and resize
 // window.addEventListener("load", calculateMaxIndex);
 // window.addEventListener("resize", calculateMaxIndex);
+
+const track = document.querySelector(".carousel-track");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const carousel = document.querySelector(".carousel");
+const items = track.querySelectorAll(".carousel-item");
+
+let index = 0;
+let maxIndex = 0;
+let imageWidth = 0;
+
+function getItemWidth() {
+  const item = track.querySelector(".carousel-item");
+  if (!item) return 0;
+  const style = getComputedStyle(track);
+  const gap = parseInt(style.columnGap || style.gap || 10);
+  return item.getBoundingClientRect().width + gap;
+}
+
+function calculateMaxIndex() {
+  imageWidth = getItemWidth();
+  const totalScrollableWidth = track.scrollWidth - carousel.offsetWidth;
+  maxIndex = Math.ceil(totalScrollableWidth / imageWidth);
+
+  if (index > maxIndex) index = maxIndex;
+  if (index < 0) index = 0;
+
+  updateTrackPosition();
+}
+
+function updateTrackPosition() {
+  track.style.transform = `translateX(-${index * imageWidth}px)`;
+}
+
+prevBtn.addEventListener("click", () => {
+  if (index > 0) {
+    index--;
+    updateTrackPosition();
+  }
+});
+
+nextBtn.addEventListener("click", () => {
+  if (index < maxIndex) {
+    index++;
+    updateTrackPosition();
+  }
+});
+
+window.addEventListener("load", calculateMaxIndex);
+window.addEventListener("resize", calculateMaxIndex);
