@@ -257,7 +257,8 @@ header.hidden {
 
 .carousel {
   overflow: hidden;
-  width: 300px; /* adjust based on your image size */
+  width: 300px; 
+  flex:1;
 }
 
 .carousel-track {
