@@ -37,20 +37,40 @@ navLinks.forEach((link) => {
 const track = document.querySelector(".carousel-track");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
+const carousel = document.querySelector(".carousel");
+const images = track.querySelectorAll("img");
 
+const imageWidth = images[0].offsetWidth + 20; // 20px is the gap
 let index = 0;
-const slideWidth = 300; // should match your image width
+
+// Update max index on window resize
+let maxIndex = 0;
+
+function calculateMaxIndex() {
+  const visibleCount = Math.floor(carousel.offsetWidth / imageWidth);
+  maxIndex = images.length - visibleCount;
+  if (index > maxIndex) index = maxIndex;
+  updateTrackPosition();
+}
+
+function updateTrackPosition() {
+  track.style.transform = `translateX(-${index * imageWidth}px)`;
+}
 
 prevBtn.addEventListener("click", () => {
   if (index > 0) {
     index--;
-    track.style.transform = `translateX(-${index * slideWidth}px)`;
+    updateTrackPosition();
   }
 });
 
 nextBtn.addEventListener("click", () => {
-  if (index < track.children.length - 1) {
+  if (index < maxIndex) {
     index++;
-    track.style.transform = `translateX(-${index * slideWidth}px)`;
+    updateTrackPosition();
   }
 });
+
+// Recalculate on load and on resize
+window.addEventListener("load", calculateMaxIndex);
+window.addEventListener("resize", calculateMaxIndex);
