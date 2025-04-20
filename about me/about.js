@@ -34,44 +34,82 @@ navLinks.forEach((link) => {
   });
 });
 
-const track = document.querySelector(".carousel-track");
-const prevBtn = document.getElementById("prevBtn");
-const nextBtn = document.getElementById("nextBtn");
-const carousel = document.querySelector(".carousel");
-const images = track.querySelectorAll("img");
+// const track = document.querySelector(".carousel-track");
+// const prevBtn = document.getElementById("prevBtn");
+// const nextBtn = document.getElementById("nextBtn");
+// const carousel = document.querySelector(".carousel");
+// const images = track.querySelectorAll("img");
 
-const imageWidth = images[0].offsetWidth + 20; // 20px is the gap
+// const imageWidth = images[0].offsetWidth + 20; // 20px is the gap
+// let index = 0;
+
+// // Update max index on window resize
+// let maxIndex = 0;
+
+// function calculateMaxIndex() {
+//   const visibleCount = Math.floor(carousel.offsetWidth / imageWidth);
+//   maxIndex = images.length - visibleCount;
+//   if (index > maxIndex) index = maxIndex;
+//   updateTrackPosition();
+// }
+
+// function updateTrackPosition() {
+//   track.style.transform = `translateX(-${index * imageWidth}px)`;
+// }
+
+// prevBtn.addEventListener("click", () => {
+//   if (index > 0) {
+//     index--;
+//     updateTrackPosition();
+//   }
+// });
+
+// nextBtn.addEventListener("click", () => {
+//   if (index < maxIndex) {
+//     index++;
+//     updateTrackPosition();
+//   }
+// });
+
+// // Recalculate on load and on resize
+// window.addEventListener("load", calculateMaxIndex);
+// window.addEventListener("resize", calculateMaxIndex);
+
 let index = 0;
-
-// Update max index on window resize
 let maxIndex = 0;
 
 function calculateMaxIndex() {
+  const image = track.querySelector("img");
+  if (!image) return;
+
+  const gap = 10; // gap from CSS
+  const imageWidth = image.getBoundingClientRect().width + gap;
+
   const visibleCount = Math.floor(carousel.offsetWidth / imageWidth);
   maxIndex = images.length - visibleCount;
+
   if (index > maxIndex) index = maxIndex;
-  updateTrackPosition();
+  updateTrackPosition(imageWidth);
 }
 
-function updateTrackPosition() {
+function updateTrackPosition(imageWidth) {
   track.style.transform = `translateX(-${index * imageWidth}px)`;
 }
 
 prevBtn.addEventListener("click", () => {
+  const image = track.querySelector("img");
+  const imageWidth = image.getBoundingClientRect().width + 10;
   if (index > 0) {
     index--;
-    updateTrackPosition();
+    updateTrackPosition(imageWidth);
   }
 });
 
 nextBtn.addEventListener("click", () => {
+  const image = track.querySelector("img");
+  const imageWidth = image.getBoundingClientRect().width + 10;
   if (index < maxIndex) {
     index++;
-    updateTrackPosition();
+    updateTrackPosition(imageWidth);
   }
 });
-
-// Recalculate on load and on resize
-window.addEventListener("load", calculateMaxIndex);
-window.addEventListener("resize", calculateMaxIndex);
-
