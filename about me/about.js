@@ -35,64 +35,6 @@ navLinks.forEach((link) => {
 });
 
 
-// const track = document.querySelector(".carousel-track");
-// const prevBtn = document.getElementById("prevBtn");
-// const nextBtn = document.getElementById("nextBtn");
-// const carousel = document.querySelector(".carousel");
-// const images = track.querySelectorAll("img");
-
-// let index = 0;
-// let maxIndex = 0;
-// let imageWidth = 0;
-
-// // Get the current image width + gap
-// function getImageWidth() {
-//   const image = track.querySelector("img");
-//   if (!image) return 0;
-//   const style = getComputedStyle(track);
-//   const gap = parseInt(style.columnGap || style.gap || 10);
-//   return image.getBoundingClientRect().width + gap;
-// }
-
-// // Recalculate image width and max scroll index
-// function calculateMaxIndex() {
-//   imageWidth = getImageWidth();
-//   const totalScrollableWidth = track.scrollWidth - carousel.offsetWidth;
-
-//   maxIndex = Math.ceil(totalScrollableWidth / imageWidth); // << KEY FIX
-
-//   // Clamp index to valid range
-//   if (index > maxIndex) index = maxIndex;
-//   if (index < 0) index = 0;
-
-//   updateTrackPosition();
-// }
-
-// // Move the carousel
-// function updateTrackPosition() {
-//   track.style.transform = `translateX(-${index * imageWidth}px)`;
-  
-// }
-
-// // Button click events
-// prevBtn.addEventListener("click", () => {
-//   if (index > 0) {
-//     index--;
-//     updateTrackPosition();
-//   }
-// });
-
-// nextBtn.addEventListener("click", () => {
-//   if (index < maxIndex) {
-//     index++;
-//     updateTrackPosition();
-//   }
-// });
-
-// // Recalculate on load and resize
-// window.addEventListener("load", calculateMaxIndex);
-// window.addEventListener("resize", calculateMaxIndex);
-
 const track = document.querySelector(".carousel-track");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
