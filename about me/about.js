@@ -34,46 +34,6 @@ navLinks.forEach((link) => {
   });
 });
 
-// const track = document.querySelector(".carousel-track");
-// const prevBtn = document.getElementById("prevBtn");
-// const nextBtn = document.getElementById("nextBtn");
-// const carousel = document.querySelector(".carousel");
-// const images = track.querySelectorAll("img");
-
-// const imageWidth = images[0].offsetWidth + 20; // 20px is the gap
-// let index = 0;
-
-// // Update max index on window resize
-// let maxIndex = 0;
-
-// function calculateMaxIndex() {
-//   const visibleCount = Math.floor(carousel.offsetWidth / imageWidth);
-//   maxIndex = images.length - visibleCount;
-//   if (index > maxIndex) index = maxIndex;
-//   updateTrackPosition();
-// }
-
-// function updateTrackPosition() {
-//   track.style.transform = `translateX(-${index * imageWidth}px)`;
-// }
-
-// prevBtn.addEventListener("click", () => {
-//   if (index > 0) {
-//     index--;
-//     updateTrackPosition();
-//   }
-// });
-
-// nextBtn.addEventListener("click", () => {
-//   if (index < maxIndex) {
-//     index++;
-//     updateTrackPosition();
-//   }
-// });
-
-// // Recalculate on load and on resize
-// window.addEventListener("load", calculateMaxIndex);
-// window.addEventListener("resize", calculateMaxIndex);
 
 const track = document.querySelector(".carousel-track");
 const prevBtn = document.getElementById("prevBtn");
@@ -85,7 +45,7 @@ let index = 0;
 let maxIndex = 0;
 let imageWidth = 0;
 
-// Function to get current image width (+ gap)
+// Get the current image width + gap
 function getImageWidth() {
   const image = track.querySelector("img");
   if (!image) return 0;
@@ -94,22 +54,26 @@ function getImageWidth() {
   return image.getBoundingClientRect().width + gap;
 }
 
+// Recalculate image width and max scroll index
 function calculateMaxIndex() {
   imageWidth = getImageWidth();
-  const visibleCount = Math.floor(carousel.offsetWidth / imageWidth);
   const totalScrollableWidth = track.scrollWidth - carousel.offsetWidth;
-  maxIndex = Math.floor(totalScrollableWidth / imageWidth);
 
+  maxIndex = Math.ceil(totalScrollableWidth / imageWidth); // << KEY FIX
+
+  // Clamp index to valid range
   if (index > maxIndex) index = maxIndex;
   if (index < 0) index = 0;
 
   updateTrackPosition();
 }
 
+// Move the carousel
 function updateTrackPosition() {
   track.style.transform = `translateX(-${index * imageWidth}px)`;
 }
 
+// Button click events
 prevBtn.addEventListener("click", () => {
   if (index > 0) {
     index--;
@@ -124,5 +88,6 @@ nextBtn.addEventListener("click", () => {
   }
 });
 
+// Recalculate on load and resize
 window.addEventListener("load", calculateMaxIndex);
 window.addEventListener("resize", calculateMaxIndex);
