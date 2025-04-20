@@ -259,9 +259,8 @@ header.hidden {
 }
 
 .carousel {
-  border: ;
   overflow: hidden;
-  width: 300px; 
+  /* width: 300px;  */
   flex:1;
   position: relative;
 }
