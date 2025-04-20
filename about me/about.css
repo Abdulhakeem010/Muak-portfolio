@@ -547,10 +547,13 @@ header.hidden {
     padding-inline: 5%;
   }
 
-  .carousel-track img {
-    width: calc((100% - 20px) / 3); /* 2 gaps between 3 images */
-  }
-  
+  /* .carousel-track img {
+    width: calc((100% - 20px) / 3); 
+  } */
+
+    .carousel-item {
+      width: calc((100% - 20px) / 3);
+    }
 
   .footer-top {
     padding-left: 50px;
