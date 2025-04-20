@@ -75,41 +75,53 @@ navLinks.forEach((link) => {
 // window.addEventListener("load", calculateMaxIndex);
 // window.addEventListener("resize", calculateMaxIndex);
 
+const track = document.querySelector(".carousel-track");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const carousel = document.querySelector(".carousel");
+const images = track.querySelectorAll("img");
+
 let index = 0;
 let maxIndex = 0;
+let imageWidth = 0;
+
+// Function to get current image width (+ gap)
+function getImageWidth() {
+  const image = track.querySelector("img");
+  if (!image) return 0;
+  const style = getComputedStyle(track);
+  const gap = parseInt(style.columnGap || style.gap || 10);
+  return image.getBoundingClientRect().width + gap;
+}
 
 function calculateMaxIndex() {
-  const image = track.querySelector("img");
-  if (!image) return;
-
-  const gap = 10; // gap from CSS
-  const imageWidth = image.getBoundingClientRect().width + gap;
-
+  imageWidth = getImageWidth();
   const visibleCount = Math.floor(carousel.offsetWidth / imageWidth);
   maxIndex = images.length - visibleCount;
 
   if (index > maxIndex) index = maxIndex;
-  updateTrackPosition(imageWidth);
+  if (index < 0) index = 0;
+
+  updateTrackPosition();
 }
 
-function updateTrackPosition(imageWidth) {
+function updateTrackPosition() {
   track.style.transform = `translateX(-${index * imageWidth}px)`;
 }
 
 prevBtn.addEventListener("click", () => {
-  const image = track.querySelector("img");
-  const imageWidth = image.getBoundingClientRect().width + 10;
   if (index > 0) {
     index--;
-    updateTrackPosition(imageWidth);
+    updateTrackPosition();
   }
 });
 
 nextBtn.addEventListener("click", () => {
-  const image = track.querySelector("img");
-  const imageWidth = image.getBoundingClientRect().width + 10;
   if (index < maxIndex) {
     index++;
-    updateTrackPosition(imageWidth);
+    updateTrackPosition();
   }
 });
+
+window.addEventListener("load", calculateMaxIndex);
+window.addEventListener("resize", calculateMaxIndex);
