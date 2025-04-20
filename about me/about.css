@@ -288,8 +288,8 @@ header.hidden {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  padding: 1rem 1rem;
   border-radius: 50%;
   cursor: pointer;
   transition: background 0.3s;
