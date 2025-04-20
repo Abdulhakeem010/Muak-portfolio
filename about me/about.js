@@ -71,6 +71,7 @@ function calculateMaxIndex() {
 // Move the carousel
 function updateTrackPosition() {
   track.style.transform = `translateX(-${index * imageWidth}px)`;
+  
 }
 
 // Button click events
