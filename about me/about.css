@@ -249,6 +249,8 @@ header.hidden {
   justify-content: center;
   gap: 10px;
   width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
   height: 400px;
   overflow: hidden;
   margin-bottom: 100px;
@@ -264,7 +266,7 @@ header.hidden {
 .carousel-track {
   display: flex;
   transition: transform 0.4s ease-in-out;
-  gap: 20px;
+  gap: 10px;
 }
 
 .carousel-track img {
