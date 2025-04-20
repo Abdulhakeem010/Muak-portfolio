@@ -242,7 +242,7 @@ header.hidden {
   color: var(--TEXT-P);
   width: calc(50% - 30px);
 }
-.carousel-container {
+/* .carousel-container {
   border: var(--BORDER);
   display: flex;
   align-items: center;
@@ -255,27 +255,49 @@ header.hidden {
   overflow: hidden;
   margin-bottom: 100px;
   border-radius: 15px;
+} */
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
+/* Carousel track remains the same */
 .carousel {
   overflow: hidden;
-  width: 300px; 
-  flex:1;
+  flex: 1;
+  position: relative;
 }
 
-.carousel-track {
-  display: flex;
-  transition: transform 0.4s ease-in-out;
-  gap: 10px;
+/* Edge fade effect using pseudo-elements */
+.carousel::before,
+.carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
 }
 
-.carousel-track img {
-  border-radius: 15px;
-  border: 1px solid blue;
-  width: 300px; /* same as .carousel width */
-  height:400px; /* optional */
-  object-fit: cover;
-  flex-shrink: 0;
+.carousel::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+.carousel::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
 }
 
 
