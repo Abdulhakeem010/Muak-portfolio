@@ -251,7 +251,7 @@ header.hidden {
   width: 100%;
   max-width: 100%;
   box-sizing: border-box;
-  height: 400px;
+  height: 450px;
   overflow: hidden;
   margin-bottom: 100px;
   border-radius: 15px;
@@ -274,7 +274,7 @@ header.hidden {
 .carousel-track img {
   border-radius: 15px;
   width: calc((100% - 30px) / 4);
-  height:400px; 
+  height:450px; 
   object-fit: cover;
   flex-shrink: 0;
 }
