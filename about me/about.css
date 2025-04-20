@@ -256,12 +256,14 @@ header.hidden {
   overflow: hidden;
   margin-bottom: 100px;
   border-radius: 15px;
+  position: relative;
 }
 
 .carousel {
   overflow: hidden;
   width: 300px; 
   flex:1;
+  position: relative;
 }
 
 .carousel-track {
@@ -277,6 +279,32 @@ header.hidden {
   height:400px; 
   object-fit: cover;
   flex-shrink: 0;
+}
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+
+.carousel-btn.right {
+  right: 10px;
 }
 
 
