@@ -272,7 +272,7 @@ header.hidden {
 
 .carousel-item {
   flex-shrink: 0;
-  width: calc((100% - 30px) / 4); /* default: 4 items per row */
+  width: calc((100% - 30px) / 4);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -480,10 +480,6 @@ header.hidden {
     padding-inline: 5%;
   }
 
-  /* .carousel-track img {
-    width: calc((100% - 20px) / 3); 
-  } */
-
     .carousel-item {
       width: calc((100% - 20px) / 3);
     }
@@ -556,11 +552,6 @@ header.hidden {
     margin-bottom: 70px;
   }
 
-  /* .carousel-track img {
-    width: calc((100% - 10px) / 2); 
-  } */
-
-
   .carousel-item {
     width: calc((100% - 10px) / 2);
   }
@@ -619,9 +610,6 @@ header.hidden {
   .who-i-am h1{
     margin-bottom: 40px;
   }
-  /* .carousel-track img {
-    width: 100%; 
-  } */
 
     .carousel-item {
       width: 100%;
