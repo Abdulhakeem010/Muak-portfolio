@@ -255,7 +255,6 @@ header.hidden {
   overflow: hidden;
   margin-bottom: 100px;
   border-radius: 15px;
-  border: 1px solid red;
   position: relative;
 }
 
@@ -272,7 +271,6 @@ header.hidden {
 }
 
 .carousel-item {
-  border: 1px solid red;
   flex-shrink: 0;
   width: calc((100% - 30px) / 4);
   display: flex;
