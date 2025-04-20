@@ -266,7 +266,7 @@ header.hidden {
 }
 
 .carousel-track img {
-  border-radius: 10px;
+  border-radius: 15px;
   border: 1px solid blue;
   width: 300px; /* same as .carousel width */
   height: 400px; /* optional */
