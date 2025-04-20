@@ -305,7 +305,7 @@ header.hidden {
 }
 
 /* Edge fade effect using pseudo-elements */
-.carousel::before,
+/* .carousel::before,
 .carousel::after {
   content: '';
   position: absolute;
@@ -314,9 +314,9 @@ header.hidden {
   height: 100%;
   z-index: 2;
   pointer-events: none;
-}
+} */
 
-.carousel::before {
+/* .carousel::before {
   left: 0;
   background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
 }
@@ -324,7 +324,7 @@ header.hidden {
 .carousel::after {
   right: 0;
   background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
-}
+} */
 
 button:disabled {
   opacity: 0.3;
