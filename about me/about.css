@@ -272,8 +272,8 @@ header.hidden {
 .carousel-track img {
   border-radius: 15px;
   border: 1px solid blue;
-  width: 300px; /* same as .carousel width */
-  height:400px; /* optional */
+  width: 300px;
+  height:400px; 
   object-fit: cover;
   flex-shrink: 0;
 }
