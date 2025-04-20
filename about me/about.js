@@ -34,29 +34,76 @@ navLinks.forEach((link) => {
   });
 });
 
+// const track = document.querySelector(".carousel-track");
+// const prevBtn = document.getElementById("prevBtn");
+// const nextBtn = document.getElementById("nextBtn");
+// const carousel = document.querySelector(".carousel");
+// const images = track.querySelectorAll("img");
+
+// const imageWidth = images[0].offsetWidth + 20; // 20px is the gap
+// let index = 0;
+
+// // Update max index on window resize
+// let maxIndex = 0;
+
+// function calculateMaxIndex() {
+//   const visibleCount = Math.floor(carousel.offsetWidth / imageWidth);
+//   maxIndex = images.length - visibleCount;
+//   if (index > maxIndex) index = maxIndex;
+//   updateTrackPosition();
+// }
+
+// function updateTrackPosition() {
+//   track.style.transform = `translateX(-${index * imageWidth}px)`;
+// }
+
+// prevBtn.addEventListener("click", () => {
+//   if (index > 0) {
+//     index--;
+//     updateTrackPosition();
+//   }
+// });
+
+// nextBtn.addEventListener("click", () => {
+//   if (index < maxIndex) {
+//     index++;
+//     updateTrackPosition();
+//   }
+// });
+
+// // Recalculate on load and on resize
+// window.addEventListener("load", calculateMaxIndex);
+// window.addEventListener("resize", calculateMaxIndex);
+
 const track = document.querySelector(".carousel-track");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 const carousel = document.querySelector(".carousel");
 const images = track.querySelectorAll("img");
 
-const imageWidth = images[0].offsetWidth + 20; // 20px is the gap
+let imageWidth = images[0].offsetWidth + 20;
 let index = 0;
-
-// Update max index on window resize
 let maxIndex = 0;
 
 function calculateMaxIndex() {
+  imageWidth = images[0].offsetWidth + 20;
   const visibleCount = Math.floor(carousel.offsetWidth / imageWidth);
   maxIndex = images.length - visibleCount;
   if (index > maxIndex) index = maxIndex;
   updateTrackPosition();
 }
 
-function updateTrackPosition() {
-  track.style.transform = `translateX(-${index * imageWidth}px)`;
+function updateButtons() {
+  prevBtn.disabled = index === 0;
+  nextBtn.disabled = index >= maxIndex;
 }
 
+function updateTrackPosition() {
+  track.style.transform = `translateX(-${index * imageWidth}px)`;
+  updateButtons();
+}
+
+// Click events
 prevBtn.addEventListener("click", () => {
   if (index > 0) {
     index--;
@@ -71,6 +118,34 @@ nextBtn.addEventListener("click", () => {
   }
 });
 
-// Recalculate on load and on resize
+// Touch swipe support
+let startX = 0;
+let currentX = 0;
+let isSwiping = false;
+
+carousel.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX;
+  isSwiping = true;
+});
+
+carousel.addEventListener("touchmove", (e) => {
+  if (!isSwiping) return;
+  currentX = e.touches[0].clientX;
+});
+
+carousel.addEventListener("touchend", () => {
+  const diff = startX - currentX;
+  if (Math.abs(diff) > 50) {
+    if (diff > 0 && index < maxIndex) {
+      index++;
+    } else if (diff < 0 && index > 0) {
+      index--;
+    }
+    updateTrackPosition();
+  }
+  isSwiping = false;
+});
+
+// Init
 window.addEventListener("load", calculateMaxIndex);
 window.addEventListener("resize", calculateMaxIndex);

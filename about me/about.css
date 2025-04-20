@@ -256,6 +256,37 @@ header.hidden {
   margin-bottom: 100px;
   border-radius: 15px;
 } */
+/* .carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 300px; 
+  flex:1;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+  gap: 10px;
+}
+
+.carousel-track img {
+  border-radius: 15px;
+  border: 1px solid blue;
+  width: 300px; 
+  height:400px;
+  object-fit: cover;
+  flex-shrink: 0;
+} */
+
 .carousel-container {
   position: relative;
   display: flex;
