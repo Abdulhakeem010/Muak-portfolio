@@ -242,7 +242,7 @@ header.hidden {
   color: var(--TEXT-P);
   width: calc(50% - 30px);
 }
-.interest-image{
+.interest-image-container{
   border: var(--BORDER);
   height: 400px;
   margin-bottom: 100px;
