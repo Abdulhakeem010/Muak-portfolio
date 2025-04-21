@@ -92,6 +92,10 @@ header.hidden {
   justify-content: flex-end;
   gap: 25px;
 }
+.header-navs {
+  list-style-type: none;
+  display: flex;
+}
 
 .nav {
   text-decoration: none;
@@ -609,7 +613,7 @@ header.hidden {
   color: #f3f3f2;
   margin-bottom: 25px;
 }
-.footer-btn{
+.footer-btn {
   width: 160px;
 }
 
@@ -757,7 +761,7 @@ header.hidden {
   .selected-project {
     padding-inline: 5%;
   }
-  .no{
+  .no {
     display: none;
   }
   .footer-top {
@@ -782,7 +786,7 @@ header.hidden {
     overflow-x: scroll;
     border: 1px solid red;
    */
-   display: flex; 
+    display: flex;
   }
 
   .header-navs {
@@ -799,7 +803,6 @@ header.hidden {
     display: flex;
     right: 0;
   }
-
 
   .hero-section {
     padding-top: 125px;
@@ -943,7 +946,7 @@ header.hidden {
   .view-p {
     margin-top: 0;
   }
-  .footer-btn{
+  .footer-btn {
     display: flex;
     justify-content: center;
     align-items: center;
