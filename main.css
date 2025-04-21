@@ -824,6 +824,10 @@ header.hidden {
     color: whitesmoke;
     overflow: hidden;
   }
+  .header-navs.active header{
+
+  }
+
   .header-navs.active{
     height: 100vh;
   }
@@ -841,7 +845,7 @@ header.hidden {
 
   .nav{
     margin-left: 0;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     font-size: 20px;
     font-weight: 500;
     line-height: 28px;
