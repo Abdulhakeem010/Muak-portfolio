@@ -828,10 +828,6 @@ header.hidden {
     overflow: hidden;
   }
 
-  /* .header-navs.active header.hidden{
-      top: -0px;
-  } */
-
   .header-navs.active{
     height: 100vh;
   }
@@ -854,8 +850,6 @@ header.hidden {
     margin-bottom: 50px;
     font-size: 20px;
     font-weight: 500;
-    line-height: 28px;
-    letter-spacing: -0.1px;
   }
 
  .hero-section {
