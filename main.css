@@ -795,21 +795,21 @@ header.hidden {
     right: 0;
   } */
 
-  .menu-toggle{
+  .menu-toggle {
     display: block;
     cursor: pointer;
   }
 
-  .menu-toggle span{
+  .menu-toggle .line{
     height: 3px;
     background-color: black;
   }
 
-  .menu-toggle span:first-child {
+  .menu-toggle .line:first-child {
     width: 28px;
   }
   
-  .menu-toggle span:last-child {
+  .menu-toggle .line:last-child {
     width: 18px;
   }
 
