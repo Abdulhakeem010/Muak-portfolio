@@ -802,8 +802,7 @@ header.hidden {
     width: 18px;
     align-self: flex-end;
   }
-  
-  /* Active (turned into "X") */
+
   .menu-toggle.active span:first-child {
     transform: rotate(45deg) translate(4px, 4px);
     width: 24px;
@@ -819,8 +818,7 @@ header.hidden {
     position: relative;
     overflow-x: scroll;
     border: 1px solid red;
-   */
-    display: flex;
+    display: flex;  */
   }
 
   .header-navs {
