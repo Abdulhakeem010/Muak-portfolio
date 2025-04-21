@@ -115,7 +115,6 @@ header.hidden {
   display: none;
 }
 
-
 .icon {
   border: 1px solid hsla(0, 0%, 80%, 0.8);
   border-radius: 8px;
@@ -800,7 +799,7 @@ header.hidden {
     cursor: pointer;
   }
 
-  .menu-toggle .line{
+  .menu-toggle .line {
     height: 2px;
     background-color: black;
     margin: 8px 0;
@@ -809,22 +808,22 @@ header.hidden {
   .menu-toggle .line:first-child {
     width: 28px;
   }
-  
+
   .menu-toggle .line:last-child {
     width: 18px;
   }
-  .header-navs{
-  position: absolute;
-  top: 90px;
-  left: 0;
-  right: 0;
-  width: 100vw;
-  background-color: #11101b;
-  transition: all 0.3s;
-  color: whitesmoke;
+  .header-navs {
+    height: 450px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: blue;
+    transition: all 0.3s;
+    color: whitesmoke;
   }
-
-  .hero-section {
+ .hero-section {
     padding-top: 125px;
     margin-bottom: 58px;
     border-radius: 0px 0px 0px 0px;
