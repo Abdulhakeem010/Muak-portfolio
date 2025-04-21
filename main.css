@@ -827,13 +827,15 @@ header.hidden {
     color: whitesmoke;
     overflow: hidden;
   }
-  .header-navs.active header.hidden{
+
+  /* .header-navs.active header.hidden{
       top: -0px;
-  }
+  } */
 
   .header-navs.active{
     height: 100vh;
   }
+  
   .header-navs ul{
     display: block;
     width: fit-content;
@@ -842,18 +844,9 @@ header.hidden {
     transition: all 0.4s;
     opacity: 0;
   }
+  
   .header-navs.active ul{
     opacity: 1;
-  }
-
-  .header-navs.active .line:first-child {
-    transform: rotate(45deg) translate(4px, 4px);
-    width: 24px;
-  }
-  
-  .header-navs.active .line:last-child {
-    transform: rotate(-45deg) translate(3px, -3px);
-    width: 24px;
   }
 
   .nav{
@@ -864,9 +857,6 @@ header.hidden {
     line-height: 28px;
     letter-spacing: -0.1px;
   }
-
-
-
 
  .hero-section {
     padding-top: 125px;
