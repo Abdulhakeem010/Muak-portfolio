@@ -98,6 +98,7 @@ header.hidden {
 }
 
 .nav {
+  display: block;
   text-decoration: none;
   color: hsla(0, 0%, 0%, 0.9);
   margin-left: 25px;
