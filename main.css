@@ -801,8 +801,9 @@ header.hidden {
   }
 
   .menu-toggle .line{
-    height: 3px;
+    height: 2px;
     background-color: black;
+    margin: 8px 0;
   }
 
   .menu-toggle .line:first-child {
@@ -811,6 +812,9 @@ header.hidden {
   
   .menu-toggle .line:last-child {
     width: 18px;
+  }
+  .header-navs{
+    display: none;
   }
 
   .hero-section {
