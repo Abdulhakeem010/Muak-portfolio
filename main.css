@@ -98,7 +98,6 @@ header.hidden {
 }
 
 .nav {
-  border: 1px solid red;
   display: block;
   text-decoration: none;
   color: hsla(0, 0%, 0%, 0.9);
@@ -814,7 +813,7 @@ header.hidden {
     width: 18px;
   }
   .header-navs {
-    height: 350px;
+    height: 400px;
     position: absolute;
     top: 90px;
     left: 0;
@@ -827,9 +826,10 @@ header.hidden {
   .header-navs ul{
     display: block;
     width: fit-content;
-    margin:70px auto 0 auto ;
+    margin:80px auto 0 auto ;
     text-align: center;
     transition: all 0.4s;
+    opacity: 0;
   }
   .nav{
     margin-left: 0;
