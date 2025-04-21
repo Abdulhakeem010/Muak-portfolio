@@ -92,12 +92,13 @@ header.hidden {
   justify-content: flex-end;
   gap: 25px;
 }
-.header-navs {
+.header-navs ul{
   list-style-type: none;
   display: flex;
 }
 
 .nav {
+  border: 1px solid red;
   display: block;
   text-decoration: none;
   color: hsla(0, 0%, 0%, 0.9);
@@ -823,6 +824,20 @@ header.hidden {
     transition: all 0.3s;
     color: whitesmoke;
   }
+  .header-navs ul{
+    display: block;
+    width: fit-content;
+    margin: 90px auto 0 auto;
+    text-align: center;
+    transition: all 0.4s;
+  }
+  .nav{
+  margin-bottom: 20px;
+  }
+
+
+
+
  .hero-section {
     padding-top: 125px;
     margin-bottom: 58px;
