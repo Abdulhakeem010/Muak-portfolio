@@ -126,27 +126,6 @@ fetchAndRender(years[years.length - 1]);
 
 
 
-// hamburger = document.querySelector (".menu-toggle");
-// hamburger.onclick = function(){
-//   navBar = document.querySelector(".header-navs")
-//   navBar.classList.toggle("active");
-
-//   if (navBar.classList.contains("active")) {
-//     document.body.style.overflow = "hidden"; // Disable scroll
-//   } else {
-//     document.body.style.overflow = ""; // Re-enable scroll
-//   }
-// };
-
-// // Auto-close nav when a link is clicked
-// navLinks.forEach((link) => {
-//   link.addEventListener("click", () => {
-//     navs.classList.remove("active");
-//     menuToggle.classList.remove("active");
-//   });
-// });
-
-
 const hamburger = document.querySelector(".menu-toggle");
 const navBar = document.querySelector(".header-navs");
 const navLinks = document.querySelectorAll(".header-navs .nav");

@@ -15,20 +15,27 @@ window.addEventListener("scroll", function () {
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
 
-const menuToggle = document.getElementById("menu-toggle");
-const navs = document.querySelector(".header-navs");
-const navLinks = document.querySelectorAll(".nav");
+const hamburger = document.querySelector(".menu-toggle");
+const navBar = document.querySelector(".header-navs");
+const navLinks = document.querySelectorAll(".header-navs .nav");
 
-// Toggle menu icon and nav
-menuToggle.addEventListener("click", () => {
-  navs.classList.toggle("active");
-  menuToggle.classList.toggle("active");
-});
+hamburger.onclick = function () {
+  navBar.classList.toggle("active");
+  hamburger.classList.toggle("active");
+
+  // Toggle scroll on body
+  if (navBar.classList.contains("active")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
+};
 
 // Auto-close nav when a link is clicked
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
-    navs.classList.remove("active");
-    menuToggle.classList.remove("active");
+    navBar.classList.remove("active");
+    hamburger.classList.remove("active");
+    document.body.style.overflow = "";
   });
 });
