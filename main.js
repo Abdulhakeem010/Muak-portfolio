@@ -134,6 +134,8 @@ fetchAndRender(years[years.length - 1]);
 //   menuToggle.classList.toggle("active");
 // });
 
+const hamburger = document.querySelector (".menu-toggle")
+
 
 
 // Auto-close nav when a link is clicked

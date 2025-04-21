@@ -813,7 +813,7 @@ header.hidden {
     width: 18px;
   }
   .header-navs {
-    height: 400px;
+    height: 0px;
     position: absolute;
     top: 90px;
     left: 0;
@@ -830,10 +830,12 @@ header.hidden {
     text-align: center;
     transition: all 0.4s;
     opacity: 0;
+    overflow: hidden;
   }
   .nav{
     margin-left: 0;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+ 
   }
 
 
