@@ -799,16 +799,18 @@ header.hidden {
     display: block;
     cursor: pointer;
   }
+
   .menu-toggle span{
     height: 3px;
+    background-color: black;
   }
+
   .menu-toggle span:first-child {
     width: 28px;
   }
   
   .menu-toggle span:last-child {
     width: 18px;
-    align-self: flex-end;
   }
 
   .hero-section {
