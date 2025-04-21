@@ -134,7 +134,11 @@ fetchAndRender(years[years.length - 1]);
 //   menuToggle.classList.toggle("active");
 // });
 
-const hamburger = document.querySelector (".menu-toggle")
+hamburger = document.querySelector (".menu-toggle");
+hamburger.onclick = function(){
+  navBar = document.querySelector(".header-navs")
+  navBar.classList.toggle("active");
+}
 
 
 
