@@ -113,41 +113,8 @@ header.hidden {
 
 .menu-toggle {
   display: none;
-  flex-direction: column;
-  justify-content: center;
-  gap: 8px;
-  cursor: pointer;
-  z-index: 1002;
 }
 
-.menu-toggle span {
-  display: block;
-  height: 2px;
-  background-color: black;
-  transition: all 0.3s ease;
-  border-radius: 2px;
-}
-
-/* First line longer than second */
-.menu-toggle span:first-child {
-  width: 28px;
-}
-
-.menu-toggle span:last-child {
-  width: 18px;
-  align-self: flex-end;
-}
-
-/* Active (turned into "X") */
-.menu-toggle.active span:first-child {
-  transform: rotate(45deg) translate(4px, 4px);
-  width: 24px;
-}
-
-.menu-toggle.active span:last-child {
-  transform: rotate(-45deg) translate(3px, -3px);
-  width: 24px;
-}
 
 .icon {
   border: 1px solid hsla(0, 0%, 80%, 0.8);
@@ -777,7 +744,7 @@ header.hidden {
 }
 
 @media screen and (max-width: 768px) {
-  .menu-toggle {
+  /* .menu-toggle {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -811,19 +778,11 @@ header.hidden {
   .menu-toggle.active span:last-child {
     transform: rotate(-45deg) translate(3px, -3px);
     width: 24px;
-  }
+  } */
 
-  .nav-wrapper {
-    /* width: max-content;
-    position: relative;
-    overflow-x: scroll;
-    border: 1px solid red;
-    display: flex;  */
-  }
-
-  .header-navs {
+  /* .header-navs {
     display: none;
-    /* right: -70%; */
+    right: -70%;
     flex-direction: row;
     gap: 1.5rem;
     transition: right 1s ease-in-out;
@@ -834,7 +793,23 @@ header.hidden {
   .header-navs.active {
     display: flex;
     right: 0;
+  } */
+
+  .menu-toggle{
+    display: block;
+    cursor: pointer;
   }
+  .menu-toggle span{
+    height: 3px;
+  }
+  /* .menu-toggle span:first-child {
+    width: 28px;
+  }
+  
+  .menu-toggle span:last-child {
+    width: 18px;
+    align-self: flex-end;
+  } */
 
   .hero-section {
     padding-top: 125px;
