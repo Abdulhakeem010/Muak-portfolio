@@ -820,8 +820,12 @@ header.hidden {
     right: 0;
     width: 100vw;
     background-color: blue;
-    transition: all 0.3s;
+    transition: all 0.5s;
     color: whitesmoke;
+    overflow: hidden;
+  }
+  .header-navs.active{
+    height: 400px ;
   }
   .header-navs ul{
     display: block;
@@ -830,8 +834,11 @@ header.hidden {
     text-align: center;
     transition: all 0.4s;
     opacity: 0;
-    overflow: hidden;
   }
+  .header-navs.active ul{
+    opacity: 1;
+  }
+
   .nav{
     margin-left: 0;
     margin-bottom: 20px;
