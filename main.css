@@ -819,18 +819,18 @@ header.hidden {
     left: 0;
     right: 0;
     width: 100vw;
-    background-color: blue;
-    transition: all 0.5s;
+    background-color: var(--BG);
+    transition: all 0.7s;
     color: whitesmoke;
     overflow: hidden;
   }
   .header-navs.active{
-    height: 400px ;
+    height: 100vh;
   }
   .header-navs ul{
     display: block;
     width: fit-content;
-    margin:80px auto 0 auto ;
+    margin:90px auto 0 auto ;
     text-align: center;
     transition: all 0.4s;
     opacity: 0;
@@ -841,8 +841,11 @@ header.hidden {
 
   .nav{
     margin-left: 0;
-    margin-bottom: 20px;
- 
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.1px;
   }
 
 
