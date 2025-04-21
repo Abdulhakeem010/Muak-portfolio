@@ -814,7 +814,7 @@ header.hidden {
     width: 18px;
   }
   .header-navs {
-    height: 300px;
+    height: 350px;
     position: absolute;
     top: 90px;
     left: 0;
@@ -827,11 +827,12 @@ header.hidden {
   .header-navs ul{
     display: block;
     width: fit-content;
-    margin: 50px auto 0 auto;
+    margin:70px auto 0 auto ;
     text-align: center;
     transition: all 0.4s;
   }
   .nav{
+    margin-left: 0;
   margin-bottom: 20px;
   }
 
