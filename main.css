@@ -814,7 +814,14 @@ header.hidden {
     width: 18px;
   }
   .header-navs{
-    display: none;
+  position: absolute;
+  top: 90px;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  background-color: #11101b;
+  transition: all 0.3s;
+  color: whitesmoke;
   }
 
   .hero-section {
