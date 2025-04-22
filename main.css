@@ -366,7 +366,8 @@ header.hidden {
 .marquee-container:hover .marquee-text {
   animation-play-state: paused;
 }
-/* END HERO SECTION STYLING */
+
+
 
 /* FEATURED PROJECT STYLING */
 .selected-project {
@@ -471,11 +472,12 @@ header.hidden {
 .sp:hover .sp-image {
   transform: scale(1.15);
 }
-/* END FEATURED PROJECT STYLING */
+ 
+
 
 /*FIRST PROJECT STYLING*/
 .first-project a {
-  width: 100%;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   height: 500px;
