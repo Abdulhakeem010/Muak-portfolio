@@ -132,6 +132,7 @@ hamburger.onclick = function () {
   navBar.classList.toggle("active");
   hamburger.classList.toggle("active");
 
+  document.body.classList.toggle('no-scroll', navBar.classList.contains('active'));
 };
 
 const ANIMATION_DURATION = 600;
