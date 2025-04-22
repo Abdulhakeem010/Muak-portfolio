@@ -133,10 +133,9 @@ header.hidden {
 .icon:hover {
   cursor: pointer;
 }
-/* END HEADER STYLING */
+
 
 /*MAIN STYLING*/
-
 /* HERO SECTION STYLING */
 .hero-section {
   display: flex;
