@@ -432,6 +432,10 @@ header.hidden {
   .header-navs.active {
     height: 100vh;
   }
+  .no-scroll {
+    overflow: hidden;
+    height: 100vh;
+  }
 
   .header-navs ul {
     display: block;
