@@ -200,6 +200,7 @@ header.hidden {
   height: 18px;
 }
 
+/* GITHUB GRAPH */
 .cg {
   display: flex;
   flex-direction: column;
@@ -317,6 +318,7 @@ header.hidden {
   border-radius: 3px;
 }
 
+/* IMAGE MARQUEE */
 .marquee-container {
   width: 100%;
   overflow: hidden;
