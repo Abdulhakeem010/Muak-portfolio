@@ -354,7 +354,7 @@ header.hidden {
   object-fit: cover;
 }
 
-/* Animation */
+/* MARQUEE ANIMATION */
 @keyframes scroll-left {
   0% {
     transform: translateX(0);
