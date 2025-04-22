@@ -553,6 +553,7 @@ header.hidden {
   align-items: center;
 }
 .fp-image-container {
+  width: 100%;
   overflow: hidden;
 }
 .fp-image {
