@@ -140,7 +140,7 @@ hamburger.onclick = function () {
   // }
 };
 
-const ANIMATION_DURATION = 3000;
+const ANIMATION_DURATION = 600;
 
 // Auto-close nav when a link is clicked
 navLinks.forEach((link) => {
@@ -154,7 +154,6 @@ navLinks.forEach((link) => {
     document.body.style.overflow = "";
 
     // manual navigation atp
-    // Wait for animation to finish
     setTimeout(() => {
       window.location.href = targetHref;
     }, ANIMATION_DURATION);
