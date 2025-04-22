@@ -111,6 +111,9 @@ header.hidden {
 .nav:hover {
   color: #828282;
 }
+.line{
+  text-decoration: line-through;
+}
 
 .menu-toggle {
   display: none;
