@@ -111,7 +111,7 @@ header.hidden {
 .nav:hover {
   color: #828282;
 }
-.line{
+.strike{
   text-decoration: line-through;
 }
 

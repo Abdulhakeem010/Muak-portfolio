@@ -124,8 +124,6 @@ const lastYearBtn = yearList.lastChild;
 setActiveYearButton(lastYearBtn);
 fetchAndRender(years[years.length - 1]);
 
-
-
 const hamburger = document.querySelector(".menu-toggle");
 const navBar = document.querySelector(".header-navs");
 const navLinks = document.querySelectorAll(".header-navs .nav");
@@ -142,11 +140,23 @@ hamburger.onclick = function () {
   // }
 };
 
+const ANIMATION_DURATION = 3000;
+
 // Auto-close nav when a link is clicked
 navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const targetHref = link.getAttribute("href");
+
     navBar.classList.remove("active");
     hamburger.classList.remove("active");
     document.body.style.overflow = "";
+
+    // manual navigation atp
+    // Wait for animation to finish
+    setTimeout(() => {
+      window.location.href = targetHref;
+    }, ANIMATION_DURATION);
   });
 });
