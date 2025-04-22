@@ -482,7 +482,7 @@ header.hidden {
     height: 2px;
     background-color: black;
     margin: 5px 0;
-    transition: all 0.4s ease;
+    transition: all 0.5s ease;
   }
 
   .menu-toggle .line:first-child {
