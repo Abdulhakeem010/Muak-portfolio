@@ -132,12 +132,6 @@ hamburger.onclick = function () {
   navBar.classList.toggle("active");
   hamburger.classList.toggle("active");
 
-  // // Toggle scroll on body
-  // if (navBar.classList.contains("active")) {
-  //   document.body.style.overflow = "hidden";
-  // } else {
-  //   document.body.style.overflow = "";
-  // }
 };
 
 const ANIMATION_DURATION = 600;

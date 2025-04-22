@@ -23,19 +23,25 @@ hamburger.onclick = function () {
   navBar.classList.toggle("active");
   hamburger.classList.toggle("active");
 
-  // Toggle scroll on body
-  if (navBar.classList.contains("active")) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "";
-  }
+ 
 };
+
+const ANIMATION_DURATION = 600;
 
 // Auto-close nav when a link is clicked
 navLinks.forEach((link) => {
-  link.addEventListener("click", () => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const targetHref = link.getAttribute("href");
+
     navBar.classList.remove("active");
     hamburger.classList.remove("active");
     document.body.style.overflow = "";
+
+    // manual navigation atp
+    setTimeout(() => {
+      window.location.href = targetHref;
+    }, ANIMATION_DURATION);
   });
 });
