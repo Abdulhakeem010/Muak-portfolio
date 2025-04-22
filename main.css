@@ -561,8 +561,8 @@ header.hidden {
   transition: transform 0.4s ease;
   object-fit: cover;
 }
-/* END FIRST PROJECT STYLING*/
 /* END MAIN STYLING */
+
 
 /* FOOTER STYLING */
 .footer-top {
@@ -713,8 +713,9 @@ header.hidden {
 }
 /* END FOOTER STYLING */
 
-/* Responsiveness*/
 
+/* RESPONSIVENESS */
+/* RESPONSIVENESS FOR SMALL PC */
 @media screen and (max-width: 1024px) {
   .hero-section {
     padding-top: 150px;
@@ -750,8 +751,9 @@ header.hidden {
   }
 }
 
+/* RESPONSIVENESS FOR TABLETS */
 @media screen and (max-width: 768px) {
-
+/* HAMBURGER MENU ICON */
   .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -928,6 +930,7 @@ header.hidden {
   }
 }
 
+/* RESPONSIVENESS FOR LARGE MOBILE */
 @media screen and (max-width: 425px) {
 
   .hero-socials {
@@ -973,6 +976,7 @@ header.hidden {
   }
 }
 
+/* RESPONSIVENESS FOR MEDIUM MOBILE */
 @media screen and (max-width: 375px) {
   .hero-socials {
     justify-content: space-between;
@@ -984,6 +988,8 @@ header.hidden {
     gap: 20px;
   }
 }
+
+/* RESPONSIVENESS FOR SMALL MOBILE */
 @media screen and (max-width: 320px) {
   .sp-image {
     height: 250px;
