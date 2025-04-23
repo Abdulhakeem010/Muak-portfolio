@@ -174,7 +174,8 @@ header.hidden {
   font-size: 14px;
   font-weight: 500;
   line-height: 16.8px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
+
 }
 .intro-btn a:hover {
   background-color: var(--TEXT-H);
