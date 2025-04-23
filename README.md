@@ -1,6 +1,6 @@
 <!-- # Muak-portfolio -->
 # 🧑‍💻 My Portfolio
- Welcome to my personal portfolio website! This site showcases some of the projects I've worked on, my skills, and a little bit about me as I continue to grow as a developer.
+  Welcome to my personal portfolio website! This site showcases some of the projects I've worked on, my skills, and a little bit about me as I continue to grow as a developer.
 
 🚀 What You'll Find Here
 
