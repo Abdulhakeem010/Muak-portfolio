@@ -225,29 +225,6 @@ header.hidden {
 
 .interest-code-block {
   border-radius: 20px;
-  /* overflow-x: auto; */
-  margin: 0;
-  white-space: pre-wrap; 
-  box-sizing: border-box;
-
-}
-.interest-code-block code {
-  padding: 0;
-  margin: 0;
-  display: block;
-}
-/* pre {
-  background-color: #1e1e1e;
-  color: #dcdcdc;
-  padding: 1rem;
-  border-radius: 8px;
-  overflow-x: auto;
-  font-family: 'Courier New', monospace;
-} */
-
-code {
-  font-size: 0.9rem;
-  line-height: 1.5;
 }
 
 .carousel-container {
