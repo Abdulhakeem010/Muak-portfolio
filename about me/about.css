@@ -202,7 +202,7 @@ header.hidden {
 }
 .interest-p-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 60px;
 }
 
@@ -224,15 +224,16 @@ header.hidden {
 }
 
 .interest-code-block {
-  background-color: #1e1e1e;
-  color: #dcdcdc;
+  color: #1e1e1e;
+  background-color: #dcdcdc;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 20px;
   overflow-x: auto;
   font-family: 'Fira Code', 'Courier New', monospace;
   margin: 0;
   white-space: pre-wrap; /* makes it wrap nicely */
   box-sizing: border-box;
+
 }
 /* pre {
   background-color: #1e1e1e;
