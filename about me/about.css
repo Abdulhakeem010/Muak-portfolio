@@ -224,14 +224,10 @@ header.hidden {
 }
 
 .interest-code-block {
-  color: #1e1e1e;
-  background-color: #dcdcdc;
-  padding: 1rem;
   border-radius: 20px;
-  overflow-x: auto;
-  font-family: 'Fira Code', 'Courier New', monospace;
+  /* overflow-x: auto; */
   margin: 0;
-  white-space: pre-wrap; /* makes it wrap nicely */
+  white-space: pre-wrap; 
   box-sizing: border-box;
 
 }
