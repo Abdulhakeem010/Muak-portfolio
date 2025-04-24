@@ -158,12 +158,14 @@ header.hidden {
   display: flex;
   flex-direction: row;
   gap: 40px;
-  height: 300px;
+  height: 100%;
+  border: 1px solid red;
 }
 .wia-image {
+  border: 1px solid red;
   border-radius: 15px;
   width: calc(50% - 20px);
-  height: 300px;
+  /* height: 300px; */
 }
 
 .wia-image img {
@@ -172,6 +174,7 @@ header.hidden {
   height: 100%;
 }
 .wia-text {
+  border: 1px solid red;
   width: calc(50% - 20px);
 }
 .wia-text h3 {
