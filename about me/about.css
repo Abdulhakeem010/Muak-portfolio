@@ -171,7 +171,6 @@ header.hidden {
   height: 100%;
 }
 .wia-text {
-  border: 1px solid red;
   width: calc(50% - 20px);
 }
 .wia-text h3 {
