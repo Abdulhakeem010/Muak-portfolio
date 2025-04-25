@@ -223,9 +223,15 @@ header.hidden {
   /* width: calc(50% - 30px); */
 }
 
-.interest-code-block {
-  border-radius: 20px;
-}
+  .interest-code-block {
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    box-sizing: border-box;
+  }
 
 .carousel-container {
   display: flex;
