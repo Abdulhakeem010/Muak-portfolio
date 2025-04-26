@@ -313,6 +313,9 @@ header.hidden {
 .la-container {
   margin-bottom: 160px;
 }
+.interest-p3{
+  display: flex;
+}
 
 /* FOOTER STYLING */
 .footer-top {
