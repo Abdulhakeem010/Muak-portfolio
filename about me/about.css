@@ -451,6 +451,10 @@ header.hidden {
     padding-inline: 5%;
   }
 
+  .no-b{
+    display: none;
+  }
+
   .carousel-item {
     width: calc((100% - 20px) / 3);
   }
@@ -573,9 +577,7 @@ header.hidden {
   .interest-p {
     width: 100%;
   }
-  .no-b {
-    display: none;
-  }
+
   .interest-image {
     margin-bottom: 70px;
   }
