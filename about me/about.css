@@ -314,11 +314,13 @@ header.hidden {
 }
 .interest-p3-container{
   display: flex;
+  gap: 60px;
 }
 .interest-p3{
    width: calc(50% - 30px);
    font-size: 18px;
-   line-height: 28px;
+    line-height: 28.8px;
+    color: var(--TEXT-P);
 }
 
 /* FOOTER STYLING */
