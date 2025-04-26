@@ -210,17 +210,17 @@ header.hidden {
 }
 
 .interest-p {
-  border: 1px solid red;
+  font-size: 18px;
+  line-height: 28.8px;
   font-weight: 400;
   width: 100%;
   height: fit-content;
   cursor: pointer;
-  /* overflow-y: scroll; */
   border-radius: 20px;
 }
 .interest-p2 {
-  font-size: 18px;
-  line-height: 28.8px;
+  /* font-size: 18px;
+  line-height: 28.8px; */
   color: var(--TEXT-P);
   border-left: 2px solid hsla(0, 0%, 80%, 0.9);
   padding-left: 20px;
