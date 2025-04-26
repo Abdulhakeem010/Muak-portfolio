@@ -217,7 +217,6 @@ header.hidden {
   cursor: pointer;
   overflow-y: scroll;
   border-radius: 20px;
-  /* width: calc(50% - 30px); */
 }
 .interest-p2{
    font-size: 18px;
@@ -315,6 +314,11 @@ header.hidden {
 }
 .interest-p3-container{
   display: flex;
+}
+.interest-p3{
+   width: calc(50% - 30px);
+   font-size: 18px;
+   line-height: 28px;
 }
 
 /* FOOTER STYLING */
