@@ -93,7 +93,7 @@ header.hidden {
   justify-content: flex-end;
   gap: 25px;
 }
-.header-navs ul{
+.header-navs ul {
   list-style-type: none;
   display: flex;
 }
@@ -111,7 +111,7 @@ header.hidden {
 .nav:hover {
   color: #828282;
 }
-.strike{
+.strike {
   text-decoration: line-through;
 }
 
@@ -132,7 +132,6 @@ header.hidden {
 .icon:hover {
   cursor: pointer;
 }
-
 
 /*main styling*/
 /* Who i am styling */
@@ -218,23 +217,23 @@ header.hidden {
   overflow-y: scroll;
   border-radius: 20px;
 }
-.interest-p2{
-   font-size: 18px;
-    line-height: 28.8px;
-    color: var(--TEXT-P);
-    border-left: 2px solid hsla(0, 0%, 80%, 0.9);
-    padding-left: 20px
+.interest-p2 {
+  font-size: 18px;
+  line-height: 28.8px;
+  color: var(--TEXT-P);
+  border-left: 2px solid hsla(0, 0%, 80%, 0.9);
+  padding-left: 20px;
 }
 
-  .interest-code-block {
-    padding: 1rem;
-    border-radius: 20px;
-    overflow-x: auto;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin: 0;
-    box-sizing: border-box;
-  }
+.interest-code-block {
+  padding: 1rem;
+  border-radius: 20px;
+  overflow-x: auto;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  box-sizing: border-box;
+}
 
 .carousel-container {
   display: flex;
@@ -312,15 +311,15 @@ header.hidden {
 .la-container {
   margin-bottom: 160px;
 }
-.interest-p3-container{
+.interest-p3-container {
   display: flex;
   gap: 60px;
 }
-.interest-p3{
-   width: calc(50% - 30px);
-   font-size: 18px;
-    line-height: 28.8px;
-    color: var(--TEXT-P);
+.interest-p3 {
+  width: calc(50% - 30px);
+  font-size: 18px;
+  line-height: 28.8px;
+  color: var(--TEXT-P);
 }
 
 /* FOOTER STYLING */
@@ -524,7 +523,7 @@ header.hidden {
     transform: rotate(45deg) translate(5px, 5px);
     width: 24px;
   }
-  
+
   .menu-toggle.active .line:last-child {
     transform: rotate(-45deg) translate(3.5px, -3.5px);
     width: 24px;
@@ -544,34 +543,34 @@ header.hidden {
     overflow: hidden;
   }
 
-  .header-navs.active{
+  .header-navs.active {
     height: 100vh;
   }
   .no-scroll {
     overflow: hidden;
     height: 100vh;
   }
-  
-  .header-navs ul{
+
+  .header-navs ul {
     display: block;
     width: fit-content;
-    margin:90px auto 0 auto ;
+    margin: 90px auto 0 auto;
     text-align: center;
     transition: all 0.4s;
     opacity: 0;
   }
-  
-  .header-navs.active ul{
+
+  .header-navs.active ul {
     opacity: 1;
   }
 
-  .nav{
+  .nav {
     margin-left: 0;
     margin-bottom: 50px;
     font-size: 20px;
     font-weight: 500;
   }
-  
+
   .who-i-am {
     padding-top: 140px;
     border-radius: 0 0 40px 40px;
@@ -700,14 +699,12 @@ header.hidden {
 }
 
 @media screen and (max-width: 375px) {
-
   .fb-left-links {
     gap: 20px;
   }
 }
 
 @media screen and (max-width: 320px) {
-
   .fb-left-links a {
     font-size: 12px;
   }
