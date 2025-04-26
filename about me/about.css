@@ -210,13 +210,11 @@ header.hidden {
 }
 
 .interest-p {
+  width: calc(50% - 30px);
   font-size: 18px;
   line-height: 28.8px;
+  color: var(--TEXT-P);
   font-weight: 400;
-  width: 100%;
-  height: fit-content;
-  cursor: pointer;
-  border-radius: 20px;
 }
 .interest-p2 {
   /* font-size: 18px;
@@ -316,12 +314,6 @@ header.hidden {
 .interest-p3-container {
   display: flex;
   gap: 60px;
-}
-.interest-p3 {
-  width: calc(50% - 30px);
-  font-size: 18px;
-  line-height: 28.8px;
-  color: var(--TEXT-P);
 }
 
 /* FOOTER STYLING */
