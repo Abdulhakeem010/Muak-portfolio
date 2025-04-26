@@ -203,6 +203,7 @@ header.hidden {
   display: flex;
   flex-direction: column;
   gap: 60px;
+  border: 1px solid red;
 }
 
 .first-p {
@@ -229,7 +230,7 @@ header.hidden {
 .interest-code-block {
   padding: 1rem;
   border-radius: 20px;
-  overflow-x: auto;
+  overflow-x:auto;
   font-size: 0.95rem;
   line-height: 1.6;
   margin: 0;
