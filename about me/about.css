@@ -203,7 +203,6 @@ header.hidden {
   display: flex;
   flex-direction: column;
   gap: 60px;
-  border: 1px solid red;
 }
 
 .first-p {
