@@ -156,17 +156,18 @@ navLinks.forEach((link) => {
   });
 });
 
+gsap.registerPlugin(ScrollTrigger);
 
 window.addEventListener("DOMContentLoaded", () => {
   gsap.from(".hero-section h1", {
-    duration: 1.5,
+    duration: 1,
     y: 100,
     opacity: 0,
     ease: "power2.out"
   });
 
   gsap.from(".hero-section p", {
-    duration: 1.5,
+    duration: 1,
     y: 100,
     opacity: 0,
     delay: 0.3,
