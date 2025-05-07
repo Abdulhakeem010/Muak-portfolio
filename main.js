@@ -158,27 +158,49 @@ navLinks.forEach((link) => {
 
 
 
+
 window.addEventListener("DOMContentLoaded", () => {
   // Register ScrollTrigger plugin
   gsap.registerPlugin(ScrollTrigger);
 
   // Hero section animation
-  gsap.from(".hero-title", {
+  gsap.from(".hero-section h1", {
     duration: 1,
-    y: -50,
+    y: 80,
     ease: "power2.out"
   });
 
-  gsap.from(".hero-subtitle", {
+  gsap.from(".hero-section p", {
     duration: 1,
-    y: 50,
+    y: 80,
     delay: 0.3,
     ease: "power2.out"
   });
+  gsap.from(".hero-socials", {
+    duration: 1,
+    y: 80,
+    delay: 0.6,
+    ease: "power2.out"
+  });
 
-  // Scroll animations (no fade)
-  gsap.from(".section-title", {
-    scrollTrigger: ".section-title",
+  
+ // Scroll animations (no fade)
+  gsap.from(".cg", {
+    scrollTrigger: ".cg",
+    duration: 1,
+    y: 100,
+    ease: "power2.out"
+  });
+
+  gsap.from(".marquee-container", {
+    scrollTrigger: ".marquee-container",
+    duration: 1,
+    y: 100,
+    ease: "power2.out"
+  });
+
+  gsap.from(".selected-project", {
+    scrollTrigger: ".selected-project",
     y: 100,
     duration: 1,
     ease: "power2.out"
