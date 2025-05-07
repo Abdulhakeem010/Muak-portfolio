@@ -36,7 +36,7 @@ This portfolio is built using:
 
 ## 🔄 Future Improvements
 
-- ✨ Add more projects and blog posts  
+- ✨ Add more projects 
 - 🌙 Implement dark mode  
 - ♿ Improve accessibility for all users
 
