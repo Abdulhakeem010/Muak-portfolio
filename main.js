@@ -164,22 +164,38 @@ window.addEventListener("DOMContentLoaded", () => {
   gsap.registerPlugin(ScrollTrigger);
 
   // Hero section animation
-  gsap.from(".hero-section h1", {
+  // gsap.from(".hero-section h1", {
+  //   duration: 1,
+  //   y: 80,
+  //   ease: "power2.out"
+  // });
+  gsap.from(".hero-section", {
+    scrollTrigger: {
+      trigger: ".hero-section",
+      once: true, // ✅ only animate once
+    },
+    y: 100,
     duration: 1,
-    y: 80,
     ease: "power2.out"
   });
 
   gsap.from(".hero-section p", {
+    scrollTrigger: {
+      trigger: ".hero-section p",
+      once: true, // ✅ only animate once
+    },
+    y: 100,
     duration: 1,
-    y: 80,
-    delay: 0.3,
     ease: "power2.out"
   });
+
   gsap.from(".hero-socials", {
+    scrollTrigger: {
+      trigger: ".hero-socials",
+      once: true, // ✅ only animate once
+    },
+    y: 100,
     duration: 1,
-    y: 80,
-    delay: 0.6,
     ease: "power2.out"
   });
 
