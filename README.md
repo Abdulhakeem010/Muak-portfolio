@@ -5,7 +5,7 @@ Welcome to my personal portfolio website! This site showcases some of the projec
 🌐 **Live Site**: [muak-portfolio.vercel.app](https://muak-portfolio.vercel.app/)
 
     ![My portfolio Image](./img/portfolio-img.png)
----
+---img/portfolio-img.png
 
 ## 🚀 What You'll Find Here
 
