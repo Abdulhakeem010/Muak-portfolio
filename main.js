@@ -160,97 +160,35 @@ navLinks.forEach((link) => {
 
 
 window.addEventListener("DOMContentLoaded", () => {
-  // Register ScrollTrigger plugin
   gsap.registerPlugin(ScrollTrigger);
 
-  // Hero section animation
-  // gsap.from(".hero-section h1", {
-  //   duration: 1,
-  //   y: 80,
-  //   ease: "power2.out"
-  // });
-  gsap.from(".hero-section", {
-    scrollTrigger: {
-      trigger: ".hero-section",
-      once: true, // ✅ only animate once
-    },
-    y: 100,
+  // Reusable animation settings
+  const scrollAnim = (target, yValue = 100) => {
+    gsap.from(target, {
+      scrollTrigger: {
+        trigger: target,
+        once: true
+      },
+      y: yValue,
+      duration: 1,
+      ease: "power2.out"
+    });
+  };
+
+  // Hero section animations
+  gsap.from(".hero-section h1", {
     duration: 1,
+    y: 80,
     ease: "power2.out"
   });
 
-  gsap.from(".hero-section p", {
-    scrollTrigger: {
-      trigger: ".hero-section p",
-      once: true, // ✅ only animate once
-    },
-    y: 100,
-    duration: 1,
-    ease: "power2.out"
-  });
+  scrollAnim(".hero-section p");
+  scrollAnim(".hero-socials");
 
-  gsap.from(".hero-socials", {
-    scrollTrigger: {
-      trigger: ".hero-socials",
-      once: true, // ✅ only animate once
-    },
-    y: 100,
-    duration: 1,
-    ease: "power2.out"
-  });
-
-
- // Scroll animations (no fade)
- gsap.from(".cg", {
-  scrollTrigger: {
-    trigger: ".cg",
-    once: true, // ✅ only animate once
-  },
-  y: 100,
-  duration: 1,
-  ease: "power2.out"
-});
-
-gsap.from(".marquee-container", {
-  scrollTrigger: {
-    trigger: ".marquee-container",
-    once: true, // ✅ only animate once
-  },
-  y: 100,
-  duration: 1,
-  ease: "power2.out"
-});
-
-  gsap.from(".selected-project", {
-    scrollTrigger:{
-      trigger: ".selected-project",
-      once: true,
-    },
-    y: 100,
-    duration: 1,
-    ease: "power2.out"
-  });
-
-  gsap.from(".first-project", {
-    scrollTrigger:{
-      trigger: ".first-project",
-      once:true,
-    },
-    y: 100,
-    duration: 1,
-    ease: "power2.out"
-  });
-
-  gsap.from("footer", {
-    scrollTrigger:{
-      trigger: "footer",
-      once: true,
-    },
-    y: 100,
-    duration: 1,
-    ease: "power2.out"
-  });
-
-
-
+  // Below hero section animations
+  scrollAnim(".cg");
+  scrollAnim(".marquee-container");
+  scrollAnim(".selected-project");
+  scrollAnim(".first-project");
+  scrollAnim("footer");
 });
