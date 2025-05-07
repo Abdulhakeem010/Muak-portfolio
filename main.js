@@ -156,21 +156,39 @@ navLinks.forEach((link) => {
   });
 });
 
-gsap.registerPlugin(ScrollTrigger);
+
 
 window.addEventListener("DOMContentLoaded", () => {
-  gsap.from(".hero-section h1", {
+  // Register ScrollTrigger plugin
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Hero section animation
+  gsap.from(".hero-title", {
     duration: 1,
-    y: 100,
-    opacity: 0,
+    y: -50,
     ease: "power2.out"
   });
 
-  gsap.from(".hero-section p", {
+  gsap.from(".hero-subtitle", {
     duration: 1,
-    y: 100,
-    opacity: 0,
+    y: 50,
     delay: 0.3,
+    ease: "power2.out"
+  });
+
+  // Scroll animations (no fade)
+  gsap.from(".section-title", {
+    scrollTrigger: ".section-title",
+    y: 100,
+    duration: 1,
+    ease: "power2.out"
+  });
+
+  gsap.from(".section-description", {
+    scrollTrigger: ".section-description",
+    y: 50,
+    duration: 1,
+    delay: 0.2,
     ease: "power2.out"
   });
 });
