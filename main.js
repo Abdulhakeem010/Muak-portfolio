@@ -183,7 +183,7 @@ window.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   });
 
-  
+
  // Scroll animations (no fade)
   gsap.from(".cg", {
     scrollTrigger: ".cg",
@@ -206,11 +206,18 @@ window.addEventListener("DOMContentLoaded", () => {
     ease: "power2.out"
   });
 
-  gsap.from(".section-description", {
-    scrollTrigger: ".section-description",
-    y: 50,
+  gsap.from(".first-project", {
+    scrollTrigger: ".first-project",
+    y: 100,
     duration: 1,
-    delay: 0.2,
     ease: "power2.out"
   });
+
+  gsap.from("footer", {
+    scrollTrigger: "footer",
+    y: 100,
+    duration: 1,
+    ease: "power2.out"
+  });
+
 });
