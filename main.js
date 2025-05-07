@@ -185,39 +185,56 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
  // Scroll animations (no fade)
-  gsap.from(".cg", {
-    scrollTrigger: ".cg",
-    duration: 1,
-    y: 100,
-    ease: "power2.out"
-  });
+ gsap.from(".cg", {
+  scrollTrigger: {
+    trigger: ".cg",
+    once: true, // ✅ only animate once
+  },
+  y: 100,
+  duration: 1,
+  ease: "power2.out"
+});
 
-  gsap.from(".marquee-container", {
-    scrollTrigger: ".marquee-container",
-    duration: 1,
-    y: 100,
-    ease: "power2.out"
-  });
+gsap.from(".marquee-container", {
+  scrollTrigger: {
+    trigger: ".marquee-container",
+    once: true, // ✅ only animate once
+  },
+  y: 100,
+  duration: 1,
+  ease: "power2.out"
+});
 
   gsap.from(".selected-project", {
-    scrollTrigger: ".selected-project",
+    scrollTrigger:{
+      trigger: ".selected-project",
+      once: true,
+    },
     y: 100,
     duration: 1,
     ease: "power2.out"
   });
 
   gsap.from(".first-project", {
-    scrollTrigger: ".first-project",
+    scrollTrigger:{
+      trigger: ".first-project",
+      once:true,
+    },
     y: 100,
     duration: 1,
     ease: "power2.out"
   });
 
   gsap.from("footer", {
-    scrollTrigger: "footer",
+    scrollTrigger:{
+      trigger: "footer",
+      once: true,
+    },
     y: 100,
     duration: 1,
     ease: "power2.out"
   });
+
+
 
 });
