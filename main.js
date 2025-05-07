@@ -1,4 +1,3 @@
-import { gsap } from "gsap";
 
 let lastScrollTop = 0;
 const header = document.getElementById("header");
