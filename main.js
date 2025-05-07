@@ -16,7 +16,7 @@ window.addEventListener("scroll", function () {
 
 const username = "Abdulhakeem010";
 const years = [2025];
-const token = window.MY_GITHUB_API_KEY;
+const token = "";
 
 const yearList = document.getElementById("year-list");
 let activeYearButton = null;
