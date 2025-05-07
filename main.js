@@ -155,3 +155,21 @@ navLinks.forEach((link) => {
     }, ANIMATION_DURATION);
   });
 });
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  gsap.from(".hero-section h1", {
+    duration: 1.5,
+    y: 100,
+    opacity: 0,
+    ease: "power2.out"
+  });
+
+  gsap.from(".hero-section p", {
+    duration: 1.5,
+    y: 100,
+    opacity: 0,
+    delay: 0.3,
+    ease: "power2.out"
+  });
+});
