@@ -156,6 +156,7 @@ header.hidden {
   width: 125px;
   height: 125px;
   border-radius: 50%;
+  object-position: top;
 }
 .hero-section h1 {
   font-size: clamp(32px, 4vw, 55px);
