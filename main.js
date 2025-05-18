@@ -136,7 +136,7 @@ hamburger.onclick = function () {
   document.body.classList.toggle('no-scroll', navBar.classList.contains('active'));
 };
 
-const ANIMATION_DURATION = 600;
+const ANIMATION_DURATION = 500;
 
 // Auto-close nav when a link is clicked
 navLinks.forEach((link) => {
